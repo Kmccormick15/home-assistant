@@ -1,0 +1,126 @@
+'1512866664337':
+  alias: Blinking House Lights
+  sequence:
+  - data:
+      entity_id:
+      #- switch.ge_unknown_type5052_id3031_switch
+      - switch.ge_unknown_type5052_id3031_switch_2
+      #- switch.ge_unknown_type5052_id3031_switch_3
+      - switch.leviton_unknown_type3601_id0001_switch
+    service: switch.toggle
+  - delay:
+      milliseconds: 1000
+  - data:
+      entity_id:
+      #- switch.ge_unknown_type5052_id3031_switch
+      - switch.ge_unknown_type5052_id3031_switch_2
+      #- switch.ge_unknown_type5052_id3031_switch_3
+      - switch.leviton_unknown_type3601_id0001_switch
+    service: switch.toggle
+'1513745726756':
+  alias: Goodnight
+  sequence:
+  - data:
+      entity_id:
+      - light.ge_12729_3way_dimmer_switch_level
+      - light.ge_12729_3way_dimmer_switch_level_2
+      - light.ge_unknown_type5044_id3031_level
+      - light.ge_unknown_type4944_id3130_level
+    service: light.turn_off
+  - data:
+      entity_id:
+      - switch.ge_unknown_type5052_id3031_switch
+      - switch.ge_unknown_type5052_id3031_switch_2
+      - switch.leviton_unknown_type3601_id0001_switch
+      - switch.ge_unknown_type5052_id3031_switch_3
+    service: switch.turn_off
+'1513893995891':
+  alias: Theater On
+  sequence:
+    service: broadlink.send_packet_192_168_1_220
+    data:
+      packet:
+      - eE0yAAgUFgcIFBYHCBQWBhYGCBQWBggUFgcIFAgUCBQIFBUHCBQIzggUFgcVBxUHFQcIFBUHAAAAAAAA
+      - JgDIAAABJ5EUEBQ1FBEUEBQ1FDUUEBQRFDUUEBQ1FDUUERQQFDUUNRQQFDUUERQQFBEUEBQRFBAUNRQRFDQVNBU0FDUUNRQ1FAAFGgABJ0gUAAw5AAEnSRMADDsAASZHFQAMOQABKEcUAAw6AAEnSBQADDoAASdIEwAMOgABKEcUAAw7AAEmRxUADDoAASdIEwAMOgABJ0gUAAw6AAEnRxUADDkAAShHFAAMOwABJkkTAAw5AAEoSBMADDoAAShHFAAMOgABJ0cVAA0F
+'1514064152005':
+  alias: Dim Rec Room Low
+  sequence:
+  - data:
+      brightness: 50
+      entity_id: light.ge_unknown_type4944_id3130_level
+    service: light.turn_on
+  - delay:
+      milliseconds: 500
+  - data:
+      brightness: 20
+      entity_id: light.ge_unknown_type4944_id3130_level
+    service: light.turn_on
+'1514064524159':
+  alias: Dim Rec Room High
+  sequence:
+  - data:
+      brightness: 100
+      entity_id: light.ge_unknown_type4944_id3130_level
+    service: light.turn_on
+'1514516585084':
+  alias: Blink Outside Lights
+  sequence:
+  - data:
+      entity_id: group.outside_house_lights
+    service: switch.toggle
+  - delay:
+      milliseconds: 100
+  - data:
+      entity_id: group.outside_house_lights
+    service: switch.toggle
+  - delay:
+      seconds: 1
+  - data:
+      entity_id: group.outside_house_lights
+    service: switch.toggle
+  - delay:
+      milliseconds: 100
+  - data:
+      entity_id: group.outside_house_lights
+    service: switch.toggle
+  - delay:
+      seconds: 1
+  - data:
+      entity_id: group.outside_house_lights
+    service: switch.toggle
+  - delay:
+      milliseconds: 100
+  - data:
+      entity_id: group.outside_house_lights
+    service: switch.toggle
+  - delay:
+      seconds: 1
+  - data:
+      entity_id: group.outside_house_lights
+    service: switch.turn_on
+'1516562302139':
+  alias: Inside House Lights On
+  sequence:
+  - data:
+      entity_id:
+      - switch.ge_unknown_type5052_id3031_switch_2
+      - switch.leviton_unknown_type3601_id0001_switch
+      - group.inside_house_lights
+    service: switch.turn_on
+  - data:
+      entity_id:
+      - group.inside_house_lights
+    service: light.turn_on
+  - data:
+      brightness: 100
+      entity_id: light.ge_unknown_type4944_id3130_level
+    service: light.turn_on
+'1516563302943':
+  alias: Lights Off
+  sequence:
+  - data:
+      entity_id: group.main_lights
+    service: switch.turn_off
+  - data:
+      entity_id: group.main_lights
+    service: light.turn_off

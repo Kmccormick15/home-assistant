@@ -1,0 +1,890 @@
+{
+    "data": {
+        "entities": [
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.leviton_unknown_type3601_id0001_switch",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "2-72057594076282880"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.ge_unknown_type5052_id3031_switch",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "3-72057594093060096"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.ge_unknown_type4f50_id3032_switch",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594109837312"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.aeotec_zw100_multisensor_6_sensor",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594126794752"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_zw100_multisensor_6_temperature",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594126811154"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_zw100_multisensor_6_luminance",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594126811186"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_zw100_multisensor_6_relative_humidity",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594126811218"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_zw100_multisensor_6_ultraviolet",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594126811570"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_zw100_multisensor_6_alarm_type",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594127859713"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_zw100_multisensor_6_alarm_level",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594127859729"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_zw100_multisensor_6_sourcenodeid",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594127859745"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_zw100_multisensor_6_burglar",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594127859873"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.fortrezz_mimolite_wireless_interfacebridge_module_switch",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "7-72057594160168960"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.fortrezz_mimolite_wireless_interfacebridge_module_sensor",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "7-72057594160349184"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fortrezz_mimolite_wireless_interfacebridge_module_general",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "7-72057594160365602"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fortrezz_mimolite_wireless_interfacebridge_module_alarm_type",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "7-72057594161414145"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fortrezz_mimolite_wireless_interfacebridge_module_alarm_level",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "7-72057594161414161"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.aeotec_dsb45_water_sensor_sensor",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "8-72057594177126400"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_dsb45_water_sensor_alarm_type",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "8-72057594178191361"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_dsb45_water_sensor_alarm_level",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "8-72057594178191377"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_dsb45_water_sensor_sourcenodeid",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "8-72057594178191393"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_dsb45_water_sensor_flood",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "8-72057594178191489"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "light.ge_12729_3way_dimmer_switch_level",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "10-72057594210516993"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "light.ge_12729_3way_dimmer_switch_level_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "11-72057594227294209"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.ge_unknown_type5052_id3031_switch_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "12-72057594244055040"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "light.ge_unknown_type4944_id3130_level",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "13-72057594260848641"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.ge_unknown_type5052_id3031_switch_3",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "14-72057594277609472"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.ge_12727_inwall_smart_switch_toggle_switch",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "15-72057594294386688"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.ge_12727_inwall_smart_switch_toggle_switch_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "16-72057594311163904"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.ge_unknown_type4952_id3037_switch",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "17-72057594327941120"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "light.ge_unknown_type4944_id3130_level_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "18-72057594344734721"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.ge_unknown_type4952_id3037_switch_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "19-72057594361495552"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.ge_unknown_type4952_id3037_switch_3",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "20-72057594378272768"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.ecolink_motion_detector_sensor",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "22-72057594412007424"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.ecolink_motion_detector_alarm_type",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "22-72057594413072385"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.ecolink_motion_detector_alarm_level",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "22-72057594413072401"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.ecolink_motion_detector_sourcenodeid",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "22-72057594413072417"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.ecolink_motion_detector_burglar",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "22-72057594413072545"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.ecolink_motion_detector_power_management",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "22-72057594413072561"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.ecolink_motion_detector_sensor_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "23-72057594428784640"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.ecolink_motion_detector_alarm_type_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "23-72057594429849601"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.ecolink_motion_detector_alarm_level_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "23-72057594429849617"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.ecolink_motion_detector_sourcenodeid_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "23-72057594429849633"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.ecolink_motion_detector_burglar_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "23-72057594429849761"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.ecolink_motion_detector_power_management_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "23-72057594429849777"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.kfdowi",
+                "name": null,
+                "platform": "plex",
+                "unique_id": "3808b5c04a3a6ca7-com-plexapp-android"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.galaxy_s7_edge",
+                "name": null,
+                "platform": "plex",
+                "unique_id": "a04f08ff0dc350a8-com-plexapp-android"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.theater_speaker",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "d5096679-1930-1345-a31f-94a3013083f6"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.home_group",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "1fc0fb2c-2671-4d89-be1f-6c81ce70ff8e"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.basement_speaker",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "643ea2ea-93bd-8681-fa1d-0ecb2b92649b"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.kitchen_speaker",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "26ee04df-d6c1-04c7-9041-08652df1c1ce"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.marshall_speaker",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "2861d79a-eba8-3cbc-846b-61db115f6e09"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.kevins_chromecast",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "c6d2a479-3cc1-9443-f1e0-1e50ff7b8bc6"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.all",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "4d9cb14d-154b-4cd1-948a-e0fa19b58f04"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.plex_web_chrome",
+                "name": null,
+                "platform": "plex",
+                "unique_id": "ma5ulc75f1whawdhw8nay8pvi"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.xboxsystemos",
+                "name": null,
+                "platform": "plex",
+                "unique_id": "10a2wqrqldiea5fbran6zflt"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.upper_living",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "1ab8aa2e-fff8-8a09-1205-0e6436ce94f9"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.living_room_tv",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "3a88d3cd-e855-8aa3-c2b5-2d592b955d84"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.connors_room_speaker",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "0b3d1b38-9db1-c9ae-ae55-c6b840a5a066"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.aeotec_zw090_zstick_gen5_us",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-1"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.leviton_unknown_type3601_id0001",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-2"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.ge_unknown_type5052_id3031",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-3"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.ge_unknown_type4f50_id3032",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-4"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.aeotec_zw100_multisensor_6",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-5"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.fortrezz_mimolite_wireless_interfacebridge_module",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-7"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.aeotec_dsb45_water_sensor",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-8"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.ge_12729_3way_dimmer_switch",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-10"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.ge_12729_3way_dimmer_switch_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-11"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.ge_unknown_type5052_id3031_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-12"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.ge_unknown_type4944_id3130",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-13"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.ge_unknown_type5052_id3031_3",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-14"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.ge_12727_inwall_smart_switch_toggle",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-15"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.ge_12727_inwall_smart_switch_toggle_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-16"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.ge_unknown_type4952_id3037",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-17"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.ge_unknown_type4944_id3130_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-18"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.ge_unknown_type4952_id3037_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-19"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.ge_unknown_type4952_id3037_3",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-20"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.ecolink_motion_detector",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-22"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.ecolink_motion_detector_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-23"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fortrezz_mimolite_wireless_interfacebridge_module_velocity",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "7-72057594160365666"
+            },
+            {
+                "config_entry_id": "030cb9f004ef4a07b8c4f6f0b85d54ea",
+                "device_id": "1f02fcbc9ec949d384be2d5a8e8510b8",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.driveway_camera_motion_detected",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "1Yjk8FBmKCFzNn9UvgQReE-Vwr-vDn7UhD-uehjBY7Z7JNbM1LmleA-motion_detected"
+            },
+            {
+                "config_entry_id": "030cb9f004ef4a07b8c4f6f0b85d54ea",
+                "device_id": "984acf4b1be84d0c8462dbcf66041349",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.teller_away",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "4_VjV9dFKNcu2NC1YzLp4Bf8x6GEgQcW2gzFna9o0aKx6r3NFOEhjA-away"
+            },
+            {
+                "config_entry_id": "030cb9f004ef4a07b8c4f6f0b85d54ea",
+                "device_id": "ae446bbce30f4bee9aaa3cbdd53db182",
+                "disabled_by": null,
+                "entity_id": "camera.rec_room",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "ctR7uMoEBYYFUAYNopypGThMc5VpMPP4iwu3KiHg6iR7JNbM1LmleA"
+            },
+            {
+                "config_entry_id": "030cb9f004ef4a07b8c4f6f0b85d54ea",
+                "device_id": "1f02fcbc9ec949d384be2d5a8e8510b8",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.driveway_camera_person_detected",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "1Yjk8FBmKCFzNn9UvgQReE-Vwr-vDn7UhD-uehjBY7Z7JNbM1LmleA-person_detected"
+            },
+            {
+                "config_entry_id": "030cb9f004ef4a07b8c4f6f0b85d54ea",
+                "device_id": "1f02fcbc9ec949d384be2d5a8e8510b8",
+                "disabled_by": null,
+                "entity_id": "camera.driveway",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "1Yjk8FBmKCFzNn9UvgQReE-Vwr-vDn7UhD-uehjBY7Z7JNbM1LmleA"
+            },
+            {
+                "config_entry_id": "030cb9f004ef4a07b8c4f6f0b85d54ea",
+                "device_id": "1f02fcbc9ec949d384be2d5a8e8510b8",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.driveway_camera_online",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "1Yjk8FBmKCFzNn9UvgQReE-Vwr-vDn7UhD-uehjBY7Z7JNbM1LmleA-online"
+            },
+            {
+                "config_entry_id": "030cb9f004ef4a07b8c4f6f0b85d54ea",
+                "device_id": "ae446bbce30f4bee9aaa3cbdd53db182",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.rec_room_camera_person_detected",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "ctR7uMoEBYYFUAYNopypGThMc5VpMPP4iwu3KiHg6iR7JNbM1LmleA-person_detected"
+            },
+            {
+                "config_entry_id": "030cb9f004ef4a07b8c4f6f0b85d54ea",
+                "device_id": "ae446bbce30f4bee9aaa3cbdd53db182",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.rec_room_camera_online",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "ctR7uMoEBYYFUAYNopypGThMc5VpMPP4iwu3KiHg6iR7JNbM1LmleA-online"
+            },
+            {
+                "config_entry_id": "030cb9f004ef4a07b8c4f6f0b85d54ea",
+                "device_id": "311f28e24b6f4704a5b22ec6ab6bf32d",
+                "disabled_by": null,
+                "entity_id": "sensor.upstairs_nest_protect_color_status",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "v6gStDhuT7ynBjwUxOwgWnsk1szUuaV4-color_status"
+            },
+            {
+                "config_entry_id": "030cb9f004ef4a07b8c4f6f0b85d54ea",
+                "device_id": "311f28e24b6f4704a5b22ec6ab6bf32d",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.upstairs_nest_protect_online",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "v6gStDhuT7ynBjwUxOwgWnsk1szUuaV4-online"
+            },
+            {
+                "config_entry_id": "030cb9f004ef4a07b8c4f6f0b85d54ea",
+                "device_id": "311f28e24b6f4704a5b22ec6ab6bf32d",
+                "disabled_by": null,
+                "entity_id": "sensor.upstairs_nest_protect_battery_health",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "v6gStDhuT7ynBjwUxOwgWnsk1szUuaV4-battery_health"
+            },
+            {
+                "config_entry_id": "030cb9f004ef4a07b8c4f6f0b85d54ea",
+                "device_id": "984acf4b1be84d0c8462dbcf66041349",
+                "disabled_by": null,
+                "entity_id": "sensor.teller_security_state",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "4_VjV9dFKNcu2NC1YzLp4Bf8x6GEgQcW2gzFna9o0aKx6r3NFOEhjA-security_state"
+            },
+            {
+                "config_entry_id": "030cb9f004ef4a07b8c4f6f0b85d54ea",
+                "device_id": "ae446bbce30f4bee9aaa3cbdd53db182",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.rec_room_camera_sound_detected",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "ctR7uMoEBYYFUAYNopypGThMc5VpMPP4iwu3KiHg6iR7JNbM1LmleA-sound_detected"
+            },
+            {
+                "config_entry_id": "030cb9f004ef4a07b8c4f6f0b85d54ea",
+                "device_id": "984acf4b1be84d0c8462dbcf66041349",
+                "disabled_by": null,
+                "entity_id": "sensor.teller_eta",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "4_VjV9dFKNcu2NC1YzLp4Bf8x6GEgQcW2gzFna9o0aKx6r3NFOEhjA-eta"
+            },
+            {
+                "config_entry_id": "030cb9f004ef4a07b8c4f6f0b85d54ea",
+                "device_id": "1f02fcbc9ec949d384be2d5a8e8510b8",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.driveway_camera_sound_detected",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "1Yjk8FBmKCFzNn9UvgQReE-Vwr-vDn7UhD-uehjBY7Z7JNbM1LmleA-sound_detected"
+            },
+            {
+                "config_entry_id": "030cb9f004ef4a07b8c4f6f0b85d54ea",
+                "device_id": "311f28e24b6f4704a5b22ec6ab6bf32d",
+                "disabled_by": null,
+                "entity_id": "sensor.upstairs_nest_protect_co_status",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "v6gStDhuT7ynBjwUxOwgWnsk1szUuaV4-co_status"
+            },
+            {
+                "config_entry_id": "030cb9f004ef4a07b8c4f6f0b85d54ea",
+                "device_id": "ae446bbce30f4bee9aaa3cbdd53db182",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.rec_room_camera_motion_detected",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "ctR7uMoEBYYFUAYNopypGThMc5VpMPP4iwu3KiHg6iR7JNbM1LmleA-motion_detected"
+            },
+            {
+                "config_entry_id": "030cb9f004ef4a07b8c4f6f0b85d54ea",
+                "device_id": "311f28e24b6f4704a5b22ec6ab6bf32d",
+                "disabled_by": null,
+                "entity_id": "sensor.upstairs_nest_protect_smoke_status",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "v6gStDhuT7ynBjwUxOwgWnsk1szUuaV4-smoke_status"
+            }
+        ]
+    },
+    "key": "core.entity_registry",
+    "version": 1
+}

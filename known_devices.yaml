@@ -1,0 +1,165 @@
+
+battlestation:
+  hide_if_away: false
+  icon:
+  mac: BT_A0:A8:CD:64:05:09
+  name: BATTLESTATION
+  picture:
+  track: false
+  vendor: Intel Corporate
+
+xt1650:
+  hide_if_away: false
+  icon:
+  mac: BT_CC:61:E5:59:36:1E
+  name: XT1650
+  picture:
+  track: true
+  vendor: unknown
+
+kevins_iphone:
+  hide_if_away: false
+  icon:
+  mac: BT_00:56:CD:1E:9A:82
+  name: Kevin's iPhone
+  picture:
+  track: true
+  vendor: unknown
+
+samsungsmg935v:
+  hide_if_away: false
+  icon:
+  mac: BT_E4:FA:ED:CC:96:69
+  name: SAMSUNG-SM-G935V
+  picture:
+  track: true
+  vendor: unknown
+
+acton:
+  hide_if_away: false
+  icon:
+  mac: BT_40:EF:4C:10:1F:CA
+  name: ACTON
+  picture:
+  track: true
+  vendor: unknown
+
+moto_e_4:
+  hide_if_away: false
+  icon:
+  mac: BT_F0:D7:AA:88:7B:94
+  name: Moto E (4)
+  picture:
+  track: true
+  vendor: Motorola Mobility LLC, a Lenovo Company
+
+moto_g_4:
+  hide_if_away: false
+  icon:
+  mac: BT_68:C4:4D:A4:5C:0E
+  name: Moto G (4)
+  picture:
+  track: true
+  vendor: Motorola Mobility LLC, a Lenovo Company
+
+uproar_wireless:
+  hide_if_away: false
+  icon:
+  mac: BT_D0:8A:55:52:AC:3B
+  name: Uproar Wireless
+  picture:
+  track: true
+  vendor: Skullcandy
+
+lance:
+  hide_if_away: false
+  icon:
+  mac: BT_B4:AE:2B:D6:BE:B3
+  name: LANCE
+  picture:
+  track: true
+  vendor: Microsoft
+
+battlestation_2:
+  hide_if_away: false
+  icon:
+  mac: BT_AC:00:CD:64:05:09
+  name: BATTLESTATION
+  picture:
+  track: true
+  vendor: unknown
+
+samsung_level_u_pro_27fc:
+  hide_if_away: false
+  icon:
+  mac: BT_7C:0B:C6:C3:27:FC
+  name: Samsung Level U Pro (27FC)
+  picture:
+  track: false
+  vendor: Samsung Electronics Co.,Ltd
+
+bt_100_nc:
+  hide_if_away: false
+  icon:
+  mac: BT_00:18:09:31:DF:E1
+  name: BT 100 NC
+  picture:
+  track: false
+  vendor: CRESYN
+
+pixel_2_xl:
+  hide_if_away: false
+  icon:
+  mac: BT_00:3D:E8:38:F3:FC
+  name: Pixel 2 XL
+  picture:
+  track: true
+  vendor: LG Electronics (Mobile Communications)
+
+galaxy_s9:
+  hide_if_away: false
+  icon:
+  mac: BT_50:77:05:B4:A9:65
+  name: Galaxy S9
+  picture:
+  track: true
+
+epic_2_bt:
+  hide_if_away: false
+  icon:
+  mac: BT_FC:A8:9A:39:B1:96
+  name: Epic 2 BT
+  picture:
+  track: false
+
+lg_hbs760:
+  hide_if_away: false
+  icon:
+  mac: BT_B8:AD:3E:72:7D:38
+  name: LG HBS760
+  picture:
+  track: false
+
+samsungsmg950u:
+  hide_if_away: false
+  icon:
+  mac: BT_A0:10:81:57:A4:E2
+  name: SAMSUNG-SM-G950U
+  picture:
+  track: true
+
+inkd_wireless:
+  hide_if_away: false
+  icon:
+  mac: BT_D0:8A:55:A6:27:C4
+  name: Ink'd Wireless
+  picture:
+  track: true
+
+iphone:
+  hide_if_away: false
+  icon:
+  mac: BT_00:56:CD:8D:E4:F2
+  name: iPhone
+  picture:
+  track: true

@@ -1,0 +1,112 @@
+Inside_House_Lights:
+  name: Inside House Lights
+  entities:
+    - light.ge_12729_3way_dimmer_switch_level
+    # - light.ge_12729_3way_dimmer_switch_level_2
+    # - light.ge_unknown_type4944_id3130_level
+    - switch.ge_unknown_type5052_id3031_switch
+    # - switch.ge_unknown_type5052_id3031_switch_2
+    # - switch.leviton_unknown_type3601_id0001_switch
+    - switch.ge_unknown_type5052_id3031_switch_3
+    - light.ge_unknown_type4944_id3130_level_2
+Rec_Room:
+  name: Rec Room
+  entities:
+    - light.ge_unknown_type4944_id3130_level
+Theater:
+  name: Theater
+  entities:
+    - switch.ge_unknown_type5052_id3031_switch_2
+Outside_House_Lights:
+  name: Outside House Lights
+  entities:
+    - switch.ge_12727_inwall_smart_switch_toggle_switch
+    - switch.ge_12727_inwall_smart_switch_toggle_switch_2
+    - switch.ge_unknown_type4952_id3037_switch
+    - switch.ge_unknown_type4952_id3037_switch_3
+Main_Lights:
+  name: Main Lights
+  entities:
+    - group.Inside_House_Lights
+    - group.Outside_House_Lights
+    - group.Rec_Room
+House_Temps:
+  name: House Temps
+  entities:
+    - weather.thermostat
+    - sensor.thermostat_temperature
+    - sensor.living_room_temperature
+    - sensor.theater_temperature
+    - sensor.nolans_room_temperature
+    - sensor.aeotec_zw100_multisensor_6_temperature
+
+Bluetooth_Presence:
+  name: Bluetooth Presence
+  entities:
+    - device_tracker.samsungsmg935v
+    - device_tracker.xt1650
+    - device_tracker.moto_e_4
+    - device_tracker.moto_g_4
+    - device_tracker.pixel_2_xl
+    - device_tracker.galaxy_s9
+    - device_tracker.samsungsmg950u
+Local_Motion_Sensing:
+  name: Local Motion Sensing
+  entities:
+    - binary_sensor.ecolink_motion_detector_sensor
+    - binary_sensor.ecolink_motion_detector_sensor_2
+Cloud_Motion_Presence:
+  name: Cloud Presence Sensing
+  entities:
+    - binary_sensor.driveway_camera_motion_detected
+    - binary_sensor.driveway_camera_person_detected
+    - binary_sensor.rec_room_camera_motion_detected
+    - binary_sensor.living_room_occupancy
+    - binary_sensor.thermostat_occupancy
+    - binary_sensor.theater_occupancy
+    - binary_sensor.nolans_room_occupancy
+
+Humidity:
+  name: Humidity
+  entities:
+    - sensor.thermostat_humidity
+    - sensor.aeotec_zw100_multisensor_6_relative_humidity 
+    
+Basement_Info:
+  name: Basement Status
+  entities: 
+    - sensor.aeotec_zw100_multisensor_6_temperature
+    - sensor.aeotec_zw100_multisensor_6_relative_humidity 
+    - sensor.aeotec_zw100_multisensor_6_alarm_level
+    - sensor.aeotec_zw100_multisensor_6_alarm_type
+    - sensor.aeotec_zw100_multisensor_6_burglar
+    - sensor.aeotec_zw100_multisensor_6_luminance
+    - sensor.aeotec_zw100_multisensor_6_ultraviolet
+    - sensor.aeotec_zw100_multisensor_6_sourcenodeid
+    - binary_sensor.aeotec_zw100_multisensor_6_sensor
+
+Nest:
+  name: Nest Status
+  entities:
+    - binary_sensor.upstairs_nest_protect_online
+    - sensor.upstairs_nest_protect_battery_health
+    - sensor.upstairs_nest_protect_co_status
+    - sensor.upstairs_nest_protect_smoke_status
+    - binary_sensor.driveway_camera_online
+    - binary_sensor.driveway_camera_sound_detected
+
+Zwave:
+  name: Zwave Status
+  entities:
+    - zwave.aeotec_zw090_zstick_gen5_us
+    - zwave.aeotec_zw100_multisensor_6
+    - zwave.fortrezz_mimolite_wireless_interfacebridge_module
+    - zwave.ge_unknown_type4f50_id3032
+    - zwave.ge_unknown_type5052_id3031
+    - zwave.leviton_unknown_type3601_id0001
+
+MiMo:
+  name: MiMo Lite 
+  entities:
+    - sensor.fortrezz_mimolite_wireless_interfacebridge_module_alarm_level
+    - sensor.fortrezz_mimolite_wireless_interfacebridge_module_alarm_type

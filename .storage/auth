@@ -1,0 +1,84 @@
+{
+    "data": {
+        "credentials": [
+            {
+                "auth_provider_id": null,
+                "auth_provider_type": "homeassistant",
+                "data": {
+                    "username": "kevin"
+                },
+                "id": "63b20db0e4084e00a4609c63396331f7",
+                "user_id": "385de3aa037d485b97e0f39bc4f1ef86"
+            }
+        ],
+        "refresh_tokens": [
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": null,
+                "client_name": null,
+                "created_at": "2018-08-21T15:42:31.770686+00:00",
+                "id": "62b5dc26deea4eda9b14629aee06b8c4",
+                "jwt_key": "cacb606e6735d001721251acf63534337a706ae0a8d929b50a1bf9bf603c80aaeba0716f88c680de3c2a5d40c3ce55905650a41b0d6b0481b2c832784480adb5",
+                "last_used_at": "2018-10-05T02:13:35.841938+00:00",
+                "last_used_ip": "172.30.32.2",
+                "token": "c875e900eb36dbb68092cd6cad2307582ba8035eadaf8af9635da70a704780f00fe49c574accaa57898aaf99a62ab4812b2ad2490b91c355a8b8a2915090a7f7",
+                "token_type": "system",
+                "user_id": "f51c98d5c3cd403e8d109e5b8c433e8f"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://hassio:8123/",
+                "client_name": null,
+                "created_at": "2018-10-03T16:12:56.245691+00:00",
+                "id": "49d690fcfa1146389a47f0cfeaa9ec2d",
+                "jwt_key": "b8692d3b7ed04efff538353c56dd897ed1c51835a65326df006cc6f1b813fb5c427fb8e3acabfd84ffa9dcfb9a94b793e825552dc5592487d62f34df1b8b5b94",
+                "last_used_at": "2018-10-04T23:34:14.527531+00:00",
+                "last_used_ip": "192.168.1.199",
+                "token": "e93a2eb7445556af2ebd6f123a8b676b3c2eb6abb8042678d4b237375c2cbebe70c8bf8091f33aab21de4cd2aa8bb5f1a2c8bff9721b7f8dba1da95333772a4b",
+                "token_type": "normal",
+                "user_id": "385de3aa037d485b97e0f39bc4f1ef86"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://hassio:8123/",
+                "client_name": null,
+                "created_at": "2018-10-04T00:06:16.808448+00:00",
+                "id": "9137cce085474605b0e9458219edc2b0",
+                "jwt_key": "af49a3882b7d82edf61a523d51dc11ae31d92788bbd2a3d94490d87c9d1e2927bacb46b13580ad8d38963bd3985d1d77b8fe0fa54b879ad9f51036d10c1706fb",
+                "last_used_at": "2018-10-05T01:53:14.884857+00:00",
+                "last_used_ip": "192.168.1.189",
+                "token": "c480166047fd4fbf30a0fc96294a23bc6daa0aefab2a0e45b3febe7c3dd9aeb23c6f3fe138b9ba014c353408a5a10c9a595d11bfd77ce933e05d2b7b9c7a4c51",
+                "token_type": "normal",
+                "user_id": "385de3aa037d485b97e0f39bc4f1ef86"
+            }
+        ],
+        "users": [
+            {
+                "id": "6e358204285e421680e62c1ceb47d92a",
+                "is_active": true,
+                "is_owner": false,
+                "name": "Hass.io",
+                "system_generated": true
+            },
+            {
+                "id": "f51c98d5c3cd403e8d109e5b8c433e8f",
+                "is_active": true,
+                "is_owner": false,
+                "name": "Hass.io",
+                "system_generated": true
+            },
+            {
+                "id": "385de3aa037d485b97e0f39bc4f1ef86",
+                "is_active": true,
+                "is_owner": true,
+                "name": "Kevin",
+                "system_generated": false
+            }
+        ]
+    },
+    "key": "auth",
+    "version": 1
+}

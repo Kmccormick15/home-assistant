@@ -1,0 +1,174 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Teller
+  # Location required to calculate the time the sun rises and sets
+  latitude: 42.928772
+  longitude: -76.541609
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 211
+  # metric for Metric, imperial for Imperial
+  unit_system: imperial
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: America/New_York
+  # Customization file
+  customize: !include customize.yaml
+
+# Show links to resources in log and frontend
+#introduction:
+
+# Enables the frontend
+frontend:
+
+# Enables configuration UI
+config:
+
+http:
+  # Secrets are defined in the file secrets.yaml
+  api_password: !secret http_password
+  # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+  base_url: teller.duckdns.org:8123
+
+# Checks for available updates
+# Note: This component will send some information about your system to
+# the developers to assist with development of Home Assistant.
+# For more information, please see:
+# https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
+
+updater:
+  # Optional, allows Home Assistant developers to focus on popular components.
+  # include_used_components: true
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time
+history:
+
+# View all events in a logbook
+logbook:
+  include:
+    domains:
+      - sensor
+      - switch
+      - light
+      - media_player
+      - automations
+
+# Enables a map showing the location of tracked devices
+map:
+
+# Track the sun
+sun:
+
+# Weather prediction
+sensor:
+  - platform: template
+    sensors:
+      theater:
+        value_template: '{{ states.remote.teller_harmony_hub.attributes.current_activity }}'
+        friendly_name: 'Theater'
+      # bedroom:
+        # value_template: '{{ states.remote.teller_harmony_hub.attributes.current_activity }}'
+        # friendly_name: 'bedroom'
+# Text to speech
+tts:
+  - platform: google
+    cache: true
+    cache_dir: /tmp/tts
+    time_memory: 300
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+
+# ZWave
+zwave:
+  usb_path: /dev/ttyACM0
+
+#nest key
+nest:
+  client_id: 379dfbd9-0b30-4ed7-a883-84878b70815d
+  client_secret: eyDr8n92NAIrgMQi4DZZxvvhI
+
+#Ecobee key
+ecobee:
+  api_key: n2zqn3Ip3eI6u5tR9qlupgqMGmCcRXyh
+  hold_temp: false
+  
+#Ecobee Notifier
+notify:
+  - name: NOTIFIER_NAME
+    platform: ecobee
+
+#IFTT Key
+ifttt:
+  key: bGD0KedJta65AhcHPa4aOCVuU2qY3sXhz9c1wYhf3ey
+
+#Bluetooth tracker
+device_tracker:
+  - platform: bluetooth_tracker
+    consider_home: 300
+
+#Cloud for configuring Alexa
+cloud:
+  # alexa: 
+  #   filter:
+  #     include_entities:
+  #       - light.rec_room
+  #     include_domains:
+  #       - switch
+#Broadlink RM pro
+switch:
+  - platform: broadlink
+    host: 192.168.1.220
+    mac: '34:ea:34:8f:00:8e'
+    timeout: 10
+    switches:
+      projector_screen:
+        friendly_name: "Screen"
+        command_on: 'eBMyAAcVFAgUCBUHFAgHFRUIBxUVBwcVFAgHFRQIFAgHFRQHBxUVBwcUBxQHFRUHBxUHFQfOAAAAAAAA='
+        command_off: 'eCUyABUHBxQIzgcVFQcVBxUHFQcIFBUHCBQVBwcUFQcHFBUHFQcHFBUHCBQVBwgUBxUHFAgUAAAAAAAA==='
+      projector:
+        friendly_name: "Projector"
+        command_on: 'JgBwAAABJ5ITERM1FBITERM1FDUUERQREzUUERM1FDUUEhMREzYTNhMRFDQVERMRExITERMSExETNhMRFDUUNRQ1EzUUNhM2EwAFGwABJkgUAAw4AAEoRxQADDoAASdIFAAMOQABKEcUAAw6AAEnSBMADQUAAAAAAAAAAA=='
+        command_off: 'JgBYAAABKJAUERM2ExETEhM2EzYTERMSEzYTERM2EzYTERMSEzYTNhMREzYTNhM2ExISNhMSExETNhMSExETEhM2ExETNhM2EwAFGgABJkkTAAw6AAEnSBMADQU='
+        
+#Test Scenes
+input_select:
+  scene_kitchen:
+    name: Kitchen Scene
+    options:
+      - Select
+      - Day Cooking
+      - Night Cooking
+      - Relax
+      - 'OFF'
+    initial: 'Select'
+input_number:
+  master_brightness:
+    name: Master Brightness
+    initial: 254
+    min: 0
+    max: 254
+    step: 1
+  rec_room_brightness:
+    name: Rec Room
+    initial: 254
+    min: 0
+    max: 254
+    step: 1
+  kitchen_brightness:
+    name: Kitchen
+    initial: 254
+    min: 0
+    max: 254
+    step: 1
+# Example configuration.yaml entry
+coinbase:
+  api_key: 80khjrouAVPSVpmC 
+  api_secret: WH2kunSXe17k6JP5wRzQdKFFaDGgn39v 
+  exchange_rate_currencies:
+    - BTC

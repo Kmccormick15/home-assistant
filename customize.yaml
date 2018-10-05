@@ -1,0 +1,184 @@
+switch.leviton_unknown_type3601_id0001_switch:
+  friendly_name: Office
+  new_entity_id: switch.leviton_unknown_type3601_id0001_switch
+switch.ge_unknown_type5052_id3031_switch:
+  friendly_name: Living Room Couch Right
+zwave.ge_unknown_type5052_id3031:
+  friendly_name: GE Switch Zwave Instance
+zwave.leviton_unknown_type3601_id0001:
+  friendly_name: Leviton Switch Zwave Instance
+switch.ge_unknown_type4f50_id3032_switch:
+  friendly_name: GE Outdoor Plug
+binary_sensor.rec_room_camera_motion_detected:
+  hidden: true
+binary_sensor.rec_room_camera_person_detected:
+  hidden: true
+camera.rec_room:
+  hidden: true
+binary_sensor.rec_room_camera_sound_detected:
+  hidden: true
+binary_sensor.rec_room_camera_online:
+  hidden: true
+weather.thermostat:
+  friendly_name: Weather
+sensor.aeotec_zw100_multisensor_6_temperature:
+  friendly_name: Basement
+sensor.nolans_room_temperature:
+  friendly_name: Nolan's Room
+sensor.formal_temperature:
+  friendly_name: Theater
+sensor.living_room_temperature:
+  friendly_name: Living Room
+sensor.thermostat_temperature:
+  friendly_name: 'Thermostat '
+zwave.aeotec_zw090_zstick_gen5_us: {}
+group.zwave_tab: {}
+sensor.aeotec_zw100_multisensor_6_alarm_level:
+  hidden: true
+sensor.aeotec_zw100_multisensor_6_alarm_type:
+  hidden: true
+sensor.aeotec_zw100_multisensor_6_burglar:
+  hidden: true
+sensor.aeotec_zw100_multisensor_6_ultraviolet:
+  hidden: true
+light.ge_unknown_type5044_id3031_level:
+  friendly_name: Living Room Lamp
+light.ge_12729_3way_dimmer_switch_level:
+  friendly_name: Kitchen Sink
+group.all_lights:
+  entity_id:
+  - light.ge_12729_3way_dimmer_switch_level
+  - light.ge_unknown_type5044_id3031_level
+light.level:
+  friendly_name: Connors room
+light.ge_12729_3way_dimmer_switch_level_2:
+  friendly_name: Connors Room
+switch.switch: {}
+switch.ge_unknown_type5052_id3031_switch_2:
+  friendly_name: Theater
+sensor.aeotec_dsb45_water_sensor_alarm_level:
+  hidden: true
+sensor.aeotec_dsb45_water_sensor_alarm_type:
+  hidden: true
+sensor.aeotec_dsb45_water_sensor_flood:
+  hidden: true
+binary_sensor.aeotec_dsb45_water_sensor_sensor:
+  hidden: true
+sensor.aeotec_dsb45_water_sensor_sourcenodeid:
+  hidden: true
+sensor.fortrezz_mimolite_wireless_interfacebridge_module_general:
+  hidden: true
+binary_sensor.fortrezz_mimolite_wireless_interfacebridge_module_sensor:
+  friendly_name: FortrezZ MIMOlite Wireless Interface/Bridge Module Sensor
+  hidden: true
+sensor.fortrezz_mimolite_wireless_interfacebridge_module_alarm_level:
+  hidden: true
+sensor.fortrezz_mimolite_wireless_interfacebridge_module_alarm_type:
+  hidden: true
+zwave.aeotec_dsb45_water_sensor:
+  hidden: true
+switch.fortrezz_mimolite_wireless_interfacebridge_module_switch:
+  hidden: true
+device_tracker.xt1650:
+  friendly_name: Kevin's MotoZ
+  icon: mdi:android
+device_tracker.samsungsmg935v:
+  friendly_name: Missy's S7
+  icon: mdi:android
+device_tracker.acton:
+  friendly_name: ACTON
+  hidden: true
+light.ge_unknown_type4944_id3130_level:
+  friendly_name: Rec Room
+switch.ge_unknown_type5052_id3031_switch_3:
+  friendly_name: Living Room Couch Left
+group.zwave:
+  hidden: true
+group.basement_info:
+  hidden: true
+camera.driveway:
+  hidden: true
+sensor.aeotec_zw100_multisensor_6_luminance:
+  hidden: true
+sensor.aeotec_zw100_multisensor_6_sourcenodeid:
+  hidden: true
+binary_sensor.aeotec_zw100_multisensor_6_sensor:
+  hidden: true
+device_tracker.moto_e_4:
+  friendly_name: Terri's  Moto E4
+switch.ge_12727_inwall_smart_switch_toggle_switch:
+  friendly_name: South Flood Light
+switch.ge_12727_inwall_smart_switch_toggle_switch_2:
+  friendly_name: East Flood Light
+switch.ge_unknown_type4952_id3037_switch:
+  friendly_name: West Flood Light
+light.ge_unknown_type4944_id3130_level_2:
+  friendly_name: Under Cabinet
+device_tracker.moto_g_4:
+  friendly_name: Dave's Moto G4
+zwave.ge_unknown_type4944_id3130:
+  friendly_name: Rec Room Zwave Instance (Node 10)
+switch.ge_unknown_type4952_id3037_switch_3:
+  friendly_name: Barn Big
+switch.ge_unknown_type4952_id3037_switch_2:
+  friendly_name: Barn Small
+binary_sensor.sensor:
+  friendly_name: Foyer Motion Sensor
+  new_entity_id: foyer_binary_sensor.sensor
+zwave.ecolink_motion_detector:
+  friendly_name: Ecolink Motion Detector (Foyer)
+  hidden: true
+sensor.ecolink_motion_detector_burglar:
+  friendly_name: Ecolink Motion Detector Burglar (Foyer)
+  hidden: true
+sensor.ecolink_motion_detector_alarm_level:
+  friendly_name: Ecolink Motion Detector Alarm Level (Foyer)
+  hidden: true
+sensor.ecolink_motion_detector_alarm_type:
+  friendly_name: Ecolink Motion Detector Alarm Type (Foyer)
+  hidden: true
+sensor.ecolink_motion_detector_power_management:
+  friendly_name: Ecolink Motion Detector Power Management (Foyer)
+  hidden: true
+binary_sensor.ecolink_motion_detector_sensor:
+  friendly_name: Ecolink Motion Detector Sensor (Foyer)
+sensor.ecolink_motion_detector_sourcenodeid:
+  friendly_name: Ecolink Motion Detector SourceNodeId (Foyer)
+  hidden: true
+device_tracker.kevins_iphone:
+  hidden: true
+sun.sun: {}
+zwave.ecolink_motion_detector_2:
+  friendly_name: Ecolink Motion Detector (Living Room)
+  hidden: true
+sensor.ecolink_motion_detector_alarm_level_2:
+  friendly_name: Ecolink Motion Detector Alarm Level (Living Room)
+  hidden: true
+sensor.ecolink_motion_detector_alarm_type_2:
+  friendly_name: Ecolink Motion Detector Alarm Type  (Living Room)
+  hidden: true
+sensor.ecolink_motion_detector_burglar_2:
+  friendly_name: Ecolink Motion Detector Burglar  (Living Room)
+  hidden: true
+sensor.ecolink_motion_detector_power_management_2:
+  friendly_name: Ecolink Motion Detector Power Management  (Living Room)
+  hidden: true
+binary_sensor.ecolink_motion_detector_sensor_2:
+  friendly_name: Ecolink Motion Detector Sensor  (Living Room)
+sensor.ecolink_motion_detector_sourcenodeid_2:
+  friendly_name: Ecolink Motion Detector SourceNodeId  (Living Room)
+  hidden: true
+device_tracker.uproar_wireless:
+  hidden: true
+device_tracker.lance:
+  hidden: true
+device_tracker.lg_hbs760:
+  hidden: true
+device_tracker.epic_2_bt:
+  hidden: true
+device_tracker.samsung_level_u_pro_27fc:
+  hidden: true
+device_tracker.samsungsmg950u:
+  friendly_name: Andrew
+sensor.teller_eta:
+  hidden: true

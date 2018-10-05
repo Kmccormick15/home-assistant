@@ -1,0 +1,409 @@
+# Driveway Alert if Home
+- action:
+  - data:
+      # Blink theater light script
+      entity_id: script.1512866664337
+    service: script.turn_on
+  - data:
+      event: Driveway_Alert
+    service: ifttt.trigger
+  - service: tts.google_say
+    entity_id: media_player.kitchen_speaker
+    data_template:
+      message: '''{{ ["Looks like someone''s here. ", "Ding Dong. ", "Look alive.
+        ", "Someone might be here. "] | random }}''
+        '
+  alias: Driveway Alert
+  condition:
+  - condition: state
+    entity_id: group.bluetooth_presence
+    state: home
+  id: '1512961411263'
+  trigger:
+  - entity_id: binary_sensor.fortrezz_mimolite_wireless_interfacebridge_module_sensor
+    from: 'off'
+    platform: state
+    to: 'on'
+
+# Driveway Alert if Away
+- action:
+  - data:
+      entity_id: group.inside_house_lights
+    service: light.turn_on
+  - data:
+      entity_id: group.inside_house_lights
+    service: switch.turn_on
+  - data:
+      entity_id:
+      - switch.ge_unknown_type5052_id3031_switch_2
+    service: switch.turn_on
+  - data:
+      entity_id: group.outside_house_lights
+    service: switch.turn_on
+  - delay: 00:00:10
+  - data:
+      entity_id: script.1514064524159
+    service: script.turn_on
+  alias: Lights On When Coming Home and House Empty
+  condition:
+    condition: and
+    conditions:
+    - condition: state
+      entity_id: group.bluetooth_presence
+      state: not_home
+    - after: sunset
+      after_offset: -00:45:00
+      condition: sun
+  id: '1513377062497'
+  trigger:
+  - entity_id: binary_sensor.fortrezz_mimolite_wireless_interfacebridge_module_sensor
+    from: 'off'
+    platform: state
+    to: 'on'
+#_________________________________
+- action:
+  - data:
+      entity_id: group.inside_house_lights
+    service: light.turn_off
+  - data:
+      entity_id: group.inside_house_lights
+    service: switch.turn_off
+  - data:
+      entity_id: script.1514064152005
+    service: script.turn_on
+  - data:
+      entity_id:
+      - switch.ge_unknown_type5052_id3031_switch_2
+      - switch.leviton_unknown_type3601_id0001_switch
+    service: switch.turn_off
+  - delay: 00:00:05
+  - data:
+      entity_id: script.1514064152005
+    service: script.turn_on
+  - data:
+      entity_id: switch.projector
+    service: switch.turn_off
+  - data:
+      entity_id: switch.screen
+    service: switch.turn_off
+  - delay: 00:00:02
+  - data:
+      entity_id: switch.projector
+    service: switch.turn_off
+  - data:
+      entity_id: group.outside_house_lights
+    service: switch.turn_off
+  - data:
+      entity_id: group.inside_house_lights
+    service: switch.turn_off
+  alias: Away From Home
+  condition: []
+  id: '1514061377826'
+  trigger:
+  - entity_id: group.bluetooth_presence
+    from: home
+    platform: state
+    to: not_home
+- action:
+  - data:
+      entity_id:
+      - switch.projector
+      - switch.ge_unknown_type5052_id3031_switch_2
+    service: switch.turn_on
+  - data:
+      entity_id: switch.screen
+    service: switch.turn_on
+  - delay: 00:00:05
+  - data:
+      entity_id: switch.projector
+    service: switch.turn_on
+  alias: Set Theater On
+  condition: []
+  id: '1514148400717'
+  trigger:
+  - entity_id: sensor.theater
+    from: PowerOff
+    platform: state
+    to: Watch Fios TV
+  - entity_id: sensor.theater
+    from: Office TV
+    platform: state
+    to: Watch Fios TV
+  - entity_id: sensor.theater
+    from: PowerOff
+    platform: state
+    to: Xbox One
+  - entity_id: sensor.theater
+    from: Office TV
+    platform: state
+    to: Xbox One
+- action:
+  - data:
+      entity_id:
+      - switch.projector
+      - switch.ge_unknown_type5052_id3031_switch_2
+    service: switch.turn_off
+  - data:
+      entity_id: switch.screen
+    service: switch.turn_off
+  - delay: 00:00:02
+  - data:
+      entity_id: switch.projector
+    service: switch.turn_off
+  alias: Set Theater Off
+  condition: []
+  id: '1514148400718'
+  trigger:
+  - entity_id: sensor.theater
+    from: Watch Fios TV
+    platform: state
+    to: PowerOff
+  - entity_id: sensor.theater
+    from: Xbox One
+    platform: state
+    to: PowerOff
+- action:
+  - data:
+      brightness: 80
+      entity_id: light.ge_unknown_type4944_id3130_level
+    service: light.turn_on
+  - delay: 00:00:03
+  - data:
+      brightness: 30
+      entity_id: light.ge_unknown_type4944_id3130_level
+    service: light.turn_on
+  alias: Lights On at Dusk and Away
+  condition:
+  - condition: state
+    entity_id: group.bluetooth_presence
+    state: not_home
+  id: '1514320786284'
+  trigger:
+  - event: sunset
+    offset: -00:30:00
+    platform: sun
+- action:
+  - data:
+      entity_id: script.1514516585084
+    service: script.turn_on
+  alias: Night Time Deterrent
+  condition:
+  - condition: state
+    entity_id: group.main_lights
+    state: 'off'
+  - after: '22:00:00'
+    before: 04:30:00
+    condition: time
+  id: '1514515796331'
+  trigger:
+  - entity_id: binary_sensor.driveway_camera_motion_detected
+    from: 'Off'
+    platform: state
+    to: 'On'
+- action:
+  - data:
+      entity_id:
+      - group.inside_house_lights
+      - group.outside_house_lights
+    service: switch.turn_on
+  - data:
+      entity_id: group.inside_house_lights
+    service: light.turn_on
+  - data:
+      entity_id: script.1514064524159
+    service: script.turn_on
+  - delay: 00:00:02
+  - data:
+      entity_id:
+      - group.inside_house_lights
+      - group.outside_house_lights
+    service: switch.turn_on
+  alias: Evening Lights On
+  condition:
+  - condition: and
+    conditions:
+    - after: sunset
+      after_offset: -01:00:00
+      condition: sun
+    - before: '21:00'
+      condition: time
+  id: '1514838378061'
+  trigger:
+  - entity_id: group.local_motion_sensing
+    from: 'off'
+    platform: state
+    to: 'on'
+- action:
+  - data:
+      entity_id: group.inside_house_lights
+    service: light.turn_on
+  - data:
+      entity_id: switch.ge_unknown_type5052_id3031_switch_2
+    service: switch.turn_on
+  - data:
+      entity_id: script.1514064152005
+    service: script.turn_on
+  alias: Night Lights On
+  condition:
+  - after: '21:00'
+    before: 07:30
+    condition: time
+  id: '1514838378062'
+  trigger:
+  - entity_id: group.local_motion_sensing
+    from: 'off'
+    platform: state
+    to: 'on'
+- action:
+  - data:
+      entity_id:
+      - group.outside_house_lights
+      - switch.ge_unknown_type5052_id3031_switch_2
+    service: switch.turn_off
+  alias: Outside Lights Off at Sunrise
+  condition: []
+  id: '1515259897457'
+  trigger:
+  - event: sunrise
+    platform: sun
+- action:
+  - service: light.turn_on
+    data_template:
+      entity_id:
+      - light.ge_unknown_type4944_id3130_level_2
+      - light.ge_12729_3way_dimmer_switch_level
+      - light.ge_unknown_type4944_id3130_level
+      brightness: '{{ trigger.to_state.state | int }}'
+  alias: Master Brightness Slider
+  condition: []
+  id: '1515270713952'
+  trigger:
+  - entity_id: input_number.master_brightness
+    platform: state
+- action:
+  - data:
+      entity_id: automation.night_lights_off
+    service: automation.turn_off
+  alias: Missy Gym Exception
+  condition:
+  - after: '6:00:00'
+    condition: time
+  id: '1515382548220'
+  trigger:
+  - entity_id: device_tracker.samsungsmg935v
+    from: not_home
+    platform: state
+    to: home
+- action:
+  - data:
+      entity_id: automation.night_lights_off
+    service: automation.turn_on
+  alias: Missy Gym Exception Reset
+  condition: []
+  id: '1515382655837'
+  trigger:
+  - event: sunrise
+    offset: '+2:00:00'
+    platform: sun
+- action:
+  - data:
+      entity_id:
+      - group.inside_house_lights
+      - group.outside_house_lights
+      - switch.ge_unknown_type5052_id3031_switch_2
+    service: switch.turn_off
+  - data:
+      entity_id: group.inside_house_lights
+    service: light.turn_off
+  - delay: 00:00:2
+  - data:
+      entity_id:
+      - group.inside_house_lights
+      - group.outside_house_lights
+      - switch.ge_unknown_type5052_id3031_switch_2
+    service: switch.turn_off
+  - data:
+      entity_id: group.inside_house_lights
+    service: light.turn_off
+  alias: Evening Light Timer
+  condition:
+    condition: and
+    conditions:
+    - after: sunset
+      after_offset: -00:45:00
+      condition: sun
+    - condition: time
+      before: '21:00'
+  id: '1515887964298'
+  trigger:
+  - entity_id: group.local_motion_sensing
+    platform: state
+    to: 'off'
+    for:
+      minutes: 15
+- action:
+  - data:
+      entity_id: group.outside_house_lights
+    service: switch.turn_on
+  alias: Outside Lights upon Night Driveway Alert
+  condition:
+  - after: sunset
+    condition: sun
+  id: '1516231258143'
+  trigger:
+  - entity_id: binary_sensor.fortrezz_mimolite_wireless_interfacebridge_module_sensor
+    from: 'off'
+    platform: state
+    to: 'on'
+- action:
+  - data:
+      entity_id:
+      - group.inside_house_lights
+      - group.outside_house_lights
+      - switch.ge_unknown_type5052_id3031_switch_2
+    service: switch.turn_off
+  - data:
+      entity_id:
+      - group.inside_house_lights
+      - light.ge_unknown_type4944_id3130_level
+    service: light.turn_off
+  - delay: 00:00:2
+  - data:
+      entity_id:
+      - group.inside_house_lights
+      - group.outside_house_lights
+      - switch.ge_unknown_type5052_id3031_switch_2
+      - switch.leviton_unknown_type3601_id0001_switch
+    service: switch.turn_off
+  - data:
+      entity_id:
+      - group.inside_house_lights
+      - light.ge_unknown_type4944_id3130_level
+    service: light.turn_off
+  alias: Night Light Timer
+  condition:
+  - after: '23:30'
+    before: 06:10
+    condition: time
+  id: '1515887964299'
+  trigger:
+  - entity_id: group.local_motion_sensing
+    platform: state
+    to: 'off'
+- action:
+  - delay: 00:00:05
+  - data:
+      entity_id: automation.driveway_alert
+    service: automation.turn_off
+  - delay: 00:03:00
+  - data:
+      entity_id: automation.driveway_alert
+    service: automation.turn_on
+  alias: Driveway Alert Exit Disable
+  condition: []
+  id: '1518372795162'
+  trigger:
+  - entity_id: automation.driveway_alert
+    from: 'on'
+    platform: state
+    to: 'off'
