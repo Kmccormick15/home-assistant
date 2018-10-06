@@ -13,3 +13,7 @@ homeassistant.exceptions.HomeAssistantError: Entity id already exists: automatio
 2018-10-05 22:15:46 ERROR (MainThread) [homeassistant.core] Timer got out of sync. Resetting
 2018-10-05 22:28:32 ERROR (MainThread) [homeassistant.core] Timer got out of sync. Resetting
 2018-10-05 22:40:08 ERROR (MainThread) [homeassistant.core] Timer got out of sync. Resetting
+2018-10-05 22:58:23 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.thermostat_temperature is taking over 10 seconds
+2018-10-05 22:58:26 ERROR (MainThread) [homeassistant.core] Timer got out of sync. Resetting
+2018-10-05 22:58:40 ERROR (MainThread) [homeassistant.core] Timer got out of sync. Resetting
+2018-10-05 23:05:30 ERROR (MainThread) [homeassistant.core] Timer got out of sync. Resetting
