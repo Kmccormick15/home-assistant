@@ -7299,3 +7299,57 @@
 2018-10-05 23:56:05.291 Detail, Node007, Refreshed Value: old value=4095, new value=4093, type=decimal
 2018-10-05 23:56:05.291 Detail, Node007, Changes to this value are not verified
 2018-10-05 23:56:05.291 Detail, Node007, Notification: ValueChanged
+2018-10-06 00:00:00.013 Detail, Node001, Queuing (Controller) Request Node Neighbor Update
+2018-10-06 00:00:00.014 Detail, Node002, Queuing (Controller) Request Node Neighbor Update
+2018-10-06 00:00:00.014 Info, Requesting Neighbor Update for node 1
+2018-10-06 00:00:00.014 Detail, Node003, Queuing (Controller) Request Node Neighbor Update
+2018-10-06 00:00:00.014 Detail, Node004, Queuing (Controller) Request Node Neighbor Update
+2018-10-06 00:00:00.014 Detail, Node005, Queuing (Controller) Request Node Neighbor Update
+2018-10-06 00:00:00.014 Detail, Node007, Queuing (Controller) Request Node Neighbor Update
+2018-10-06 00:00:00.014 Detail, Node008, Queuing (Controller) Request Node Neighbor Update
+2018-10-06 00:00:00.014 Detail, Node010, Queuing (Controller) Request Node Neighbor Update
+2018-10-06 00:00:00.016 Detail, Node011, Queuing (Controller) Request Node Neighbor Update
+2018-10-06 00:00:00.016 Detail, Node012, Queuing (Controller) Request Node Neighbor Update
+2018-10-06 00:00:00.016 Detail, Node013, Queuing (Controller) Request Node Neighbor Update
+2018-10-06 00:00:00.016 Detail, Node014, Queuing (Controller) Request Node Neighbor Update
+2018-10-06 00:00:00.016 Detail, Node015, Queuing (Controller) Request Node Neighbor Update
+2018-10-06 00:00:00.016 Detail, Node016, Queuing (Controller) Request Node Neighbor Update
+2018-10-06 00:00:00.016 Detail, Node017, Queuing (Controller) Request Node Neighbor Update
+2018-10-06 00:00:00.016 Detail, Node018, Queuing (Controller) Request Node Neighbor Update
+2018-10-06 00:00:00.016 Detail, Node019, Queuing (Controller) Request Node Neighbor Update
+2018-10-06 00:00:00.016 Detail, Node020, Queuing (Controller) Request Node Neighbor Update
+2018-10-06 00:00:00.016 Detail, Node022, Queuing (Controller) Request Node Neighbor Update
+2018-10-06 00:00:00.017 Detail, Node023, Queuing (Controller) Request Node Neighbor Update
+2018-10-06 00:00:00.017 Detail, Node001, Queuing (Command) ControllerCommand_RequestNodeNeighborUpdate (Node=1): 0x01, 0x05, 0x00, 0x48, 0x01, 0x37, 0x84
+2018-10-06 00:00:00.017 Detail, Notification: ControllerCommand - Starting
+2018-10-06 00:00:00.018 Detail, 
+2018-10-06 00:00:00.018 Info, Node001, Sending (Command) message (Callback ID=0x37, Expected Reply=0x48) - ControllerCommand_RequestNodeNeighborUpdate (Node=1): 0x01, 0x05, 0x00, 0x48, 0x01, 0x37, 0x84
+2018-10-06 00:00:00.113 Detail, Node001,   Received: 0x01, 0x05, 0x00, 0x48, 0x37, 0x21, 0xa4
+2018-10-06 00:00:00.113 Detail, 
+2018-10-06 00:00:00.113 Info, Node001, REQUEST_NEIGHBOR_UPDATE_STARTED
+2018-10-06 00:00:00.113 Detail, Node033,   Expected callbackId was received
+2018-10-06 00:00:00.113 Detail, Node033,   Expected reply was received
+2018-10-06 00:00:00.114 Detail, Node033,   Message transaction complete
+2018-10-06 00:00:00.114 Detail, 
+2018-10-06 00:00:00.114 Detail, Node001, Removing current message
+2018-10-06 00:00:00.114 Detail, Notification: ControllerCommand - InProgress
+2018-10-06 00:00:00.115 Info, WriteNextMsg Controller nothing to do
+2018-10-06 00:00:11.233 Detail,   Received: 0x01, 0x05, 0x00, 0x48, 0x37, 0x23, 0xa6
+2018-10-06 00:00:11.234 Detail, 
+2018-10-06 00:00:11.234 Warning, WARNING: REQUEST_NEIGHBOR_UPDATE_FAILED
+2018-10-06 00:00:11.234 Detail, Notification: ControllerCommand - Failed
+2018-10-06 00:00:11.235 Info, Requesting Neighbor Update for node 2
+2018-10-06 00:00:11.235 Detail, Node002, Queuing (Command) ControllerCommand_RequestNodeNeighborUpdate (Node=2): 0x01, 0x05, 0x00, 0x48, 0x02, 0x38, 0x88
+2018-10-06 00:00:11.236 Detail, Notification: ControllerCommand - Starting
+2018-10-06 00:00:11.236 Detail, 
+2018-10-06 00:00:11.236 Info, Node002, Sending (Command) message (Callback ID=0x38, Expected Reply=0x48) - ControllerCommand_RequestNodeNeighborUpdate (Node=2): 0x01, 0x05, 0x00, 0x48, 0x02, 0x38, 0x88
+2018-10-06 00:00:11.334 Detail, Node002,   Received: 0x01, 0x05, 0x00, 0x48, 0x38, 0x21, 0xab
+2018-10-06 00:00:11.334 Detail, 
+2018-10-06 00:00:11.334 Info, Node002, REQUEST_NEIGHBOR_UPDATE_STARTED
+2018-10-06 00:00:11.334 Detail, Node033,   Expected callbackId was received
+2018-10-06 00:00:11.334 Detail, Node033,   Expected reply was received
+2018-10-06 00:00:11.334 Detail, Node033,   Message transaction complete
+2018-10-06 00:00:11.335 Detail, 
+2018-10-06 00:00:11.335 Detail, Node002, Removing current message
+2018-10-06 00:00:11.335 Detail, Notification: ControllerCommand - InProgress
+2018-10-06 00:00:11.336 Info, WriteNextMsg Controller nothing to do
