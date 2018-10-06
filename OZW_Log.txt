@@ -7272,3 +7272,30 @@
 2018-10-05 23:42:17.552 Detail,   Received: 0x01, 0x07, 0x00, 0x13, 0x31, 0x01, 0x01, 0xc6, 0x1c
 2018-10-05 23:42:17.552 Detail,   ZW_SEND_DATA Request with callback ID 0x31 received (expected 0x00)
 2018-10-05 23:42:17.552 Warning, WARNING: Unexpected Callback ID received
+2018-10-05 23:47:28.934 Detail, Node022,   Received: 0x01, 0x11, 0x00, 0x04, 0x00, 0x16, 0x0b, 0x71, 0x05, 0x00, 0x00, 0x00, 0xff, 0x07, 0x00, 0x00, 0x00, 0x00, 0x7b
+2018-10-05 23:47:28.935 Detail, 
+2018-10-05 23:47:28.935 Info, Node022, Received Alarm report: type=0, level=0, sensorSrcID=0, type:Burglar event:0, status=255
+2018-10-05 23:47:28.935 Detail, Node022, Refreshed Value: old value=0, new value=0, type=byte
+2018-10-05 23:47:28.935 Detail, Node022, Changes to this value are not verified
+2018-10-05 23:47:28.935 Detail, Node022, Refreshed Value: old value=0, new value=0, type=byte
+2018-10-05 23:47:28.935 Detail, Node022, Changes to this value are not verified
+2018-10-05 23:47:28.935 Detail, Node022, Refreshed Value: old value=0, new value=0, type=byte
+2018-10-05 23:47:28.935 Detail, Node022, Changes to this value are not verified
+2018-10-05 23:47:28.935 Detail, Node022, Refreshed Value: old value=8, new value=0, type=byte
+2018-10-05 23:47:28.936 Detail, Node022, Changes to this value are not verified
+2018-10-05 23:47:28.936 Detail, Node022, Notification: ValueChanged
+2018-10-05 23:47:28.961 Detail, Node022, Notification: ValueChanged
+2018-10-05 23:47:28.984 Detail, Node022, Notification: ValueChanged
+2018-10-05 23:47:29.008 Detail, Node022, Notification: ValueChanged
+2018-10-05 23:47:29.037 Detail, Node022,   Received: 0x01, 0x0a, 0x00, 0x04, 0x00, 0x16, 0x04, 0x30, 0x03, 0x00, 0xff, 0x2f
+2018-10-05 23:47:29.037 Detail, 
+2018-10-05 23:47:29.038 Info, Node022, Received SensorBinary report: Sensor:255 State=Off
+2018-10-05 23:47:29.038 Detail, Node022, Refreshed Value: old value=false, new value=false, type=bool
+2018-10-05 23:47:29.038 Detail, Node022, Changes to this value are not verified
+2018-10-05 23:47:29.038 Detail, Node022, Notification: ValueChanged
+2018-10-05 23:56:05.291 Detail, Node007,   Received: 0x01, 0x0c, 0x00, 0x04, 0x00, 0x07, 0x06, 0x31, 0x05, 0x02, 0x0a, 0x0f, 0xfd, 0x38
+2018-10-05 23:56:05.291 Detail, 
+2018-10-05 23:56:05.291 Info, Node007, Received SensorMultiLevel report from node 7, instance 1, General: value=4093
+2018-10-05 23:56:05.291 Detail, Node007, Refreshed Value: old value=4095, new value=4093, type=decimal
+2018-10-05 23:56:05.291 Detail, Node007, Changes to this value are not verified
+2018-10-05 23:56:05.291 Detail, Node007, Notification: ValueChanged
