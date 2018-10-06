@@ -60,7 +60,8 @@
     from: 'off'
     platform: state
     to: 'on'
-#_________________________________
+
+#Turn everything off when bluetooth presence is away
 - action:
   - data:
       entity_id: group.inside_house_lights
@@ -84,7 +85,7 @@
       entity_id: switch.projector
     service: switch.turn_off
   - data:
-      entity_id: switch.screen
+      entity_id: switch.projector_screen
     service: switch.turn_off
   - delay: 00:00:02
   - data:
@@ -104,6 +105,8 @@
     from: home
     platform: state
     to: not_home
+
+# Set theater on
 - action:
   - data:
       entity_id:
@@ -111,7 +114,7 @@
       - switch.ge_unknown_type5052_id3031_switch_2
     service: switch.turn_on
   - data:
-      entity_id: switch.screen
+      entity_id: switch.projector_screen
     service: switch.turn_on
   - delay: 00:00:05
   - data:
@@ -137,18 +140,28 @@
     from: Office TV
     platform: state
     to: Xbox One
+
+# Set Theater Off
 - action:
   - data:
       entity_id:
-      - switch.projector
       - switch.ge_unknown_type5052_id3031_switch_2
+    service: switch.turn_on
+  - data:
+      entity_id:
+      - switch.projector
     service: switch.turn_off
   - data:
-      entity_id: switch.screen
+      entity_id: switch.projector_screen
     service: switch.turn_off
   - delay: 00:00:02
   - data:
       entity_id: switch.projector
+    service: switch.turn_off
+  - delay: 00:02:00
+  - data:
+      entity_id:
+      - switch.ge_unknown_type5052_id3031_switch_2
     service: switch.turn_off
   alias: Set Theater Off
   condition: []
@@ -162,44 +175,30 @@
     from: Xbox One
     platform: state
     to: PowerOff
-- action:
-  - data:
-      brightness: 80
-      entity_id: light.ge_unknown_type4944_id3130_level
-    service: light.turn_on
-  - delay: 00:00:03
-  - data:
-      brightness: 30
-      entity_id: light.ge_unknown_type4944_id3130_level
-    service: light.turn_on
-  alias: Lights On at Dusk and Away
-  condition:
-  - condition: state
-    entity_id: group.bluetooth_presence
-    state: not_home
-  id: '1514320786284'
-  trigger:
-  - event: sunset
-    offset: -00:30:00
-    platform: sun
-- action:
-  - data:
-      entity_id: script.1514516585084
-    service: script.turn_on
-  alias: Night Time Deterrent
-  condition:
-  - condition: state
-    entity_id: group.main_lights
-    state: 'off'
-  - after: '22:00:00'
-    before: 04:30:00
-    condition: time
-  id: '1514515796331'
-  trigger:
-  - entity_id: binary_sensor.driveway_camera_motion_detected
-    from: 'Off'
-    platform: state
-    to: 'On'
+
+# Lights On at Dusk and Away
+# - action:
+#   - data:
+#       brightness: 80
+#       entity_id: light.ge_unknown_type4944_id3130_level
+#     service: light.turn_on
+#   - delay: 00:00:03
+#   - data:
+#       brightness: 30
+#       entity_id: light.ge_unknown_type4944_id3130_level
+#     service: light.turn_on
+#   alias: Lights On at Dusk and Away
+#   condition:
+#   - condition: state
+#     entity_id: group.bluetooth_presence
+#     state: not_home
+#   id: '1514320786284'
+#   trigger:
+#   - event: sunset
+#     offset: -00:30:00
+#     platform: sun
+
+#Evening Lights On
 - action:
   - data:
       entity_id:
@@ -210,6 +209,7 @@
       entity_id: group.inside_house_lights
     service: light.turn_on
   - data:
+      #Dim rec room to 100%
       entity_id: script.1514064524159
     service: script.turn_on
   - delay: 00:00:02
@@ -233,13 +233,15 @@
     from: 'off'
     platform: state
     to: 'on'
+
+#Night Lights On - Theater on 
 - action:
   - data:
       entity_id: group.inside_house_lights
     service: light.turn_on
-  - data:
-      entity_id: switch.ge_unknown_type5052_id3031_switch_2
-    service: switch.turn_on
+  # - data:
+  #     entity_id: switch.ge_unknown_type5052_id3031_switch_2
+  #   service: switch.turn_on
   - data:
       entity_id: script.1514064152005
     service: script.turn_on
@@ -254,6 +256,36 @@
     from: 'off'
     platform: state
     to: 'on'
+
+#Night Lights On Theater Off
+- action:
+  # - data:
+  #     entity_id: group.inside_house_lights
+  #   service: light.turn_on
+  - data:
+      entity_id: switch.ge_unknown_type5052_id3031_switch_2
+    service: switch.turn_on
+  - data:
+      entity_id: script.1514064152005
+    service: script.turn_on
+  alias: Night Lights On
+  condition:
+    condition: and
+    conditions:
+    - after: '21:00'
+      before: 07:30
+      condition: time
+    - condition: state
+      entity_id: sensor.theater
+      state: PowerOff
+  id: '1514838378062'
+  trigger:
+  - entity_id: group.local_motion_sensing
+    from: 'off'
+    platform: state
+    to: 'on'
+
+# Outside Lights Off at Sunrise
 - action:
   - data:
       entity_id:
@@ -266,6 +298,8 @@
   trigger:
   - event: sunrise
     platform: sun
+
+# Brightness Slider
 - action:
   - service: light.turn_on
     data_template:
@@ -280,31 +314,8 @@
   trigger:
   - entity_id: input_number.master_brightness
     platform: state
-- action:
-  - data:
-      entity_id: automation.night_lights_off
-    service: automation.turn_off
-  alias: Missy Gym Exception
-  condition:
-  - after: '6:00:00'
-    condition: time
-  id: '1515382548220'
-  trigger:
-  - entity_id: device_tracker.samsungsmg935v
-    from: not_home
-    platform: state
-    to: home
-- action:
-  - data:
-      entity_id: automation.night_lights_off
-    service: automation.turn_on
-  alias: Missy Gym Exception Reset
-  condition: []
-  id: '1515382655837'
-  trigger:
-  - event: sunrise
-    offset: '+2:00:00'
-    platform: sun
+
+# Evening light timer - 60 mins no motion = lights off
 - action:
   - data:
       entity_id:
@@ -340,21 +351,26 @@
     platform: state
     to: 'off'
     for:
-      minutes: 15
-- action:
-  - data:
-      entity_id: group.outside_house_lights
-    service: switch.turn_on
-  alias: Outside Lights upon Night Driveway Alert
-  condition:
-  - after: sunset
-    condition: sun
-  id: '1516231258143'
-  trigger:
-  - entity_id: binary_sensor.fortrezz_mimolite_wireless_interfacebridge_module_sensor
-    from: 'off'
-    platform: state
-    to: 'on'
+      minutes: 60
+
+# THis should be useless. delete after lights go on after dark an beam is broken
+# #Outside lights on after sunset and beam break
+# - action:
+#   - data:
+#       entity_id: group.outside_house_lights
+#     service: switch.turn_on
+#   alias: Outside Lights upon Night Driveway Alert
+#   condition:
+#   - after: sunset
+#     condition: sun
+#   id: '1516231258143'
+#   trigger:
+#   - entity_id: binary_sensor.fortrezz_mimolite_wireless_interfacebridge_module_sensor
+#     from: 'off'
+#     platform: state
+#     to: 'on'
+
+# Night time light timer
 - action:
   - data:
       entity_id:
@@ -390,6 +406,8 @@
   - entity_id: group.local_motion_sensing
     platform: state
     to: 'off'
+
+# Driveway alert exit disable for 3 mins
 - action:
   - delay: 00:00:05
   - data:

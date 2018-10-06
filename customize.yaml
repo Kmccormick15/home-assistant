@@ -1,8 +1,6 @@
 switch.leviton_unknown_type3601_id0001_switch:
   friendly_name: Office
   new_entity_id: switch.leviton_unknown_type3601_id0001_switch
-switch.ge_unknown_type5052_id3031_switch:
-  friendly_name: Living Room Couch Right
 zwave.ge_unknown_type5052_id3031:
   friendly_name: GE Switch Zwave Instance
 zwave.leviton_unknown_type3601_id0001:
@@ -49,10 +47,6 @@ group.all_lights:
   entity_id:
   - light.ge_12729_3way_dimmer_switch_level
   - light.ge_unknown_type5044_id3031_level
-light.level:
-  friendly_name: Connors room
-light.ge_12729_3way_dimmer_switch_level_2:
-  friendly_name: Connors Room
 switch.switch: {}
 switch.ge_unknown_type5052_id3031_switch_2:
   friendly_name: Theater
@@ -81,9 +75,11 @@ switch.fortrezz_mimolite_wireless_interfacebridge_module_switch:
   hidden: true
 device_tracker.xt1650:
   friendly_name: Kevin's MotoZ
+  hidden: true
   icon: mdi:android
 device_tracker.samsungsmg935v:
   friendly_name: Missy's S7
+  hidden: true
   icon: mdi:android
 device_tracker.acton:
   friendly_name: ACTON
@@ -91,7 +87,7 @@ device_tracker.acton:
 light.ge_unknown_type4944_id3130_level:
   friendly_name: Rec Room
 switch.ge_unknown_type5052_id3031_switch_3:
-  friendly_name: Living Room Couch Left
+  friendly_name: Living Room Couch
 group.zwave:
   hidden: true
 group.basement_info:
@@ -147,7 +143,8 @@ sensor.ecolink_motion_detector_sourcenodeid:
   hidden: true
 device_tracker.kevins_iphone:
   hidden: true
-sun.sun: {}
+sun.sun:
+  hidden: true
 zwave.ecolink_motion_detector_2:
   friendly_name: Ecolink Motion Detector (Living Room)
   hidden: true
@@ -181,4 +178,16 @@ device_tracker.samsung_level_u_pro_27fc:
 device_tracker.samsungsmg950u:
   friendly_name: Andrew
 sensor.teller_eta:
+  hidden: true
+device_tracker.battlestation_2:
+  hidden: true
+device_tracker.inkd_wireless:
+  hidden: true
+device_tracker.iphone:
+  hidden: true
+sensor.fortrezz_mimolite_wireless_interfacebridge_module_velocity:
+  hidden: true
+sensor.teller_security_state:
+  hidden: true
+binary_sensor.teller_away:
   hidden: true

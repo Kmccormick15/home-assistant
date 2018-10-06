@@ -753,7 +753,7 @@
                 "device_id": "1f02fcbc9ec949d384be2d5a8e8510b8",
                 "disabled_by": null,
                 "entity_id": "binary_sensor.driveway_camera_person_detected",
-                "name": null,
+                "name": "Nest_Person_Detected",
                 "platform": "nest",
                 "unique_id": "1Yjk8FBmKCFzNn9UvgQReE-Vwr-vDn7UhD-uehjBY7Z7JNbM1LmleA-person_detected"
             },

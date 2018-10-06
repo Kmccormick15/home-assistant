@@ -4,7 +4,7 @@ Inside_House_Lights:
     - light.ge_12729_3way_dimmer_switch_level
     # - light.ge_12729_3way_dimmer_switch_level_2
     # - light.ge_unknown_type4944_id3130_level
-    - switch.ge_unknown_type5052_id3031_switch
+    #- switch.ge_unknown_type5052_id3031_switch
     # - switch.ge_unknown_type5052_id3031_switch_2
     # - switch.leviton_unknown_type3601_id0001_switch
     - switch.ge_unknown_type5052_id3031_switch_3
@@ -37,14 +37,15 @@ House_Temps:
     - sensor.thermostat_temperature
     - sensor.living_room_temperature
     - sensor.theater_temperature
+    - sensor.bedroom_temperature
     - sensor.nolans_room_temperature
     - sensor.aeotec_zw100_multisensor_6_temperature
 
 Bluetooth_Presence:
   name: Bluetooth Presence
   entities:
-    - device_tracker.samsungsmg935v
-    - device_tracker.xt1650
+   # - device_tracker.samsungsmg935v  --S7
+   # - device_tracker.xt1650          --motoz
     - device_tracker.moto_e_4
     - device_tracker.moto_g_4
     - device_tracker.pixel_2_xl
@@ -63,6 +64,7 @@ Cloud_Motion_Presence:
     - binary_sensor.rec_room_camera_motion_detected
     - binary_sensor.living_room_occupancy
     - binary_sensor.thermostat_occupancy
+    - binary_sensor.bedroom_occupancy
     - binary_sensor.theater_occupancy
     - binary_sensor.nolans_room_occupancy
 

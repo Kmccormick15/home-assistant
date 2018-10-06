@@ -1,12 +1,12 @@
 '1512866664337':
-  alias: Blinking House Lights
+  alias: Blink Theater Light
   sequence:
   - data:
       entity_id:
       #- switch.ge_unknown_type5052_id3031_switch
       - switch.ge_unknown_type5052_id3031_switch_2
       #- switch.ge_unknown_type5052_id3031_switch_3
-      - switch.leviton_unknown_type3601_id0001_switch
+      #- switch.leviton_unknown_type3601_id0001_switch
     service: switch.toggle
   - delay:
       milliseconds: 1000
