@@ -7896,3 +7896,1100 @@
 2018-10-06 00:07:11.215 Detail, Node023, Queuing (Controller) Request Node Neighbor Update
 2018-10-06 00:07:11.215 Detail, Notification: ControllerCommand - Starting
 2018-10-06 00:07:11.215 Detail, Notification: ControllerCommand - Sleeping
+2018-10-06 00:12:26.717 Detail, Node022,   Received: 0x01, 0x11, 0x00, 0x04, 0x00, 0x16, 0x0b, 0x71, 0x05, 0x00, 0x00, 0x00, 0xff, 0x07, 0x08, 0x00, 0x00, 0x00, 0x73
+2018-10-06 00:12:26.718 Detail, 
+2018-10-06 00:12:26.718 Info, Node022, Received Alarm report: type=0, level=0, sensorSrcID=0, type:Burglar event:8, status=255
+2018-10-06 00:12:26.718 Detail, Node022, Refreshed Value: old value=0, new value=0, type=byte
+2018-10-06 00:12:26.718 Detail, Node022, Changes to this value are not verified
+2018-10-06 00:12:26.718 Detail, Node022, Refreshed Value: old value=0, new value=0, type=byte
+2018-10-06 00:12:26.718 Detail, Node022, Changes to this value are not verified
+2018-10-06 00:12:26.718 Detail, Node022, Refreshed Value: old value=0, new value=0, type=byte
+2018-10-06 00:12:26.718 Detail, Node022, Changes to this value are not verified
+2018-10-06 00:12:26.718 Detail, Node022, Refreshed Value: old value=0, new value=8, type=byte
+2018-10-06 00:12:26.718 Detail, Node022, Changes to this value are not verified
+2018-10-06 00:12:26.719 Detail, Node022, Notification: ValueChanged
+2018-10-06 00:12:26.741 Detail, Node022, Notification: ValueChanged
+2018-10-06 00:12:26.765 Detail, Node022, Notification: ValueChanged
+2018-10-06 00:12:26.788 Detail, Node022, Notification: ValueChanged
+2018-10-06 00:12:26.811 Detail, Node022,   Received: 0x01, 0x0a, 0x00, 0x04, 0x00, 0x16, 0x04, 0x30, 0x03, 0xff, 0xff, 0xd0
+2018-10-06 00:12:26.811 Detail, 
+2018-10-06 00:12:26.811 Info, Node022, Received SensorBinary report: Sensor:255 State=On
+2018-10-06 00:12:26.811 Detail, Node022, Refreshed Value: old value=false, new value=true, type=bool
+2018-10-06 00:12:26.811 Detail, Node022, Changes to this value are not verified
+2018-10-06 00:12:26.812 Detail, Node022, Notification: ValueChanged
+2018-10-06 00:12:26.979 Info, Node010, Value::Set - COMMAND_CLASS_SWITCH_MULTILEVEL - Level - 0 - 1 - 255
+2018-10-06 00:12:26.979 Info, Node010, SwitchMultilevel::Set - Setting to level 255
+2018-10-06 00:12:26.979 Detail, Node010, Queuing (Send) SwitchMultilevelCmd_Set (Node=10): 0x01, 0x0a, 0x00, 0x13, 0x0a, 0x03, 0x26, 0x01, 0xff, 0x25, 0x4b, 0x59
+2018-10-06 00:12:26.979 Detail, Node010, Queuing (Send) SwitchMultilevelCmd_Get (Node=10): 0x01, 0x09, 0x00, 0x13, 0x0a, 0x02, 0x26, 0x02, 0x25, 0x4c, 0xa0
+2018-10-06 00:12:26.979 Detail, 
+2018-10-06 00:12:26.980 Info, Node010, Sending (Send) message (Callback ID=0x4b, Expected Reply=0x13) - SwitchMultilevelCmd_Set (Node=10): 0x01, 0x0a, 0x00, 0x13, 0x0a, 0x03, 0x26, 0x01, 0xff, 0x25, 0x4b, 0x59
+2018-10-06 00:12:26.982 Info, Node018, Value::Set - COMMAND_CLASS_SWITCH_MULTILEVEL - Dimming Duration - 5 - 1 - 255
+2018-10-06 00:12:26.982 Detail, Node018, Refreshed Value: old value=255, new value=255, type=byte
+2018-10-06 00:12:26.982 Detail, Node018, Changes to this value are not verified
+2018-10-06 00:12:26.983 Info, Node018, Value::Set - COMMAND_CLASS_SWITCH_MULTILEVEL - Level - 0 - 1 - 255
+2018-10-06 00:12:26.983 Info, Node018, SwitchMultilevel::Set - Setting to level 255
+2018-10-06 00:12:26.984 Info, Node018,   Duration: Default
+2018-10-06 00:12:26.984 Detail, Node018, Queuing (Send) SwitchMultilevelCmd_Set (Node=18): 0x01, 0x0b, 0x00, 0x13, 0x12, 0x04, 0x26, 0x01, 0xff, 0xff, 0x25, 0x4d, 0xbe
+2018-10-06 00:12:26.984 Detail, Node018, Queuing (Send) SwitchMultilevelCmd_Get (Node=18): 0x01, 0x09, 0x00, 0x13, 0x12, 0x02, 0x26, 0x02, 0x25, 0x4e, 0xba
+2018-10-06 00:12:26.984 Detail, Node018, Notification: ValueChanged
+2018-10-06 00:12:27.052 Info, Node013, Value::Set - COMMAND_CLASS_SWITCH_MULTILEVEL - Dimming Duration - 5 - 1 - 255
+2018-10-06 00:12:27.053 Detail, Node013, Refreshed Value: old value=255, new value=255, type=byte
+2018-10-06 00:12:27.053 Detail, Node013, Changes to this value are not verified
+2018-10-06 00:12:27.053 Detail, Node013, Notification: ValueChanged
+2018-10-06 00:12:27.055 Info, Node013, Value::Set - COMMAND_CLASS_SWITCH_MULTILEVEL - Level - 0 - 1 - 19
+2018-10-06 00:12:27.055 Info, Node013, SwitchMultilevel::Set - Setting to level 19
+2018-10-06 00:12:27.055 Info, Node013,   Duration: Default
+2018-10-06 00:12:27.056 Detail, Node013, Queuing (Send) SwitchMultilevelCmd_Set (Node=13): 0x01, 0x0b, 0x00, 0x13, 0x0d, 0x04, 0x26, 0x01, 0x13, 0xff, 0x25, 0x4f, 0x4f
+2018-10-06 00:12:27.056 Detail, Node013, Queuing (Send) SwitchMultilevelCmd_Get (Node=13): 0x01, 0x09, 0x00, 0x13, 0x0d, 0x02, 0x26, 0x02, 0x25, 0x50, 0xbb
+2018-10-06 00:12:28.023 Info, Node013, Value::Set - COMMAND_CLASS_SWITCH_MULTILEVEL - Dimming Duration - 5 - 1 - 255
+2018-10-06 00:12:28.023 Detail, Node013, Refreshed Value: old value=255, new value=255, type=byte
+2018-10-06 00:12:28.023 Detail, Node013, Changes to this value are not verified
+2018-10-06 00:12:28.024 Detail, Node013, Notification: ValueChanged
+2018-10-06 00:12:28.026 Info, Node013, Value::Set - COMMAND_CLASS_SWITCH_MULTILEVEL - Level - 0 - 1 - 7
+2018-10-06 00:12:28.026 Info, Node013, SwitchMultilevel::Set - Setting to level 7
+2018-10-06 00:12:28.027 Info, Node013,   Duration: Default
+2018-10-06 00:12:28.027 Detail, Node013, Queuing (Send) SwitchMultilevelCmd_Set (Node=13): 0x01, 0x0b, 0x00, 0x13, 0x0d, 0x04, 0x26, 0x01, 0x07, 0xff, 0x25, 0x51, 0x45
+2018-10-06 00:12:28.027 Detail, Node013, Queuing (Send) SwitchMultilevelCmd_Get (Node=13): 0x01, 0x09, 0x00, 0x13, 0x0d, 0x02, 0x26, 0x02, 0x25, 0x52, 0xb9
+2018-10-06 00:12:28.068 Detail, Node010,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-10-06 00:12:28.069 Detail, Node010,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-10-06 00:12:28.225 Detail, Node010,   Received: 0x01, 0x07, 0x00, 0x13, 0x4b, 0x00, 0x00, 0x7d, 0xdd
+2018-10-06 00:12:28.225 Detail, Node010,   ZW_SEND_DATA Request with callback ID 0x4b received (expected 0x4b)
+2018-10-06 00:12:28.225 Info, Node010, Request RTT 1246 Average Request RTT 703
+2018-10-06 00:12:28.225 Detail,   Expected callbackId was received
+2018-10-06 00:12:28.225 Detail,   Expected reply was received
+2018-10-06 00:12:28.225 Detail,   Message transaction complete
+2018-10-06 00:12:28.225 Detail, 
+2018-10-06 00:12:28.226 Detail, Node010, Removing current message
+2018-10-06 00:12:28.226 Detail, 
+2018-10-06 00:12:28.226 Info, Node010, Sending (Send) message (Callback ID=0x4c, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=10): 0x01, 0x09, 0x00, 0x13, 0x0a, 0x02, 0x26, 0x02, 0x25, 0x4c, 0xa0
+2018-10-06 00:12:28.235 Detail, Node010,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-10-06 00:12:28.235 Detail, Node010,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-10-06 00:12:28.428 Detail, Node010,   Received: 0x01, 0x07, 0x00, 0x13, 0x4c, 0x00, 0x00, 0x14, 0xb3
+2018-10-06 00:12:28.428 Detail, Node010,   ZW_SEND_DATA Request with callback ID 0x4c received (expected 0x4c)
+2018-10-06 00:12:28.428 Info, Node010, Request RTT 201 Average Request RTT 452
+2018-10-06 00:12:28.428 Detail,   Expected callbackId was received
+2018-10-06 00:12:28.507 Detail, Node010,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x0a, 0x03, 0x26, 0x03, 0x09, 0xd7
+2018-10-06 00:12:28.507 Detail, 
+2018-10-06 00:12:28.507 Info, Node010, Response RTT 280 Average Response RTT 245
+2018-10-06 00:12:28.507 Info, Node010, Received SwitchMultiLevel report: level=9
+2018-10-06 00:12:28.507 Detail, Node010, Refreshed Value: old value=0, new value=9, type=byte
+2018-10-06 00:12:28.507 Detail, Node010, Changes to this value are not verified
+2018-10-06 00:12:28.507 Detail, Node010,   Expected reply and command class was received
+2018-10-06 00:12:28.508 Detail, Node010,   Message transaction complete
+2018-10-06 00:12:28.508 Detail, 
+2018-10-06 00:12:28.508 Detail, Node010, Removing current message
+2018-10-06 00:12:28.508 Detail, Node010, Notification: ValueChanged
+2018-10-06 00:12:28.533 Detail, 
+2018-10-06 00:12:28.533 Info, Node018, Sending (Send) message (Callback ID=0x4d, Expected Reply=0x13) - SwitchMultilevelCmd_Set (Node=18): 0x01, 0x0b, 0x00, 0x13, 0x12, 0x04, 0x26, 0x01, 0xff, 0xff, 0x25, 0x4d, 0xbe
+2018-10-06 00:12:29.072 Detail, Node018,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-10-06 00:12:29.072 Detail, Node018,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-10-06 00:12:29.333 Detail, Node018,   Received: 0x01, 0x07, 0x00, 0x13, 0x4d, 0x00, 0x00, 0x4f, 0xe9
+2018-10-06 00:12:29.334 Detail, Node018,   ZW_SEND_DATA Request with callback ID 0x4d received (expected 0x4d)
+2018-10-06 00:12:29.334 Info, Node018, Request RTT 801 Average Request RTT 551
+2018-10-06 00:12:29.334 Detail,   Expected callbackId was received
+2018-10-06 00:12:29.334 Detail,   Expected reply was received
+2018-10-06 00:12:29.334 Detail,   Message transaction complete
+2018-10-06 00:12:29.334 Detail, 
+2018-10-06 00:12:29.334 Detail, Node018, Removing current message
+2018-10-06 00:12:29.334 Detail, 
+2018-10-06 00:12:29.334 Info, Node018, Sending (Send) message (Callback ID=0x4e, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=18): 0x01, 0x09, 0x00, 0x13, 0x12, 0x02, 0x26, 0x02, 0x25, 0x4e, 0xba
+2018-10-06 00:12:29.876 Detail, Node018,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-10-06 00:12:29.876 Detail, Node018,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-10-06 00:12:30.165 Detail, Node018,   Received: 0x01, 0x07, 0x00, 0x13, 0x4e, 0x00, 0x00, 0x53, 0xf6
+2018-10-06 00:12:30.165 Detail, Node018,   ZW_SEND_DATA Request with callback ID 0x4e received (expected 0x4e)
+2018-10-06 00:12:30.165 Info, Node018, Request RTT 831 Average Request RTT 691
+2018-10-06 00:12:30.166 Detail,   Expected callbackId was received
+2018-10-06 00:12:30.265 Detail, Node018,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x12, 0x03, 0x26, 0x03, 0x1b, 0xdd
+2018-10-06 00:12:30.265 Detail, 
+2018-10-06 00:12:30.265 Info, Node018, Response RTT 931 Average Response RTT 682
+2018-10-06 00:12:30.265 Info, Node018, Received SwitchMultiLevel report: level=27
+2018-10-06 00:12:30.265 Detail, Node018, Refreshed Value: old value=0, new value=27, type=byte
+2018-10-06 00:12:30.265 Detail, Node018, Changes to this value are not verified
+2018-10-06 00:12:30.265 Detail, Node018,   Expected reply and command class was received
+2018-10-06 00:12:30.265 Detail, Node018,   Message transaction complete
+2018-10-06 00:12:30.265 Detail, 
+2018-10-06 00:12:30.266 Detail, Node018, Removing current message
+2018-10-06 00:12:30.266 Detail, Node018, Notification: ValueChanged
+2018-10-06 00:12:30.294 Detail, 
+2018-10-06 00:12:30.294 Info, Node013, Sending (Send) message (Callback ID=0x4f, Expected Reply=0x13) - SwitchMultilevelCmd_Set (Node=13): 0x01, 0x0b, 0x00, 0x13, 0x0d, 0x04, 0x26, 0x01, 0x13, 0xff, 0x25, 0x4f, 0x4f
+2018-10-06 00:12:30.836 Detail, Node013,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-10-06 00:12:30.836 Detail, Node013,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-10-06 00:12:31.007 Detail, Node013,   Received: 0x01, 0x07, 0x00, 0x13, 0x4f, 0x00, 0x00, 0x47, 0xe3
+2018-10-06 00:12:31.008 Detail, Node013,   ZW_SEND_DATA Request with callback ID 0x4f received (expected 0x4f)
+2018-10-06 00:12:31.008 Info, Node013, Request RTT 714 Average Request RTT 485
+2018-10-06 00:12:31.008 Detail,   Expected callbackId was received
+2018-10-06 00:12:31.008 Detail,   Expected reply was received
+2018-10-06 00:12:31.008 Detail,   Message transaction complete
+2018-10-06 00:12:31.009 Detail, 
+2018-10-06 00:12:31.009 Detail, Node013, Removing current message
+2018-10-06 00:12:31.009 Detail, 
+2018-10-06 00:12:31.009 Info, Node013, Sending (Send) message (Callback ID=0x50, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=13): 0x01, 0x09, 0x00, 0x13, 0x0d, 0x02, 0x26, 0x02, 0x25, 0x50, 0xbb
+2018-10-06 00:12:31.551 Detail, Node013,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-10-06 00:12:31.552 Detail, Node013,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-10-06 00:12:31.563 Detail, Node010,   Received: 0x01, 0x09, 0x00, 0x04, 0x10, 0x0a, 0x03, 0x26, 0x03, 0x09, 0xc7
+2018-10-06 00:12:31.563 Detail, 
+2018-10-06 00:12:31.563 Info, Node010, Received SwitchMultiLevel report: level=9
+2018-10-06 00:12:31.564 Detail, Node010, Refreshed Value: old value=9, new value=9, type=byte
+2018-10-06 00:12:31.564 Detail, Node010, Changes to this value are not verified
+2018-10-06 00:12:31.564 Detail, Node010, Notification: ValueChanged
+2018-10-06 00:12:31.600 Detail, Node013,   Received: 0x01, 0x07, 0x00, 0x13, 0x50, 0x00, 0x00, 0x3b, 0x80
+2018-10-06 00:12:31.601 Detail, Node013,   ZW_SEND_DATA Request with callback ID 0x50 received (expected 0x50)
+2018-10-06 00:12:31.601 Info, Node013, Request RTT 591 Average Request RTT 538
+2018-10-06 00:12:31.601 Detail,   Expected callbackId was received
+2018-10-06 00:12:31.824 Detail, Node013,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x0d, 0x03, 0x26, 0x03, 0x13, 0xca
+2018-10-06 00:12:31.825 Detail, 
+2018-10-06 00:12:31.825 Info, Node013, Response RTT 815 Average Response RTT 603
+2018-10-06 00:12:31.825 Info, Node013, Received SwitchMultiLevel report: level=19
+2018-10-06 00:12:31.826 Detail, Node013, Refreshed Value: old value=0, new value=19, type=byte
+2018-10-06 00:12:31.826 Detail, Node013, Changes to this value are not verified
+2018-10-06 00:12:31.826 Detail, Node013,   Expected reply and command class was received
+2018-10-06 00:12:31.826 Detail, Node013,   Message transaction complete
+2018-10-06 00:12:31.827 Detail, 
+2018-10-06 00:12:31.827 Detail, Node013, Removing current message
+2018-10-06 00:12:31.827 Detail, Node013, Notification: ValueChanged
+2018-10-06 00:12:31.849 Detail, 
+2018-10-06 00:12:31.849 Info, Node013, Sending (Send) message (Callback ID=0x51, Expected Reply=0x13) - SwitchMultilevelCmd_Set (Node=13): 0x01, 0x0b, 0x00, 0x13, 0x0d, 0x04, 0x26, 0x01, 0x07, 0xff, 0x25, 0x51, 0x45
+2018-10-06 00:12:31.858 Detail, Node013,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-10-06 00:12:31.859 Detail, Node013,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-10-06 00:12:32.182 Detail, Node010,   Received: 0x01, 0x09, 0x00, 0x04, 0x10, 0x0a, 0x03, 0x26, 0x03, 0x09, 0xc7
+2018-10-06 00:12:32.183 Detail, 
+2018-10-06 00:12:32.183 Info, Node010, Received SwitchMultiLevel report: level=9
+2018-10-06 00:12:32.183 Detail, Node010, Refreshed Value: old value=9, new value=9, type=byte
+2018-10-06 00:12:32.183 Detail, Node010, Changes to this value are not verified
+2018-10-06 00:12:32.183 Detail, Node010, Notification: ValueChanged
+2018-10-06 00:12:32.244 Detail, Node013,   Received: 0x01, 0x07, 0x00, 0x13, 0x51, 0x00, 0x00, 0x28, 0x92
+2018-10-06 00:12:32.273 Detail, Node013,   ZW_SEND_DATA Request with callback ID 0x51 received (expected 0x51)
+2018-10-06 00:12:32.273 Info, Node013, Request RTT 424 Average Request RTT 481
+2018-10-06 00:12:32.274 Detail,   Expected callbackId was received
+2018-10-06 00:12:32.274 Detail,   Expected reply was received
+2018-10-06 00:12:32.274 Detail,   Message transaction complete
+2018-10-06 00:12:32.274 Detail, 
+2018-10-06 00:12:32.274 Detail, Node013, Removing current message
+2018-10-06 00:12:32.274 Detail, 
+2018-10-06 00:12:32.275 Info, Node013, Sending (Send) message (Callback ID=0x52, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=13): 0x01, 0x09, 0x00, 0x13, 0x0d, 0x02, 0x26, 0x02, 0x25, 0x52, 0xb9
+2018-10-06 00:12:32.817 Detail, Node013,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-10-06 00:12:32.817 Detail, Node013,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-10-06 00:12:32.857 Detail, Node013,   Received: 0x01, 0x07, 0x00, 0x13, 0x52, 0x00, 0x00, 0x3a, 0x83
+2018-10-06 00:12:32.857 Detail, Node013,   ZW_SEND_DATA Request with callback ID 0x52 received (expected 0x52)
+2018-10-06 00:12:32.857 Info, Node013, Request RTT 582 Average Request RTT 531
+2018-10-06 00:12:32.857 Detail,   Expected callbackId was received
+2018-10-06 00:12:32.931 Detail, Node013,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x0d, 0x03, 0x26, 0x03, 0x07, 0xde
+2018-10-06 00:12:32.931 Detail, 
+2018-10-06 00:12:32.931 Info, Node013, Response RTT 656 Average Response RTT 629
+2018-10-06 00:12:32.931 Info, Node013, Received SwitchMultiLevel report: level=7
+2018-10-06 00:12:32.931 Detail, Node013, Refreshed Value: old value=19, new value=7, type=byte
+2018-10-06 00:12:32.931 Detail, Node013, Changes to this value are not verified
+2018-10-06 00:12:32.932 Detail, Node013,   Expected reply and command class was received
+2018-10-06 00:12:32.932 Detail, Node013,   Message transaction complete
+2018-10-06 00:12:32.932 Detail, 
+2018-10-06 00:12:32.932 Detail, Node013, Removing current message
+2018-10-06 00:12:32.932 Detail, Node013, Notification: ValueChanged
+2018-10-06 00:15:39.066 Detail, Node022,   Received: 0x01, 0x11, 0x00, 0x04, 0x00, 0x16, 0x0b, 0x71, 0x05, 0x00, 0x00, 0x00, 0xff, 0x07, 0x00, 0x00, 0x00, 0x00, 0x7b
+2018-10-06 00:15:39.067 Detail, 
+2018-10-06 00:15:39.067 Info, Node022, Received Alarm report: type=0, level=0, sensorSrcID=0, type:Burglar event:0, status=255
+2018-10-06 00:15:39.067 Detail, Node022, Refreshed Value: old value=0, new value=0, type=byte
+2018-10-06 00:15:39.067 Detail, Node022, Changes to this value are not verified
+2018-10-06 00:15:39.067 Detail, Node022, Refreshed Value: old value=0, new value=0, type=byte
+2018-10-06 00:15:39.067 Detail, Node022, Changes to this value are not verified
+2018-10-06 00:15:39.067 Detail, Node022, Refreshed Value: old value=0, new value=0, type=byte
+2018-10-06 00:15:39.067 Detail, Node022, Changes to this value are not verified
+2018-10-06 00:15:39.067 Detail, Node022, Refreshed Value: old value=8, new value=0, type=byte
+2018-10-06 00:15:39.067 Detail, Node022, Changes to this value are not verified
+2018-10-06 00:15:39.068 Detail, Node022, Notification: ValueChanged
+2018-10-06 00:15:39.098 Detail, Node022, Notification: ValueChanged
+2018-10-06 00:15:39.171 Detail, Node022, Notification: ValueChanged
+2018-10-06 00:15:39.235 Detail, Node022, Notification: ValueChanged
+2018-10-06 00:15:39.333 Detail, Node022,   Received: 0x01, 0x0a, 0x00, 0x04, 0x00, 0x16, 0x04, 0x30, 0x03, 0x00, 0xff, 0x2f
+2018-10-06 00:15:39.333 Detail, 
+2018-10-06 00:15:39.334 Info, Node022, Received SensorBinary report: Sensor:255 State=Off
+2018-10-06 00:15:39.334 Detail, Node022, Refreshed Value: old value=true, new value=false, type=bool
+2018-10-06 00:15:39.334 Detail, Node022, Changes to this value are not verified
+2018-10-06 00:15:39.334 Detail, Node022, Notification: ValueChanged
+2018-10-06 00:15:39.667 Info, Node012, Value::Set - COMMAND_CLASS_SWITCH_BINARY - Switch - 0 - 1 - False
+2018-10-06 00:15:39.667 Info, Node012, SwitchBinary::Set - Setting node 12 to Off
+2018-10-06 00:15:39.667 Detail, Node012, Queuing (Send) SwitchBinaryCmd_Set (Node=12): 0x01, 0x0a, 0x00, 0x13, 0x0c, 0x03, 0x25, 0x01, 0x00, 0x25, 0x53, 0xbb
+2018-10-06 00:15:39.668 Detail, Node012, Queuing (Send) SwitchBinaryCmd_Get (Node=12): 0x01, 0x09, 0x00, 0x13, 0x0c, 0x02, 0x25, 0x02, 0x25, 0x54, 0xbd
+2018-10-06 00:15:39.669 Detail, 
+2018-10-06 00:15:39.669 Info, Node012, Sending (Send) message (Callback ID=0x53, Expected Reply=0x13) - SwitchBinaryCmd_Set (Node=12): 0x01, 0x0a, 0x00, 0x13, 0x0c, 0x03, 0x25, 0x01, 0x00, 0x25, 0x53, 0xbb
+2018-10-06 00:15:39.673 Info, Node014, Value::Set - COMMAND_CLASS_SWITCH_BINARY - Switch - 0 - 1 - False
+2018-10-06 00:15:39.673 Info, Node014, SwitchBinary::Set - Setting node 14 to Off
+2018-10-06 00:15:39.674 Detail, Node014, Queuing (Send) SwitchBinaryCmd_Set (Node=14): 0x01, 0x0a, 0x00, 0x13, 0x0e, 0x03, 0x25, 0x01, 0x00, 0x25, 0x55, 0xbf
+2018-10-06 00:15:39.674 Detail, Node014, Queuing (Send) SwitchBinaryCmd_Get (Node=14): 0x01, 0x09, 0x00, 0x13, 0x0e, 0x02, 0x25, 0x02, 0x25, 0x56, 0xbd
+2018-10-06 00:15:39.681 Detail, Node012,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-10-06 00:15:39.682 Detail, Node012,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-10-06 00:15:39.689 Info, Node015, Value::Set - COMMAND_CLASS_SWITCH_BINARY - Switch - 0 - 1 - False
+2018-10-06 00:15:39.689 Info, Node015, SwitchBinary::Set - Setting node 15 to Off
+2018-10-06 00:15:39.689 Detail, Node015, Queuing (Send) SwitchBinaryCmd_Set (Node=15): 0x01, 0x0a, 0x00, 0x13, 0x0f, 0x03, 0x25, 0x01, 0x00, 0x25, 0x57, 0xbc
+2018-10-06 00:15:39.690 Detail, Node015, Queuing (Send) SwitchBinaryCmd_Get (Node=15): 0x01, 0x09, 0x00, 0x13, 0x0f, 0x02, 0x25, 0x02, 0x25, 0x58, 0xb2
+2018-10-06 00:15:39.703 Info, Node016, Value::Set - COMMAND_CLASS_SWITCH_BINARY - Switch - 0 - 1 - False
+2018-10-06 00:15:39.703 Info, Node016, SwitchBinary::Set - Setting node 16 to Off
+2018-10-06 00:15:39.703 Detail, Node016, Queuing (Send) SwitchBinaryCmd_Set (Node=16): 0x01, 0x0a, 0x00, 0x13, 0x10, 0x03, 0x25, 0x01, 0x00, 0x25, 0x59, 0xad
+2018-10-06 00:15:39.704 Detail, Node016, Queuing (Send) SwitchBinaryCmd_Get (Node=16): 0x01, 0x09, 0x00, 0x13, 0x10, 0x02, 0x25, 0x02, 0x25, 0x5a, 0xaf
+2018-10-06 00:15:39.704 Detail, Node012,   Received: 0x01, 0x07, 0x00, 0x13, 0x53, 0x00, 0x00, 0x03, 0xbb
+2018-10-06 00:15:39.705 Detail, Node012,   ZW_SEND_DATA Request with callback ID 0x53 received (expected 0x53)
+2018-10-06 00:15:39.705 Info, Node012, Request RTT 35 Average Request RTT 32
+2018-10-06 00:15:39.705 Detail,   Expected callbackId was received
+2018-10-06 00:15:39.705 Detail,   Expected reply was received
+2018-10-06 00:15:39.705 Detail,   Message transaction complete
+2018-10-06 00:15:39.705 Detail, 
+2018-10-06 00:15:39.705 Detail, Node012, Removing current message
+2018-10-06 00:15:39.705 Detail, 
+2018-10-06 00:15:39.705 Info, Node012, Sending (Send) message (Callback ID=0x54, Expected Reply=0x04) - SwitchBinaryCmd_Get (Node=12): 0x01, 0x09, 0x00, 0x13, 0x0c, 0x02, 0x25, 0x02, 0x25, 0x54, 0xbd
+2018-10-06 00:15:39.714 Detail, Node012,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-10-06 00:15:39.714 Detail, Node012,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-10-06 00:15:39.722 Info, Node017, Value::Set - COMMAND_CLASS_SWITCH_BINARY - Switch - 0 - 1 - False
+2018-10-06 00:15:39.722 Info, Node017, SwitchBinary::Set - Setting node 17 to Off
+2018-10-06 00:15:39.722 Detail, Node017, Queuing (Send) SwitchBinaryCmd_Set (Node=17): 0x01, 0x0a, 0x00, 0x13, 0x11, 0x03, 0x25, 0x01, 0x00, 0x25, 0x5b, 0xae
+2018-10-06 00:15:39.722 Detail, Node017, Queuing (Send) SwitchBinaryCmd_Get (Node=17): 0x01, 0x09, 0x00, 0x13, 0x11, 0x02, 0x25, 0x02, 0x25, 0x5c, 0xa8
+2018-10-06 00:15:39.730 Info, Node020, Value::Set - COMMAND_CLASS_SWITCH_BINARY - Switch - 0 - 1 - False
+2018-10-06 00:15:39.731 Info, Node020, SwitchBinary::Set - Setting node 20 to Off
+2018-10-06 00:15:39.731 Detail, Node020, Queuing (Send) SwitchBinaryCmd_Set (Node=20): 0x01, 0x0a, 0x00, 0x13, 0x14, 0x03, 0x25, 0x01, 0x00, 0x25, 0x5d, 0xad
+2018-10-06 00:15:39.731 Detail, Node020, Queuing (Send) SwitchBinaryCmd_Get (Node=20): 0x01, 0x09, 0x00, 0x13, 0x14, 0x02, 0x25, 0x02, 0x25, 0x5e, 0xaf
+2018-10-06 00:15:39.735 Detail, Node012,   Received: 0x01, 0x07, 0x00, 0x13, 0x54, 0x00, 0x00, 0x03, 0xbc
+2018-10-06 00:15:39.736 Detail, Node012,   ZW_SEND_DATA Request with callback ID 0x54 received (expected 0x54)
+2018-10-06 00:15:39.736 Info, Node012, Request RTT 30 Average Request RTT 31
+2018-10-06 00:15:39.736 Detail,   Expected callbackId was received
+2018-10-06 00:15:39.750 Detail, Node012,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x0c, 0x03, 0x25, 0x03, 0x00, 0xdb
+2018-10-06 00:15:39.750 Detail, 
+2018-10-06 00:15:39.750 Info, Node012, Response RTT 44 Average Response RTT 44
+2018-10-06 00:15:39.750 Info, Node012, Received SwitchBinary report from node 12: level=Off
+2018-10-06 00:15:39.750 Detail, Node012, Refreshed Value: old value=false, new value=false, type=bool
+2018-10-06 00:15:39.750 Detail, Node012, Changes to this value are not verified
+2018-10-06 00:15:39.750 Detail, Node012,   Expected reply and command class was received
+2018-10-06 00:15:39.750 Detail, Node012,   Message transaction complete
+2018-10-06 00:15:39.750 Detail, 
+2018-10-06 00:15:39.751 Detail, Node012, Removing current message
+2018-10-06 00:15:39.751 Detail, Node012, Notification: ValueChanged
+2018-10-06 00:15:39.758 Info, Node010, Value::Set - COMMAND_CLASS_SWITCH_MULTILEVEL - Level - 0 - 1 - 0
+2018-10-06 00:15:39.770 Info, Node010, SwitchMultilevel::Set - Setting to level 0
+2018-10-06 00:15:39.770 Detail, Node010, Queuing (Send) SwitchMultilevelCmd_Set (Node=10): 0x01, 0x0a, 0x00, 0x13, 0x0a, 0x03, 0x26, 0x01, 0x00, 0x25, 0x5f, 0xb2
+2018-10-06 00:15:39.770 Detail, Node010, Queuing (Send) SwitchMultilevelCmd_Get (Node=10): 0x01, 0x09, 0x00, 0x13, 0x0a, 0x02, 0x26, 0x02, 0x25, 0x60, 0x8c
+2018-10-06 00:15:39.813 Detail, 
+2018-10-06 00:15:39.813 Info, Node014, Sending (Send) message (Callback ID=0x55, Expected Reply=0x13) - SwitchBinaryCmd_Set (Node=14): 0x01, 0x0a, 0x00, 0x13, 0x0e, 0x03, 0x25, 0x01, 0x00, 0x25, 0x55, 0xbf
+2018-10-06 00:15:39.821 Info, Node013, Value::Set - COMMAND_CLASS_SWITCH_MULTILEVEL - Dimming Duration - 5 - 1 - 255
+2018-10-06 00:15:39.822 Detail, Node013, Refreshed Value: old value=255, new value=255, type=byte
+2018-10-06 00:15:39.822 Detail, Node013, Changes to this value are not verified
+2018-10-06 00:15:39.822 Detail, Node013, Notification: ValueChanged
+2018-10-06 00:15:39.824 Info, Node013, Value::Set - COMMAND_CLASS_SWITCH_MULTILEVEL - Level - 0 - 1 - 0
+2018-10-06 00:15:39.825 Info, Node013, SwitchMultilevel::Set - Setting to level 0
+2018-10-06 00:15:39.825 Info, Node013,   Duration: Default
+2018-10-06 00:15:39.825 Detail, Node013, Queuing (Send) SwitchMultilevelCmd_Set (Node=13): 0x01, 0x0b, 0x00, 0x13, 0x0d, 0x04, 0x26, 0x01, 0x00, 0xff, 0x25, 0x61, 0x72
+2018-10-06 00:15:39.825 Detail, Node013, Queuing (Send) SwitchMultilevelCmd_Get (Node=13): 0x01, 0x09, 0x00, 0x13, 0x0d, 0x02, 0x26, 0x02, 0x25, 0x62, 0x89
+2018-10-06 00:15:39.861 Detail, Node014,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-10-06 00:15:39.861 Detail, Node014,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-10-06 00:15:39.863 Info, Node018, Value::Set - COMMAND_CLASS_SWITCH_MULTILEVEL - Dimming Duration - 5 - 1 - 255
+2018-10-06 00:15:39.863 Detail, Node018, Refreshed Value: old value=255, new value=255, type=byte
+2018-10-06 00:15:39.863 Detail, Node018, Changes to this value are not verified
+2018-10-06 00:15:39.865 Info, Node018, Value::Set - COMMAND_CLASS_SWITCH_MULTILEVEL - Level - 0 - 1 - 0
+2018-10-06 00:15:39.865 Info, Node018, SwitchMultilevel::Set - Setting to level 0
+2018-10-06 00:15:39.865 Info, Node018,   Duration: Default
+2018-10-06 00:15:39.865 Detail, Node018, Queuing (Send) SwitchMultilevelCmd_Set (Node=18): 0x01, 0x0b, 0x00, 0x13, 0x12, 0x04, 0x26, 0x01, 0x00, 0xff, 0x25, 0x63, 0x6f
+2018-10-06 00:15:39.865 Detail, Node018, Queuing (Send) SwitchMultilevelCmd_Get (Node=18): 0x01, 0x09, 0x00, 0x13, 0x12, 0x02, 0x26, 0x02, 0x25, 0x64, 0x90
+2018-10-06 00:15:39.865 Detail, Node014,   Received: 0x01, 0x07, 0x00, 0x13, 0x55, 0x00, 0x00, 0x03, 0xbd
+2018-10-06 00:15:39.866 Detail, Node014,   ZW_SEND_DATA Request with callback ID 0x55 received (expected 0x55)
+2018-10-06 00:15:39.866 Info, Node014, Request RTT 52 Average Request RTT 60
+2018-10-06 00:15:39.866 Detail,   Expected callbackId was received
+2018-10-06 00:15:39.866 Detail,   Expected reply was received
+2018-10-06 00:15:39.866 Detail,   Message transaction complete
+2018-10-06 00:15:39.866 Detail, 
+2018-10-06 00:15:39.866 Detail, Node014, Removing current message
+2018-10-06 00:15:39.866 Detail, Node018, Notification: ValueChanged
+2018-10-06 00:15:39.921 Detail, 
+2018-10-06 00:15:39.921 Info, Node014, Sending (Send) message (Callback ID=0x56, Expected Reply=0x04) - SwitchBinaryCmd_Get (Node=14): 0x01, 0x09, 0x00, 0x13, 0x0e, 0x02, 0x25, 0x02, 0x25, 0x56, 0xbd
+2018-10-06 00:15:39.929 Detail, Node014,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-10-06 00:15:39.930 Detail, Node014,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-10-06 00:15:39.952 Detail, Node014,   Received: 0x01, 0x07, 0x00, 0x13, 0x56, 0x00, 0x00, 0x02, 0xbf
+2018-10-06 00:15:39.953 Detail, Node014,   ZW_SEND_DATA Request with callback ID 0x56 received (expected 0x56)
+2018-10-06 00:15:39.953 Info, Node014, Request RTT 31 Average Request RTT 45
+2018-10-06 00:15:39.953 Detail,   Expected callbackId was received
+2018-10-06 00:15:39.969 Detail, Node014,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x0e, 0x03, 0x25, 0x03, 0x00, 0xd9
+2018-10-06 00:15:39.979 Detail, 
+2018-10-06 00:15:39.979 Info, Node014, Response RTT 57 Average Response RTT 95
+2018-10-06 00:15:39.979 Info, Node014, Received SwitchBinary report from node 14: level=Off
+2018-10-06 00:15:39.979 Detail, Node014, Refreshed Value: old value=false, new value=false, type=bool
+2018-10-06 00:15:39.979 Detail, Node014, Changes to this value are not verified
+2018-10-06 00:15:39.979 Detail, Node014,   Expected reply and command class was received
+2018-10-06 00:15:39.979 Detail, Node014,   Message transaction complete
+2018-10-06 00:15:39.979 Detail, 
+2018-10-06 00:15:39.979 Detail, Node014, Removing current message
+2018-10-06 00:15:39.979 Detail, Node014, Notification: ValueChanged
+2018-10-06 00:15:39.995 Detail, 
+2018-10-06 00:15:39.996 Info, Node015, Sending (Send) message (Callback ID=0x57, Expected Reply=0x13) - SwitchBinaryCmd_Set (Node=15): 0x01, 0x0a, 0x00, 0x13, 0x0f, 0x03, 0x25, 0x01, 0x00, 0x25, 0x57, 0xbc
+2018-10-06 00:15:40.009 Detail, Node015,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-10-06 00:15:40.017 Detail, Node015,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-10-06 00:15:40.031 Detail, Node015,   Received: 0x01, 0x07, 0x00, 0x13, 0x57, 0x00, 0x00, 0x03, 0xbf
+2018-10-06 00:15:40.032 Detail, Node015,   ZW_SEND_DATA Request with callback ID 0x57 received (expected 0x57)
+2018-10-06 00:15:40.032 Info, Node015, Request RTT 36 Average Request RTT 41
+2018-10-06 00:15:40.032 Detail,   Expected callbackId was received
+2018-10-06 00:15:40.032 Detail,   Expected reply was received
+2018-10-06 00:15:40.032 Detail,   Message transaction complete
+2018-10-06 00:15:40.032 Detail, 
+2018-10-06 00:15:40.032 Detail, Node015, Removing current message
+2018-10-06 00:15:40.032 Detail, 
+2018-10-06 00:15:40.032 Info, Node015, Sending (Send) message (Callback ID=0x58, Expected Reply=0x04) - SwitchBinaryCmd_Get (Node=15): 0x01, 0x09, 0x00, 0x13, 0x0f, 0x02, 0x25, 0x02, 0x25, 0x58, 0xb2
+2018-10-06 00:15:40.041 Detail, Node015,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-10-06 00:15:40.041 Detail, Node015,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-10-06 00:15:40.063 Detail, Node015,   Received: 0x01, 0x07, 0x00, 0x13, 0x58, 0x00, 0x00, 0x02, 0xb1
+2018-10-06 00:15:40.063 Detail, Node015,   ZW_SEND_DATA Request with callback ID 0x58 received (expected 0x58)
+2018-10-06 00:15:40.064 Info, Node015, Request RTT 31 Average Request RTT 36
+2018-10-06 00:15:40.064 Detail,   Expected callbackId was received
+2018-10-06 00:15:40.079 Detail, Node015,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x0f, 0x03, 0x25, 0x03, 0x00, 0xd8
+2018-10-06 00:15:40.079 Detail, 
+2018-10-06 00:15:40.079 Info, Node015, Response RTT 46 Average Response RTT 50
+2018-10-06 00:15:40.079 Info, Node015, Received SwitchBinary report from node 15: level=Off
+2018-10-06 00:15:40.079 Detail, Node015, Refreshed Value: old value=false, new value=false, type=bool
+2018-10-06 00:15:40.079 Detail, Node015, Changes to this value are not verified
+2018-10-06 00:15:40.079 Detail, Node015,   Expected reply and command class was received
+2018-10-06 00:15:40.079 Detail, Node015,   Message transaction complete
+2018-10-06 00:15:40.080 Detail, 
+2018-10-06 00:15:40.080 Detail, Node015, Removing current message
+2018-10-06 00:15:40.080 Detail, Node015, Notification: ValueChanged
+2018-10-06 00:15:40.094 Detail, 
+2018-10-06 00:15:40.111 Info, Node016, Sending (Send) message (Callback ID=0x59, Expected Reply=0x13) - SwitchBinaryCmd_Set (Node=16): 0x01, 0x0a, 0x00, 0x13, 0x10, 0x03, 0x25, 0x01, 0x00, 0x25, 0x59, 0xad
+2018-10-06 00:15:40.791 Info, mgr,     Refreshing node 10: COMMAND_CLASS_SWITCH_MULTILEVEL index = 0 instance = 1 (to confirm a reported change)
+2018-10-06 00:15:40.791 Detail, Node010, Queuing (Send) SwitchMultilevelCmd_Get (Node=10): 0x01, 0x09, 0x00, 0x13, 0x0a, 0x02, 0x26, 0x02, 0x25, 0x65, 0x89
+2018-10-06 00:15:40.801 Detail, Node016,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-10-06 00:15:40.801 Detail, Node016,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-10-06 00:15:40.839 Info, mgr,     Refreshing node 13: COMMAND_CLASS_SWITCH_MULTILEVEL index = 0 instance = 1 (to confirm a reported change)
+2018-10-06 00:15:40.839 Detail, Node013, Queuing (Send) SwitchMultilevelCmd_Get (Node=13): 0x01, 0x09, 0x00, 0x13, 0x0d, 0x02, 0x26, 0x02, 0x25, 0x66, 0x8d
+2018-10-06 00:15:40.867 Info, mgr,     Refreshing node 18: COMMAND_CLASS_SWITCH_MULTILEVEL index = 0 instance = 1 (to confirm a reported change)
+2018-10-06 00:15:40.868 Detail, Node018, Queuing (Send) SwitchMultilevelCmd_Get (Node=18): 0x01, 0x09, 0x00, 0x13, 0x12, 0x02, 0x26, 0x02, 0x25, 0x67, 0x93
+2018-10-06 00:15:40.913 Detail, Node016,   Received: 0x01, 0x07, 0x00, 0x13, 0x59, 0x00, 0x00, 0x50, 0xe2
+2018-10-06 00:15:40.914 Detail, Node016,   ZW_SEND_DATA Request with callback ID 0x59 received (expected 0x59)
+2018-10-06 00:15:40.914 Info, Node016, Request RTT 803 Average Request RTT 695
+2018-10-06 00:15:40.914 Detail,   Expected callbackId was received
+2018-10-06 00:15:40.915 Detail,   Expected reply was received
+2018-10-06 00:15:40.915 Detail,   Message transaction complete
+2018-10-06 00:15:40.915 Detail, 
+2018-10-06 00:15:40.915 Detail, Node016, Removing current message
+2018-10-06 00:15:40.916 Detail, 
+2018-10-06 00:15:40.916 Info, Node016, Sending (Send) message (Callback ID=0x5a, Expected Reply=0x04) - SwitchBinaryCmd_Get (Node=16): 0x01, 0x09, 0x00, 0x13, 0x10, 0x02, 0x25, 0x02, 0x25, 0x5a, 0xaf
+2018-10-06 00:15:40.925 Detail, Node016,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-10-06 00:15:40.925 Detail, Node016,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-10-06 00:15:41.163 Detail, Node016,   Received: 0x01, 0x07, 0x00, 0x13, 0x5a, 0x00, 0x00, 0x18, 0xa9
+2018-10-06 00:15:41.163 Detail, Node016,   ZW_SEND_DATA Request with callback ID 0x5a received (expected 0x5a)
+2018-10-06 00:15:41.163 Info, Node016, Request RTT 248 Average Request RTT 471
+2018-10-06 00:15:41.164 Detail,   Expected callbackId was received
+2018-10-06 00:15:41.241 Detail, Node016,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x10, 0x03, 0x25, 0x03, 0x00, 0xc7
+2018-10-06 00:15:41.241 Detail, 
+2018-10-06 00:15:41.241 Info, Node016, Response RTT 325 Average Response RTT 520
+2018-10-06 00:15:41.241 Info, Node016, Received SwitchBinary report from node 16: level=Off
+2018-10-06 00:15:41.241 Detail, Node016, Refreshed Value: old value=false, new value=false, type=bool
+2018-10-06 00:15:41.241 Detail, Node016, Changes to this value are not verified
+2018-10-06 00:15:41.241 Detail, Node016,   Expected reply and command class was received
+2018-10-06 00:15:41.241 Detail, Node016,   Message transaction complete
+2018-10-06 00:15:41.241 Detail, 
+2018-10-06 00:15:41.241 Detail, Node016, Removing current message
+2018-10-06 00:15:41.242 Detail, Node016, Notification: ValueChanged
+2018-10-06 00:15:41.264 Detail, 
+2018-10-06 00:15:41.264 Info, Node017, Sending (Send) message (Callback ID=0x5b, Expected Reply=0x13) - SwitchBinaryCmd_Set (Node=17): 0x01, 0x0a, 0x00, 0x13, 0x11, 0x03, 0x25, 0x01, 0x00, 0x25, 0x5b, 0xae
+2018-10-06 00:15:41.809 Info, mgr,     Refreshing node 10: COMMAND_CLASS_SWITCH_MULTILEVEL index = 0 instance = 1 (to confirm a reported change)
+2018-10-06 00:15:41.809 Detail, Node010, Queuing (Send) SwitchMultilevelCmd_Get (Node=10): 0x01, 0x09, 0x00, 0x13, 0x0a, 0x02, 0x26, 0x02, 0x25, 0x68, 0x84
+2018-10-06 00:15:41.839 Info, mgr,     Refreshing node 13: COMMAND_CLASS_SWITCH_MULTILEVEL index = 0 instance = 1 (to confirm a reported change)
+2018-10-06 00:15:41.839 Detail, Node013, Queuing (Send) SwitchMultilevelCmd_Get (Node=13): 0x01, 0x09, 0x00, 0x13, 0x0d, 0x02, 0x26, 0x02, 0x25, 0x69, 0x82
+2018-10-06 00:15:41.895 Info, mgr,     Refreshing node 18: COMMAND_CLASS_SWITCH_MULTILEVEL index = 0 instance = 1 (to confirm a reported change)
+2018-10-06 00:15:41.895 Detail, Node018, Queuing (Send) SwitchMultilevelCmd_Get (Node=18): 0x01, 0x09, 0x00, 0x13, 0x12, 0x02, 0x26, 0x02, 0x25, 0x6a, 0x9e
+2018-10-06 00:15:42.023 Info, Node002, Value::Set - COMMAND_CLASS_SWITCH_BINARY - Switch - 0 - 1 - False
+2018-10-06 00:15:42.023 Info, Node002, SwitchBinary::Set - Setting node 2 to Off
+2018-10-06 00:15:42.023 Detail, Node002, Queuing (Send) SwitchBinaryCmd_Set (Node=2): 0x01, 0x0a, 0x00, 0x13, 0x02, 0x03, 0x25, 0x01, 0x00, 0x25, 0x6b, 0x8d
+2018-10-06 00:15:42.023 Detail, Node002, Queuing (Send) SwitchBinaryCmd_Get (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x25, 0x02, 0x25, 0x6c, 0x8b
+2018-10-06 00:15:42.030 Info, Node012, Value::Set - COMMAND_CLASS_SWITCH_BINARY - Switch - 0 - 1 - False
+2018-10-06 00:15:42.030 Info, Node012, SwitchBinary::Set - Setting node 12 to Off
+2018-10-06 00:15:42.030 Detail, Node012, Queuing (Send) SwitchBinaryCmd_Set (Node=12): 0x01, 0x0a, 0x00, 0x13, 0x0c, 0x03, 0x25, 0x01, 0x00, 0x25, 0x6d, 0x85
+2018-10-06 00:15:42.030 Detail, Node012, Queuing (Send) SwitchBinaryCmd_Get (Node=12): 0x01, 0x09, 0x00, 0x13, 0x0c, 0x02, 0x25, 0x02, 0x25, 0x6e, 0x87
+2018-10-06 00:15:42.034 Info, Node014, Value::Set - COMMAND_CLASS_SWITCH_BINARY - Switch - 0 - 1 - False
+2018-10-06 00:15:42.034 Info, Node014, SwitchBinary::Set - Setting node 14 to Off
+2018-10-06 00:15:42.034 Detail, Node014, Queuing (Send) SwitchBinaryCmd_Set (Node=14): 0x01, 0x0a, 0x00, 0x13, 0x0e, 0x03, 0x25, 0x01, 0x00, 0x25, 0x6f, 0x85
+2018-10-06 00:15:42.034 Detail, Node014, Queuing (Send) SwitchBinaryCmd_Get (Node=14): 0x01, 0x09, 0x00, 0x13, 0x0e, 0x02, 0x25, 0x02, 0x25, 0x70, 0x9b
+2018-10-06 00:15:42.040 Info, Node015, Value::Set - COMMAND_CLASS_SWITCH_BINARY - Switch - 0 - 1 - False
+2018-10-06 00:15:42.040 Info, Node015, SwitchBinary::Set - Setting node 15 to Off
+2018-10-06 00:15:42.041 Detail, Node015, Queuing (Send) SwitchBinaryCmd_Set (Node=15): 0x01, 0x0a, 0x00, 0x13, 0x0f, 0x03, 0x25, 0x01, 0x00, 0x25, 0x71, 0x9a
+2018-10-06 00:15:42.041 Detail, Node015, Queuing (Send) SwitchBinaryCmd_Get (Node=15): 0x01, 0x09, 0x00, 0x13, 0x0f, 0x02, 0x25, 0x02, 0x25, 0x72, 0x98
+2018-10-06 00:15:42.046 Info, Node016, Value::Set - COMMAND_CLASS_SWITCH_BINARY - Switch - 0 - 1 - False
+2018-10-06 00:15:42.046 Info, Node016, SwitchBinary::Set - Setting node 16 to Off
+2018-10-06 00:15:42.046 Detail, Node016, Queuing (Send) SwitchBinaryCmd_Set (Node=16): 0x01, 0x0a, 0x00, 0x13, 0x10, 0x03, 0x25, 0x01, 0x00, 0x25, 0x73, 0x87
+2018-10-06 00:15:42.046 Detail, Node016, Queuing (Send) SwitchBinaryCmd_Get (Node=16): 0x01, 0x09, 0x00, 0x13, 0x10, 0x02, 0x25, 0x02, 0x25, 0x74, 0x81
+2018-10-06 00:15:42.049 Info, Node017, Value::Set - COMMAND_CLASS_SWITCH_BINARY - Switch - 0 - 1 - False
+2018-10-06 00:15:42.049 Info, Node017, SwitchBinary::Set - Setting node 17 to Off
+2018-10-06 00:15:42.049 Detail, Node017, Queuing (Send) SwitchBinaryCmd_Set (Node=17): 0x01, 0x0a, 0x00, 0x13, 0x11, 0x03, 0x25, 0x01, 0x00, 0x25, 0x75, 0x80
+2018-10-06 00:15:42.050 Detail, Node017, Queuing (Send) SwitchBinaryCmd_Get (Node=17): 0x01, 0x09, 0x00, 0x13, 0x11, 0x02, 0x25, 0x02, 0x25, 0x76, 0x82
+2018-10-06 00:15:42.052 Info, Node020, Value::Set - COMMAND_CLASS_SWITCH_BINARY - Switch - 0 - 1 - False
+2018-10-06 00:15:42.052 Info, Node020, SwitchBinary::Set - Setting node 20 to Off
+2018-10-06 00:15:42.053 Detail, Node020, Queuing (Send) SwitchBinaryCmd_Set (Node=20): 0x01, 0x0a, 0x00, 0x13, 0x14, 0x03, 0x25, 0x01, 0x00, 0x25, 0x77, 0x87
+2018-10-06 00:15:42.053 Detail, Node020, Queuing (Send) SwitchBinaryCmd_Get (Node=20): 0x01, 0x09, 0x00, 0x13, 0x14, 0x02, 0x25, 0x02, 0x25, 0x78, 0x89
+2018-10-06 00:15:42.069 Info, Node010, Value::Set - COMMAND_CLASS_SWITCH_MULTILEVEL - Level - 0 - 1 - 0
+2018-10-06 00:15:42.069 Info, Node010, SwitchMultilevel::Set - Setting to level 0
+2018-10-06 00:15:42.069 Detail, Node010, Queuing (Send) SwitchMultilevelCmd_Set (Node=10): 0x01, 0x0a, 0x00, 0x13, 0x0a, 0x03, 0x26, 0x01, 0x00, 0x25, 0x79, 0x94
+2018-10-06 00:15:42.069 Detail, Node010, Queuing (Send) SwitchMultilevelCmd_Get (Node=10): 0x01, 0x09, 0x00, 0x13, 0x0a, 0x02, 0x26, 0x02, 0x25, 0x7a, 0x96
+2018-10-06 00:15:42.076 Info, Node013, Value::Set - COMMAND_CLASS_SWITCH_MULTILEVEL - Dimming Duration - 5 - 1 - 255
+2018-10-06 00:15:42.077 Detail, Node013, Refreshed Value: old value=255, new value=255, type=byte
+2018-10-06 00:15:42.077 Detail, Node013, Changes to this value are not verified
+2018-10-06 00:15:42.077 Detail, Node013, Notification: ValueChanged
+2018-10-06 00:15:42.078 Info, Node013, Value::Set - COMMAND_CLASS_SWITCH_MULTILEVEL - Level - 0 - 1 - 0
+2018-10-06 00:15:42.079 Info, Node013, SwitchMultilevel::Set - Setting to level 0
+2018-10-06 00:15:42.079 Info, Node013,   Duration: Default
+2018-10-06 00:15:42.079 Detail, Node013, Queuing (Send) SwitchMultilevelCmd_Set (Node=13): 0x01, 0x0b, 0x00, 0x13, 0x0d, 0x04, 0x26, 0x01, 0x00, 0xff, 0x25, 0x7b, 0x68
+2018-10-06 00:15:42.079 Detail, Node013, Queuing (Send) SwitchMultilevelCmd_Get (Node=13): 0x01, 0x09, 0x00, 0x13, 0x0d, 0x02, 0x26, 0x02, 0x25, 0x7c, 0x97
+2018-10-06 00:15:42.114 Info, Node018, Value::Set - COMMAND_CLASS_SWITCH_MULTILEVEL - Dimming Duration - 5 - 1 - 255
+2018-10-06 00:15:42.114 Detail, Node018, Refreshed Value: old value=255, new value=255, type=byte
+2018-10-06 00:15:42.114 Detail, Node018, Changes to this value are not verified
+2018-10-06 00:15:42.114 Detail, Node018, Notification: ValueChanged
+2018-10-06 00:15:42.116 Info, Node018, Value::Set - COMMAND_CLASS_SWITCH_MULTILEVEL - Level - 0 - 1 - 0
+2018-10-06 00:15:42.116 Info, Node018, SwitchMultilevel::Set - Setting to level 0
+2018-10-06 00:15:42.116 Info, Node018,   Duration: Default
+2018-10-06 00:15:42.116 Detail, Node018, Queuing (Send) SwitchMultilevelCmd_Set (Node=18): 0x01, 0x0b, 0x00, 0x13, 0x12, 0x04, 0x26, 0x01, 0x00, 0xff, 0x25, 0x7d, 0x71
+2018-10-06 00:15:42.116 Detail, Node018, Queuing (Send) SwitchMultilevelCmd_Get (Node=18): 0x01, 0x09, 0x00, 0x13, 0x12, 0x02, 0x26, 0x02, 0x25, 0x7e, 0x8a
+2018-10-06 00:15:42.256 Detail, Node017,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-10-06 00:15:42.256 Detail, Node017,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-10-06 00:15:42.422 Detail, Node017,   Received: 0x01, 0x07, 0x00, 0x13, 0x5b, 0x00, 0x00, 0x73, 0xc3
+2018-10-06 00:15:42.423 Detail, Node017,   ZW_SEND_DATA Request with callback ID 0x5b received (expected 0x5b)
+2018-10-06 00:15:42.424 Info, Node017, Request RTT 1159 Average Request RTT 665
+2018-10-06 00:15:42.424 Detail,   Expected callbackId was received
+2018-10-06 00:15:42.425 Detail,   Expected reply was received
+2018-10-06 00:15:42.425 Detail,   Message transaction complete
+2018-10-06 00:15:42.425 Detail, 
+2018-10-06 00:15:42.425 Detail, Node017, Removing current message
+2018-10-06 00:15:42.426 Detail, 
+2018-10-06 00:15:42.426 Info, Node017, Sending (Send) message (Callback ID=0x5c, Expected Reply=0x04) - SwitchBinaryCmd_Get (Node=17): 0x01, 0x09, 0x00, 0x13, 0x11, 0x02, 0x25, 0x02, 0x25, 0x5c, 0xa8
+2018-10-06 00:15:42.436 Detail, Node017,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-10-06 00:15:42.437 Detail, Node017,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-10-06 00:15:43.071 Info, mgr,     Refreshing node 10: COMMAND_CLASS_SWITCH_MULTILEVEL index = 0 instance = 1 (to confirm a reported change)
+2018-10-06 00:15:43.072 Detail, Node010, Queuing (Send) SwitchMultilevelCmd_Get (Node=10): 0x01, 0x09, 0x00, 0x13, 0x0a, 0x02, 0x26, 0x02, 0x25, 0x7f, 0x93
+2018-10-06 00:15:43.094 Info, mgr,     Refreshing node 13: COMMAND_CLASS_SWITCH_MULTILEVEL index = 0 instance = 1 (to confirm a reported change)
+2018-10-06 00:15:43.094 Detail, Node013, Queuing (Send) SwitchMultilevelCmd_Get (Node=13): 0x01, 0x09, 0x00, 0x13, 0x0d, 0x02, 0x26, 0x02, 0x25, 0x80, 0x6b
+2018-10-06 00:15:43.132 Info, mgr,     Refreshing node 18: COMMAND_CLASS_SWITCH_MULTILEVEL index = 0 instance = 1 (to confirm a reported change)
+2018-10-06 00:15:43.133 Detail, Node018, Queuing (Send) SwitchMultilevelCmd_Get (Node=18): 0x01, 0x09, 0x00, 0x13, 0x12, 0x02, 0x26, 0x02, 0x25, 0x81, 0x75
+2018-10-06 00:15:44.073 Info, mgr,     Refreshing node 10: COMMAND_CLASS_SWITCH_MULTILEVEL index = 0 instance = 1 (to confirm a reported change)
+2018-10-06 00:15:44.074 Detail, Node010, Queuing (Send) SwitchMultilevelCmd_Get (Node=10): 0x01, 0x09, 0x00, 0x13, 0x0a, 0x02, 0x26, 0x02, 0x25, 0x82, 0x6e
+2018-10-06 00:15:44.106 Info, mgr,     Refreshing node 13: COMMAND_CLASS_SWITCH_MULTILEVEL index = 0 instance = 1 (to confirm a reported change)
+2018-10-06 00:15:44.106 Detail, Node013, Queuing (Send) SwitchMultilevelCmd_Get (Node=13): 0x01, 0x09, 0x00, 0x13, 0x0d, 0x02, 0x26, 0x02, 0x25, 0x83, 0x68
+2018-10-06 00:15:44.140 Info, mgr,     Refreshing node 18: COMMAND_CLASS_SWITCH_MULTILEVEL index = 0 instance = 1 (to confirm a reported change)
+2018-10-06 00:15:44.141 Detail, Node018, Queuing (Send) SwitchMultilevelCmd_Get (Node=18): 0x01, 0x09, 0x00, 0x13, 0x12, 0x02, 0x26, 0x02, 0x25, 0x84, 0x70
+2018-10-06 00:15:44.147 Detail, Node017,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x11, 0x03, 0x25, 0x03, 0x00, 0xc6
+2018-10-06 00:15:44.147 Detail, 
+2018-10-06 00:15:44.147 Info, Node017, Response RTT 1721 Average Response RTT 979
+2018-10-06 00:15:44.147 Info, Node017, Received SwitchBinary report from node 17: level=Off
+2018-10-06 00:15:44.147 Detail, Node017, Refreshed Value: old value=false, new value=false, type=bool
+2018-10-06 00:15:44.147 Detail, Node017, Changes to this value are not verified
+2018-10-06 00:15:44.147 Detail, Node017, Notification: ValueChanged
+2018-10-06 00:15:44.513 Detail, Node017,   Received: 0x01, 0x07, 0x00, 0x13, 0x5c, 0x00, 0x00, 0xd0, 0x67
+2018-10-06 00:15:44.513 Detail, Node017,   ZW_SEND_DATA Request with callback ID 0x5c received (expected 0x5c)
+2018-10-06 00:15:44.513 Info, Node017, Request RTT 2086 Average Request RTT 1375
+2018-10-06 00:15:44.514 Detail,   Expected callbackId was received
+2018-10-06 00:15:44.571 Detail, Node017,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x11, 0x03, 0x25, 0x03, 0x00, 0xc6
+2018-10-06 00:15:44.571 Detail, 
+2018-10-06 00:15:44.571 Info, Node017, Response RTT 2144 Average Response RTT 1561
+2018-10-06 00:15:44.571 Info, Node017, Received SwitchBinary report from node 17: level=Off
+2018-10-06 00:15:44.572 Detail, Node017, Refreshed Value: old value=false, new value=false, type=bool
+2018-10-06 00:15:44.572 Detail, Node017, Changes to this value are not verified
+2018-10-06 00:15:44.572 Detail, Node017,   Expected reply and command class was received
+2018-10-06 00:15:44.572 Detail, Node017,   Message transaction complete
+2018-10-06 00:15:44.572 Detail, 
+2018-10-06 00:15:44.572 Detail, Node017, Removing current message
+2018-10-06 00:15:44.572 Detail, Node017, Notification: ValueChanged
+2018-10-06 00:15:44.594 Detail, 
+2018-10-06 00:15:44.594 Info, Node020, Sending (Send) message (Callback ID=0x5d, Expected Reply=0x13) - SwitchBinaryCmd_Set (Node=20): 0x01, 0x0a, 0x00, 0x13, 0x14, 0x03, 0x25, 0x01, 0x00, 0x25, 0x5d, 0xad
+2018-10-06 00:15:44.595 Detail, Unsolicited message received while waiting for ACK.
+2018-10-06 00:15:44.595 Detail, Node017,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x11, 0x03, 0x25, 0x03, 0x00, 0xc6
+2018-10-06 00:15:44.595 Detail, 
+2018-10-06 00:15:44.595 Info, Node017, Received SwitchBinary report from node 17: level=Off
+2018-10-06 00:15:44.596 Detail, Node017, Refreshed Value: old value=false, new value=false, type=bool
+2018-10-06 00:15:44.596 Detail, Node017, Changes to this value are not verified
+2018-10-06 00:15:44.596 Detail, Node017, Notification: ValueChanged
+2018-10-06 00:15:44.617 Detail, Node020, CAN received...triggering resend
+2018-10-06 00:15:44.617 Detail, 
+2018-10-06 00:15:44.618 Info, Node020, Sending (Send) message (Attempt 2, Callback ID=0x85, Expected Reply=0x13) - SwitchBinaryCmd_Set (Node=20): 0x01, 0x0a, 0x00, 0x13, 0x14, 0x03, 0x25, 0x01, 0x00, 0x25, 0x85, 0x75
+2018-10-06 00:15:44.746 Detail, Node020,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-10-06 00:15:44.746 Detail, Node020,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-10-06 00:15:44.939 Detail, Node020,   Received: 0x01, 0x07, 0x00, 0x13, 0x85, 0x00, 0x00, 0x20, 0x4e
+2018-10-06 00:15:44.940 Detail, Node020,   ZW_SEND_DATA Request with callback ID 0x85 received (expected 0x85)
+2018-10-06 00:15:44.940 Info, Node020, Request RTT 321 Average Request RTT 239
+2018-10-06 00:15:44.940 Detail,   Expected callbackId was received
+2018-10-06 00:15:44.940 Detail,   Expected reply was received
+2018-10-06 00:15:44.940 Detail,   Message transaction complete
+2018-10-06 00:15:44.940 Detail, 
+2018-10-06 00:15:44.940 Detail, Node020, Removing current message
+2018-10-06 00:15:44.940 Detail, 
+2018-10-06 00:15:44.941 Info, Node020, Sending (Send) message (Callback ID=0x5e, Expected Reply=0x04) - SwitchBinaryCmd_Get (Node=20): 0x01, 0x09, 0x00, 0x13, 0x14, 0x02, 0x25, 0x02, 0x25, 0x5e, 0xaf
+2018-10-06 00:15:45.071 Detail, Node020,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-10-06 00:15:45.071 Detail, Node020,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-10-06 00:15:50.581 Detail, Node020,   Received: 0x01, 0x07, 0x00, 0x13, 0x5e, 0x00, 0x02, 0x34, 0x83
+2018-10-06 00:15:50.581 Detail, Node020,   ZW_SEND_DATA Request with callback ID 0x5e received (expected 0x5e)
+2018-10-06 00:15:50.581 Info, Node020, Request RTT 5641 Average Request RTT 2940
+2018-10-06 00:15:50.581 Detail,   Expected callbackId was received
+2018-10-06 00:15:54.940 Error, Node020, ERROR: Dropping command, expected response not received after 1 attempt(s)
+2018-10-06 00:15:54.940 Detail, Node020, Removing current message
+2018-10-06 00:15:54.940 Detail, Node020, Notification: Notification - TimeOut
+2018-10-06 00:15:54.947 Detail, 
+2018-10-06 00:15:54.948 Info, Node010, Sending (Send) message (Callback ID=0x5f, Expected Reply=0x13) - SwitchMultilevelCmd_Set (Node=10): 0x01, 0x0a, 0x00, 0x13, 0x0a, 0x03, 0x26, 0x01, 0x00, 0x25, 0x5f, 0xb2
+2018-10-06 00:15:54.956 Detail, Node010,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-10-06 00:15:54.957 Detail, Node010,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-10-06 00:15:55.059 Detail, Node010,   Received: 0x01, 0x07, 0x00, 0x13, 0x5f, 0x00, 0x00, 0x0b, 0xbf
+2018-10-06 00:15:55.059 Detail, Node010,   ZW_SEND_DATA Request with callback ID 0x5f received (expected 0x5f)
+2018-10-06 00:15:55.059 Info, Node010, Request RTT 112 Average Request RTT 282
+2018-10-06 00:15:55.060 Detail,   Expected callbackId was received
+2018-10-06 00:15:55.060 Detail,   Expected reply was received
+2018-10-06 00:15:55.060 Detail,   Message transaction complete
+2018-10-06 00:15:55.060 Detail, 
+2018-10-06 00:15:55.060 Detail, Node010, Removing current message
+2018-10-06 00:15:55.060 Detail, 
+2018-10-06 00:15:55.060 Info, Node010, Sending (Send) message (Callback ID=0x60, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=10): 0x01, 0x09, 0x00, 0x13, 0x0a, 0x02, 0x26, 0x02, 0x25, 0x60, 0x8c
+2018-10-06 00:15:55.069 Detail, Node010,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-10-06 00:15:55.070 Detail, Node010,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-10-06 00:15:55.172 Detail, Node010,   Received: 0x01, 0x07, 0x00, 0x13, 0x60, 0x00, 0x00, 0x0b, 0x80
+2018-10-06 00:15:55.172 Detail, Node010,   ZW_SEND_DATA Request with callback ID 0x60 received (expected 0x60)
+2018-10-06 00:15:55.172 Info, Node010, Request RTT 112 Average Request RTT 197
+2018-10-06 00:15:55.172 Detail,   Expected callbackId was received
+2018-10-06 00:15:55.230 Detail, Node010,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x0a, 0x03, 0x26, 0x03, 0x0c, 0xd2
+2018-10-06 00:15:55.230 Detail, 
+2018-10-06 00:15:55.230 Info, Node010, Response RTT 169 Average Response RTT 207
+2018-10-06 00:15:55.230 Info, Node010, Received SwitchMultiLevel report: level=12
+2018-10-06 00:15:55.230 Detail, Node010, Refreshed Value: old value=9, new value=12, type=byte
+2018-10-06 00:15:55.230 Detail, Node010, Changes to this value are not verified
+2018-10-06 00:15:55.230 Detail, Node010,   Expected reply and command class was received
+2018-10-06 00:15:55.230 Detail, Node010,   Message transaction complete
+2018-10-06 00:15:55.231 Detail, 
+2018-10-06 00:15:55.231 Detail, Node010, Removing current message
+2018-10-06 00:15:55.231 Detail, Node010, Notification: ValueChanged
+2018-10-06 00:15:55.254 Detail, 
+2018-10-06 00:15:55.254 Info, Node013, Sending (Send) message (Callback ID=0x61, Expected Reply=0x13) - SwitchMultilevelCmd_Set (Node=13): 0x01, 0x0b, 0x00, 0x13, 0x0d, 0x04, 0x26, 0x01, 0x00, 0xff, 0x25, 0x61, 0x72
+2018-10-06 00:15:55.263 Detail, Node013,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-10-06 00:15:55.263 Detail, Node013,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-10-06 00:15:55.488 Detail, Node013,   Received: 0x01, 0x07, 0x00, 0x13, 0x61, 0x00, 0x00, 0x17, 0x9d
+2018-10-06 00:15:55.488 Detail, Node013,   ZW_SEND_DATA Request with callback ID 0x61 received (expected 0x61)
+2018-10-06 00:15:55.489 Info, Node013, Request RTT 234 Average Request RTT 382
+2018-10-06 00:15:55.489 Detail,   Expected callbackId was received
+2018-10-06 00:15:55.489 Detail,   Expected reply was received
+2018-10-06 00:15:55.489 Detail,   Message transaction complete
+2018-10-06 00:15:55.490 Detail, 
+2018-10-06 00:15:55.490 Detail, Node013, Removing current message
+2018-10-06 00:15:55.490 Detail, 
+2018-10-06 00:15:55.490 Info, Node013, Sending (Send) message (Callback ID=0x62, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=13): 0x01, 0x09, 0x00, 0x13, 0x0d, 0x02, 0x26, 0x02, 0x25, 0x62, 0x89
+2018-10-06 00:15:55.500 Detail, Node013,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-10-06 00:15:55.500 Detail, Node013,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-10-06 00:15:55.690 Detail, Node013,   Received: 0x01, 0x07, 0x00, 0x13, 0x62, 0x00, 0x00, 0x13, 0x9a
+2018-10-06 00:15:55.690 Detail, Node013,   ZW_SEND_DATA Request with callback ID 0x62 received (expected 0x62)
+2018-10-06 00:15:55.690 Info, Node013, Request RTT 198 Average Request RTT 290
+2018-10-06 00:15:55.690 Detail,   Expected callbackId was received
+2018-10-06 00:15:55.766 Detail, Node013,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x0d, 0x03, 0x26, 0x03, 0x00, 0xd9
+2018-10-06 00:15:55.766 Detail, 
+2018-10-06 00:15:55.766 Info, Node013, Response RTT 275 Average Response RTT 452
+2018-10-06 00:15:55.767 Info, Node013, Received SwitchMultiLevel report: level=0
+2018-10-06 00:15:55.767 Detail, Node013, Refreshed Value: old value=7, new value=0, type=byte
+2018-10-06 00:15:55.767 Detail, Node013, Changes to this value are not verified
+2018-10-06 00:15:55.767 Detail, Node013,   Expected reply and command class was received
+2018-10-06 00:15:55.767 Detail, Node013,   Message transaction complete
+2018-10-06 00:15:55.767 Detail, 
+2018-10-06 00:15:55.767 Detail, Node013, Removing current message
+2018-10-06 00:15:55.767 Detail, Node013, Notification: ValueChanged
+2018-10-06 00:15:55.793 Detail, 
+2018-10-06 00:15:55.794 Info, Node018, Sending (Send) message (Callback ID=0x63, Expected Reply=0x13) - SwitchMultilevelCmd_Set (Node=18): 0x01, 0x0b, 0x00, 0x13, 0x12, 0x04, 0x26, 0x01, 0x00, 0xff, 0x25, 0x63, 0x6f
+2018-10-06 00:15:55.803 Detail, Node018,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-10-06 00:15:55.803 Detail, Node018,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-10-06 00:15:56.759 Detail, Node018,   Received: 0x01, 0x07, 0x00, 0x13, 0x63, 0x00, 0x00, 0x60, 0xe8
+2018-10-06 00:15:56.759 Detail, Node018,   ZW_SEND_DATA Request with callback ID 0x63 received (expected 0x63)
+2018-10-06 00:15:56.759 Info, Node018, Request RTT 966 Average Request RTT 828
+2018-10-06 00:15:56.760 Detail,   Expected callbackId was received
+2018-10-06 00:15:56.760 Detail,   Expected reply was received
+2018-10-06 00:15:56.760 Detail,   Message transaction complete
+2018-10-06 00:15:56.760 Detail, 
+2018-10-06 00:15:56.760 Detail, Node018, Removing current message
+2018-10-06 00:15:56.760 Detail, 
+2018-10-06 00:15:56.760 Info, Node018, Sending (Send) message (Callback ID=0x64, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=18): 0x01, 0x09, 0x00, 0x13, 0x12, 0x02, 0x26, 0x02, 0x25, 0x64, 0x90
+2018-10-06 00:15:56.770 Detail, Node018,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-10-06 00:15:56.770 Detail, Node018,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-10-06 00:15:56.825 Detail, Node018,   Received: 0x01, 0x07, 0x00, 0x13, 0x64, 0x00, 0x00, 0x06, 0x89
+2018-10-06 00:15:56.825 Detail, Node018,   ZW_SEND_DATA Request with callback ID 0x64 received (expected 0x64)
+2018-10-06 00:15:56.825 Info, Node018, Request RTT 64 Average Request RTT 446
+2018-10-06 00:15:56.825 Detail,   Expected callbackId was received
+2018-10-06 00:15:56.897 Detail, Node018,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x12, 0x03, 0x26, 0x03, 0x42, 0x84
+2018-10-06 00:15:56.897 Detail, 
+2018-10-06 00:15:56.898 Info, Node018, Response RTT 137 Average Response RTT 409
+2018-10-06 00:15:56.898 Info, Node018, Received SwitchMultiLevel report: level=66
+2018-10-06 00:15:56.898 Detail, Node018, Refreshed Value: old value=27, new value=66, type=byte
+2018-10-06 00:15:56.898 Detail, Node018, Changes to this value are not verified
+2018-10-06 00:15:56.898 Detail, Node018,   Expected reply and command class was received
+2018-10-06 00:15:56.898 Detail, Node018,   Message transaction complete
+2018-10-06 00:15:56.898 Detail, 
+2018-10-06 00:15:56.898 Detail, Node018, Removing current message
+2018-10-06 00:15:56.899 Detail, Node018, Notification: ValueChanged
+2018-10-06 00:15:56.924 Detail, 
+2018-10-06 00:15:56.924 Info, Node010, Sending (Send) message (Callback ID=0x65, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=10): 0x01, 0x09, 0x00, 0x13, 0x0a, 0x02, 0x26, 0x02, 0x25, 0x65, 0x89
+2018-10-06 00:15:56.932 Detail, Node010,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-10-06 00:15:56.933 Detail, Node010,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-10-06 00:15:57.125 Detail, Node010,   Received: 0x01, 0x07, 0x00, 0x13, 0x65, 0x00, 0x00, 0x14, 0x9a
+2018-10-06 00:15:57.125 Detail, Node010,   ZW_SEND_DATA Request with callback ID 0x65 received (expected 0x65)
+2018-10-06 00:15:57.125 Info, Node010, Request RTT 201 Average Request RTT 199
+2018-10-06 00:15:57.125 Detail,   Expected callbackId was received
+2018-10-06 00:15:57.183 Detail, Node010,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x0a, 0x03, 0x26, 0x03, 0x00, 0xde
+2018-10-06 00:15:57.183 Detail, 
+2018-10-06 00:15:57.183 Info, Node010, Response RTT 259 Average Response RTT 233
+2018-10-06 00:15:57.183 Info, Node010, Received SwitchMultiLevel report: level=0
+2018-10-06 00:15:57.183 Detail, Node010, Refreshed Value: old value=12, new value=0, type=byte
+2018-10-06 00:15:57.183 Detail, Node010, Changes to this value are not verified
+2018-10-06 00:15:57.183 Detail, Node010,   Expected reply and command class was received
+2018-10-06 00:15:57.183 Detail, Node010,   Message transaction complete
+2018-10-06 00:15:57.184 Detail, 
+2018-10-06 00:15:57.184 Detail, Node010, Removing current message
+2018-10-06 00:15:57.184 Detail, Node010, Notification: ValueChanged
+2018-10-06 00:15:57.203 Detail, 
+2018-10-06 00:15:57.203 Info, Node013, Sending (Send) message (Callback ID=0x66, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=13): 0x01, 0x09, 0x00, 0x13, 0x0d, 0x02, 0x26, 0x02, 0x25, 0x66, 0x8d
+2018-10-06 00:15:57.212 Detail, Node013,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-10-06 00:15:57.212 Detail, Node013,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-10-06 00:15:57.398 Detail, Node013,   Received: 0x01, 0x07, 0x00, 0x13, 0x66, 0x00, 0x00, 0x13, 0x9e
+2018-10-06 00:15:57.398 Detail, Node013,   ZW_SEND_DATA Request with callback ID 0x66 received (expected 0x66)
+2018-10-06 00:15:57.399 Info, Node013, Request RTT 195 Average Request RTT 242
+2018-10-06 00:15:57.399 Detail,   Expected callbackId was received
+2018-10-06 00:15:57.476 Detail, Node013,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x0d, 0x03, 0x26, 0x03, 0x00, 0xd9
+2018-10-06 00:15:57.477 Detail, 
+2018-10-06 00:15:57.477 Info, Node013, Response RTT 273 Average Response RTT 362
+2018-10-06 00:15:57.477 Info, Node013, Received SwitchMultiLevel report: level=0
+2018-10-06 00:15:57.477 Detail, Node013, Refreshed Value: old value=0, new value=0, type=byte
+2018-10-06 00:15:57.477 Detail, Node013, Changes to this value are not verified
+2018-10-06 00:15:57.477 Detail, Node013,   Expected reply and command class was received
+2018-10-06 00:15:57.477 Detail, Node013,   Message transaction complete
+2018-10-06 00:15:57.477 Detail, 
+2018-10-06 00:15:57.477 Detail, Node013, Removing current message
+2018-10-06 00:15:57.478 Detail, Node013, Notification: ValueChanged
+2018-10-06 00:15:57.507 Detail, 
+2018-10-06 00:15:57.507 Info, Node018, Sending (Send) message (Callback ID=0x67, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=18): 0x01, 0x09, 0x00, 0x13, 0x12, 0x02, 0x26, 0x02, 0x25, 0x67, 0x93
+2018-10-06 00:15:57.516 Detail, Node018,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-10-06 00:15:57.516 Detail, Node018,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-10-06 00:15:58.494 Detail, Node018,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x12, 0x03, 0x26, 0x03, 0x28, 0xee
+2018-10-06 00:15:58.494 Detail, 
+2018-10-06 00:15:58.494 Info, Node018, Response RTT 987 Average Response RTT 698
+2018-10-06 00:15:58.494 Info, Node018, Received SwitchMultiLevel report: level=40
+2018-10-06 00:15:58.495 Detail, Node018, Refreshed Value: old value=66, new value=40, type=byte
+2018-10-06 00:15:58.495 Detail, Node018, Changes to this value are not verified
+2018-10-06 00:15:58.495 Detail, Node018, Notification: ValueChanged
+2018-10-06 00:15:58.729 Detail, Node018,   Received: 0x01, 0x07, 0x00, 0x13, 0x67, 0x00, 0x00, 0x7a, 0xf6
+2018-10-06 00:15:58.729 Detail, Node018,   ZW_SEND_DATA Request with callback ID 0x67 received (expected 0x67)
+2018-10-06 00:15:58.729 Info, Node018, Request RTT 1221 Average Request RTT 833
+2018-10-06 00:15:58.730 Detail,   Expected callbackId was received
+2018-10-06 00:16:07.509 Error, Node018, ERROR: Dropping command, expected response not received after 1 attempt(s)
+2018-10-06 00:16:07.509 Detail, Node018, Removing current message
+2018-10-06 00:16:07.510 Detail, Node018, Notification: Notification - TimeOut
+2018-10-06 00:16:07.531 Detail, 
+2018-10-06 00:16:07.531 Info, Node010, Sending (Send) message (Callback ID=0x68, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=10): 0x01, 0x09, 0x00, 0x13, 0x0a, 0x02, 0x26, 0x02, 0x25, 0x68, 0x84
+2018-10-06 00:16:07.540 Detail, Node010,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-10-06 00:16:07.541 Detail, Node010,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-10-06 00:16:07.642 Detail, Node010,   Received: 0x01, 0x07, 0x00, 0x13, 0x68, 0x00, 0x00, 0x0a, 0x89
+2018-10-06 00:16:07.642 Detail, Node010,   ZW_SEND_DATA Request with callback ID 0x68 received (expected 0x68)
+2018-10-06 00:16:07.643 Info, Node010, Request RTT 111 Average Request RTT 155
+2018-10-06 00:16:07.643 Detail,   Expected callbackId was received
+2018-10-06 00:16:07.700 Detail, Node010,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x0a, 0x03, 0x26, 0x03, 0x00, 0xde
+2018-10-06 00:16:07.701 Detail, 
+2018-10-06 00:16:07.701 Info, Node010, Response RTT 169 Average Response RTT 201
+2018-10-06 00:16:07.702 Info, Node010, Received SwitchMultiLevel report: level=0
+2018-10-06 00:16:07.703 Detail, Node010, Refreshed Value: old value=0, new value=0, type=byte
+2018-10-06 00:16:07.703 Detail, Node010, Changes to this value are not verified
+2018-10-06 00:16:07.703 Detail, Node010,   Expected reply and command class was received
+2018-10-06 00:16:07.704 Detail, Node010,   Message transaction complete
+2018-10-06 00:16:07.704 Detail, 
+2018-10-06 00:16:07.704 Detail, Node010, Removing current message
+2018-10-06 00:16:07.704 Detail, Node010, Notification: ValueChanged
+2018-10-06 00:16:07.740 Detail, 
+2018-10-06 00:16:07.741 Info, Node013, Sending (Send) message (Callback ID=0x69, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=13): 0x01, 0x09, 0x00, 0x13, 0x0d, 0x02, 0x26, 0x02, 0x25, 0x69, 0x82
+2018-10-06 00:16:07.749 Detail, Node013,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-10-06 00:16:07.750 Detail, Node013,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-10-06 00:16:07.938 Detail, Node013,   Received: 0x01, 0x07, 0x00, 0x13, 0x69, 0x00, 0x00, 0x13, 0x91
+2018-10-06 00:16:07.939 Detail, Node013,   ZW_SEND_DATA Request with callback ID 0x69 received (expected 0x69)
+2018-10-06 00:16:07.939 Info, Node013, Request RTT 198 Average Request RTT 220
+2018-10-06 00:16:07.940 Detail,   Expected callbackId was received
+2018-10-06 00:16:08.078 Detail, Node013,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x0d, 0x03, 0x26, 0x03, 0x00, 0xd9
+2018-10-06 00:16:08.078 Detail, 
+2018-10-06 00:16:08.079 Info, Node013, Response RTT 338 Average Response RTT 350
+2018-10-06 00:16:08.079 Info, Node013, Received SwitchMultiLevel report: level=0
+2018-10-06 00:16:08.079 Detail, Node013, Refreshed Value: old value=0, new value=0, type=byte
+2018-10-06 00:16:08.079 Detail, Node013, Changes to this value are not verified
+2018-10-06 00:16:08.079 Detail, Node013,   Expected reply and command class was received
+2018-10-06 00:16:08.080 Detail, Node013,   Message transaction complete
+2018-10-06 00:16:08.080 Detail, 
+2018-10-06 00:16:08.080 Detail, Node013, Removing current message
+2018-10-06 00:16:08.080 Detail, Node013, Notification: ValueChanged
+2018-10-06 00:16:08.103 Detail, 
+2018-10-06 00:16:08.104 Info, Node018, Sending (Send) message (Callback ID=0x6a, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=18): 0x01, 0x09, 0x00, 0x13, 0x12, 0x02, 0x26, 0x02, 0x25, 0x6a, 0x9e
+2018-10-06 00:16:08.112 Detail, Node018,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-10-06 00:16:08.113 Detail, Node018,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-10-06 00:16:09.447 Detail, Node018,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x12, 0x03, 0x26, 0x03, 0x00, 0xc6
+2018-10-06 00:16:09.448 Detail, 
+2018-10-06 00:16:09.448 Info, Node018, Response RTT 1343 Average Response RTT 1020
+2018-10-06 00:16:09.448 Info, Node018, Received SwitchMultiLevel report: level=0
+2018-10-06 00:16:09.448 Detail, Node018, Refreshed Value: old value=40, new value=0, type=byte
+2018-10-06 00:16:09.448 Detail, Node018, Changes to this value are not verified
+2018-10-06 00:16:09.448 Detail, Node018, Notification: ValueChanged
+2018-10-06 00:16:09.619 Detail, Node018,   Received: 0x01, 0x07, 0x00, 0x13, 0x6a, 0x00, 0x00, 0x97, 0x16
+2018-10-06 00:16:09.628 Detail, Node018,   ZW_SEND_DATA Request with callback ID 0x6a received (expected 0x6a)
+2018-10-06 00:16:09.629 Info, Node018, Request RTT 1524 Average Request RTT 1178
+2018-10-06 00:16:09.629 Detail,   Expected callbackId was received
+2018-10-06 00:16:09.702 Detail, Node018,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x12, 0x03, 0x26, 0x03, 0x00, 0xc6
+2018-10-06 00:16:09.703 Detail, 
+2018-10-06 00:16:09.703 Info, Node018, Response RTT 1599 Average Response RTT 1309
+2018-10-06 00:16:09.704 Info, Node018, Received SwitchMultiLevel report: level=0
+2018-10-06 00:16:09.704 Detail, Node018, Refreshed Value: old value=0, new value=0, type=byte
+2018-10-06 00:16:09.705 Detail, Node018, Changes to this value are not verified
+2018-10-06 00:16:09.705 Detail, Node018,   Expected reply and command class was received
+2018-10-06 00:16:09.705 Detail, Node018,   Message transaction complete
+2018-10-06 00:16:09.706 Detail, 
+2018-10-06 00:16:09.706 Detail, Node018, Removing current message
+2018-10-06 00:16:09.707 Detail, Node018, Notification: ValueChanged
+2018-10-06 00:16:09.730 Detail, 
+2018-10-06 00:16:09.731 Info, Node002, Sending (Send) message (Callback ID=0x6b, Expected Reply=0x13) - SwitchBinaryCmd_Set (Node=2): 0x01, 0x0a, 0x00, 0x13, 0x02, 0x03, 0x25, 0x01, 0x00, 0x25, 0x6b, 0x8d
+2018-10-06 00:16:09.743 Detail, Node002,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-10-06 00:16:09.744 Detail, Node002,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-10-06 00:16:19.732 Error, Node002, ERROR: Dropping command, expected response not received after 1 attempt(s)
+2018-10-06 00:16:19.732 Detail, Node002, Removing current message
+2018-10-06 00:16:19.732 Detail, Node002, Notification: Notification - TimeOut
+2018-10-06 00:16:19.740 Detail, 
+2018-10-06 00:16:19.740 Info, Node002, Sending (Send) message (Callback ID=0x6c, Expected Reply=0x04) - SwitchBinaryCmd_Get (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x25, 0x02, 0x25, 0x6c, 0x8b
+2018-10-06 00:16:20.740 Error, Node002, ERROR: Dropping command, expected response not received after 1 attempt(s)
+2018-10-06 00:16:20.740 Detail, Node002, Removing current message
+2018-10-06 00:16:20.741 Detail, Node002, Notification: Notification - TimeOut
+2018-10-06 00:16:20.749 Detail, 
+2018-10-06 00:16:20.749 Info, Node012, Sending (Send) message (Callback ID=0x6d, Expected Reply=0x13) - SwitchBinaryCmd_Set (Node=12): 0x01, 0x0a, 0x00, 0x13, 0x0c, 0x03, 0x25, 0x01, 0x00, 0x25, 0x6d, 0x85
+2018-10-06 00:16:21.750 Error, Node012, ERROR: Dropping command, expected response not received after 1 attempt(s)
+2018-10-06 00:16:21.750 Detail, Node012, Removing current message
+2018-10-06 00:16:21.751 Detail, Node012, Notification: Notification - TimeOut
+2018-10-06 00:16:21.759 Detail, 
+2018-10-06 00:16:21.759 Info, Node012, Sending (Send) message (Callback ID=0x6e, Expected Reply=0x04) - SwitchBinaryCmd_Get (Node=12): 0x01, 0x09, 0x00, 0x13, 0x0c, 0x02, 0x25, 0x02, 0x25, 0x6e, 0x87
+2018-10-06 00:16:22.760 Error, Node012, ERROR: Dropping command, expected response not received after 1 attempt(s)
+2018-10-06 00:16:22.760 Detail, Node012, Removing current message
+2018-10-06 00:16:22.760 Detail, Node012, Notification: Notification - TimeOut
+2018-10-06 00:16:22.768 Detail, 
+2018-10-06 00:16:22.769 Info, Node014, Sending (Send) message (Callback ID=0x6f, Expected Reply=0x13) - SwitchBinaryCmd_Set (Node=14): 0x01, 0x0a, 0x00, 0x13, 0x0e, 0x03, 0x25, 0x01, 0x00, 0x25, 0x6f, 0x85
+2018-10-06 00:16:23.769 Error, Node014, ERROR: Dropping command, expected response not received after 1 attempt(s)
+2018-10-06 00:16:23.770 Detail, Node014, Removing current message
+2018-10-06 00:16:23.770 Detail, Node014, Notification: Notification - TimeOut
+2018-10-06 00:16:23.778 Detail, 
+2018-10-06 00:16:23.779 Info, Node014, Sending (Send) message (Callback ID=0x70, Expected Reply=0x04) - SwitchBinaryCmd_Get (Node=14): 0x01, 0x09, 0x00, 0x13, 0x0e, 0x02, 0x25, 0x02, 0x25, 0x70, 0x9b
+2018-10-06 00:16:24.780 Error, Node014, ERROR: Dropping command, expected response not received after 1 attempt(s)
+2018-10-06 00:16:24.780 Detail, Node014, Removing current message
+2018-10-06 00:16:24.781 Detail, Node014, Notification: Notification - TimeOut
+2018-10-06 00:16:24.789 Detail, 
+2018-10-06 00:16:24.790 Info, Node015, Sending (Send) message (Callback ID=0x71, Expected Reply=0x13) - SwitchBinaryCmd_Set (Node=15): 0x01, 0x0a, 0x00, 0x13, 0x0f, 0x03, 0x25, 0x01, 0x00, 0x25, 0x71, 0x9a
+2018-10-06 00:16:25.790 Error, Node015, ERROR: Dropping command, expected response not received after 1 attempt(s)
+2018-10-06 00:16:25.790 Detail, Node015, Removing current message
+2018-10-06 00:16:25.791 Detail, Node015, Notification: Notification - TimeOut
+2018-10-06 00:16:25.798 Detail, 
+2018-10-06 00:16:25.799 Info, Node015, Sending (Send) message (Callback ID=0x72, Expected Reply=0x04) - SwitchBinaryCmd_Get (Node=15): 0x01, 0x09, 0x00, 0x13, 0x0f, 0x02, 0x25, 0x02, 0x25, 0x72, 0x98
+2018-10-06 00:16:26.799 Error, Node015, ERROR: Dropping command, expected response not received after 1 attempt(s)
+2018-10-06 00:16:26.799 Detail, Node015, Removing current message
+2018-10-06 00:16:26.799 Detail, Node015, Notification: Notification - TimeOut
+2018-10-06 00:16:26.808 Detail, 
+2018-10-06 00:16:26.809 Info, Node016, Sending (Send) message (Callback ID=0x73, Expected Reply=0x13) - SwitchBinaryCmd_Set (Node=16): 0x01, 0x0a, 0x00, 0x13, 0x10, 0x03, 0x25, 0x01, 0x00, 0x25, 0x73, 0x87
+2018-10-06 00:16:27.809 Error, Node016, ERROR: Dropping command, expected response not received after 1 attempt(s)
+2018-10-06 00:16:27.809 Detail, Node016, Removing current message
+2018-10-06 00:16:27.810 Detail, Node016, Notification: Notification - TimeOut
+2018-10-06 00:16:27.818 Detail, 
+2018-10-06 00:16:27.819 Info, Node016, Sending (Send) message (Callback ID=0x74, Expected Reply=0x04) - SwitchBinaryCmd_Get (Node=16): 0x01, 0x09, 0x00, 0x13, 0x10, 0x02, 0x25, 0x02, 0x25, 0x74, 0x81
+2018-10-06 00:16:28.820 Error, Node016, ERROR: Dropping command, expected response not received after 1 attempt(s)
+2018-10-06 00:16:28.820 Detail, Node016, Removing current message
+2018-10-06 00:16:28.820 Detail, Node016, Notification: Notification - TimeOut
+2018-10-06 00:16:28.827 Detail, 
+2018-10-06 00:16:28.828 Info, Node017, Sending (Send) message (Callback ID=0x75, Expected Reply=0x13) - SwitchBinaryCmd_Set (Node=17): 0x01, 0x0a, 0x00, 0x13, 0x11, 0x03, 0x25, 0x01, 0x00, 0x25, 0x75, 0x80
+2018-10-06 00:16:29.828 Error, Node017, ERROR: Dropping command, expected response not received after 1 attempt(s)
+2018-10-06 00:16:29.828 Detail, Node017, Removing current message
+2018-10-06 00:16:29.828 Detail, Node017, Notification: Notification - TimeOut
+2018-10-06 00:16:29.836 Detail, 
+2018-10-06 00:16:29.836 Info, Node017, Sending (Send) message (Callback ID=0x76, Expected Reply=0x04) - SwitchBinaryCmd_Get (Node=17): 0x01, 0x09, 0x00, 0x13, 0x11, 0x02, 0x25, 0x02, 0x25, 0x76, 0x82
+2018-10-06 00:16:30.836 Error, Node017, ERROR: Dropping command, expected response not received after 1 attempt(s)
+2018-10-06 00:16:30.836 Detail, Node017, Removing current message
+2018-10-06 00:16:30.836 Detail, Node017, Notification: Notification - TimeOut
+2018-10-06 00:16:30.844 Detail, 
+2018-10-06 00:16:30.844 Info, Node020, Sending (Send) message (Callback ID=0x77, Expected Reply=0x13) - SwitchBinaryCmd_Set (Node=20): 0x01, 0x0a, 0x00, 0x13, 0x14, 0x03, 0x25, 0x01, 0x00, 0x25, 0x77, 0x87
+2018-10-06 00:16:31.844 Error, Node020, ERROR: Dropping command, expected response not received after 1 attempt(s)
+2018-10-06 00:16:31.844 Detail, Node020, Removing current message
+2018-10-06 00:16:31.844 Detail, Node020, Notification: Notification - TimeOut
+2018-10-06 00:16:31.851 Detail, 
+2018-10-06 00:16:31.852 Info, Node020, Sending (Send) message (Callback ID=0x78, Expected Reply=0x04) - SwitchBinaryCmd_Get (Node=20): 0x01, 0x09, 0x00, 0x13, 0x14, 0x02, 0x25, 0x02, 0x25, 0x78, 0x89
+2018-10-06 00:16:32.852 Error, Node020, ERROR: Dropping command, expected response not received after 1 attempt(s)
+2018-10-06 00:16:32.852 Detail, Node020, Removing current message
+2018-10-06 00:16:32.853 Detail, Node020, Notification: Notification - TimeOut
+2018-10-06 00:16:32.860 Detail, 
+2018-10-06 00:16:32.861 Info, Node010, Sending (Send) message (Callback ID=0x79, Expected Reply=0x13) - SwitchMultilevelCmd_Set (Node=10): 0x01, 0x0a, 0x00, 0x13, 0x0a, 0x03, 0x26, 0x01, 0x00, 0x25, 0x79, 0x94
+2018-10-06 00:16:33.861 Error, Node010, ERROR: Dropping command, expected response not received after 1 attempt(s)
+2018-10-06 00:16:33.862 Detail, Node010, Removing current message
+2018-10-06 00:16:33.862 Detail, Node010, Notification: Notification - TimeOut
+2018-10-06 00:16:33.870 Detail, 
+2018-10-06 00:16:33.871 Info, Node010, Sending (Send) message (Callback ID=0x7a, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=10): 0x01, 0x09, 0x00, 0x13, 0x0a, 0x02, 0x26, 0x02, 0x25, 0x7a, 0x96
+2018-10-06 00:16:34.872 Error, Node010, ERROR: Dropping command, expected response not received after 1 attempt(s)
+2018-10-06 00:16:34.872 Detail, Node010, Removing current message
+2018-10-06 00:16:34.872 Detail, Node010, Notification: Notification - TimeOut
+2018-10-06 00:16:34.880 Detail, 
+2018-10-06 00:16:34.881 Info, Node013, Sending (Send) message (Callback ID=0x7b, Expected Reply=0x13) - SwitchMultilevelCmd_Set (Node=13): 0x01, 0x0b, 0x00, 0x13, 0x0d, 0x04, 0x26, 0x01, 0x00, 0xff, 0x25, 0x7b, 0x68
+2018-10-06 00:16:35.881 Error, Node013, ERROR: Dropping command, expected response not received after 1 attempt(s)
+2018-10-06 00:16:35.881 Detail, Node013, Removing current message
+2018-10-06 00:16:35.882 Detail, Node013, Notification: Notification - TimeOut
+2018-10-06 00:16:35.889 Detail, 
+2018-10-06 00:16:35.889 Info, Node013, Sending (Send) message (Callback ID=0x7c, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=13): 0x01, 0x09, 0x00, 0x13, 0x0d, 0x02, 0x26, 0x02, 0x25, 0x7c, 0x97
+2018-10-06 00:16:36.890 Error, Node013, ERROR: Dropping command, expected response not received after 1 attempt(s)
+2018-10-06 00:16:36.890 Detail, Node013, Removing current message
+2018-10-06 00:16:36.890 Detail, Node013, Notification: Notification - TimeOut
+2018-10-06 00:16:36.898 Detail, 
+2018-10-06 00:16:36.898 Info, Node018, Sending (Send) message (Callback ID=0x7d, Expected Reply=0x13) - SwitchMultilevelCmd_Set (Node=18): 0x01, 0x0b, 0x00, 0x13, 0x12, 0x04, 0x26, 0x01, 0x00, 0xff, 0x25, 0x7d, 0x71
+2018-10-06 00:16:37.898 Error, Node018, ERROR: Dropping command, expected response not received after 1 attempt(s)
+2018-10-06 00:16:37.898 Detail, Node018, Removing current message
+2018-10-06 00:16:37.899 Detail, Node018, Notification: Notification - TimeOut
+2018-10-06 00:16:37.906 Detail, 
+2018-10-06 00:16:37.906 Info, Node018, Sending (Send) message (Callback ID=0x7e, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=18): 0x01, 0x09, 0x00, 0x13, 0x12, 0x02, 0x26, 0x02, 0x25, 0x7e, 0x8a
+2018-10-06 00:16:38.907 Error, Node018, ERROR: Dropping command, expected response not received after 1 attempt(s)
+2018-10-06 00:16:38.907 Detail, Node018, Removing current message
+2018-10-06 00:16:38.907 Detail, Node018, Notification: Notification - TimeOut
+2018-10-06 00:16:38.914 Detail, 
+2018-10-06 00:16:38.914 Info, Node010, Sending (Send) message (Callback ID=0x7f, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=10): 0x01, 0x09, 0x00, 0x13, 0x0a, 0x02, 0x26, 0x02, 0x25, 0x7f, 0x93
+2018-10-06 00:16:39.915 Error, Node010, ERROR: Dropping command, expected response not received after 1 attempt(s)
+2018-10-06 00:16:39.915 Detail, Node010, Removing current message
+2018-10-06 00:16:39.915 Detail, Node010, Notification: Notification - TimeOut
+2018-10-06 00:16:39.923 Detail, 
+2018-10-06 00:16:39.923 Info, Node013, Sending (Send) message (Callback ID=0x80, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=13): 0x01, 0x09, 0x00, 0x13, 0x0d, 0x02, 0x26, 0x02, 0x25, 0x80, 0x6b
+2018-10-06 00:16:40.924 Error, Node013, ERROR: Dropping command, expected response not received after 1 attempt(s)
+2018-10-06 00:16:40.924 Detail, Node013, Removing current message
+2018-10-06 00:16:40.924 Detail, Node013, Notification: Notification - TimeOut
+2018-10-06 00:16:40.931 Detail, 
+2018-10-06 00:16:40.932 Info, Node018, Sending (Send) message (Callback ID=0x81, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=18): 0x01, 0x09, 0x00, 0x13, 0x12, 0x02, 0x26, 0x02, 0x25, 0x81, 0x75
+2018-10-06 00:17:03.415 Detail, Node018,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2018-10-06 00:17:03.417 Detail, Node018,   ZW_SEND_DATA delivered to Z-Wave stack
+2018-10-06 00:17:03.418 Detail, Node018, CAN received...triggering resend
+2018-10-06 00:17:03.419 Detail, 
+2018-10-06 00:17:03.419 Info, Node018, Sending (Send) message (Attempt 2, Callback ID=0x86, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=18): 0x01, 0x09, 0x00, 0x13, 0x12, 0x02, 0x26, 0x02, 0x25, 0x86, 0x72
+2018-10-06 00:17:03.419 Detail, Node018, CAN received...triggering resend
+2018-10-06 00:17:03.419 Detail, 
+2018-10-06 00:17:03.419 Info, Node018, Sending (Send) message (Attempt 3, Callback ID=0x87, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=18): 0x01, 0x09, 0x00, 0x13, 0x12, 0x02, 0x26, 0x02, 0x25, 0x87, 0x73
+2018-10-06 00:17:03.420 Detail, Node018, CAN received...triggering resend
+2018-10-06 00:17:03.420 Detail, 
+2018-10-06 00:17:03.420 Info, Node018, Sending (Send) message (Attempt 4, Callback ID=0x88, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=18): 0x01, 0x09, 0x00, 0x13, 0x12, 0x02, 0x26, 0x02, 0x25, 0x88, 0x7c
+2018-10-06 00:17:03.420 Detail, Node018, CAN received...triggering resend
+2018-10-06 00:17:03.420 Detail, 
+2018-10-06 00:17:03.420 Info, Node018, Sending (Send) message (Attempt 5, Callback ID=0x89, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=18): 0x01, 0x09, 0x00, 0x13, 0x12, 0x02, 0x26, 0x02, 0x25, 0x89, 0x7d
+2018-10-06 00:17:03.421 Detail, Node018, CAN received...triggering resend
+2018-10-06 00:17:03.421 Detail, 
+2018-10-06 00:17:03.421 Info, Node018, Sending (Send) message (Attempt 6, Callback ID=0x8a, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=18): 0x01, 0x09, 0x00, 0x13, 0x12, 0x02, 0x26, 0x02, 0x25, 0x8a, 0x7e
+2018-10-06 00:17:03.421 Detail, Node018, CAN received...triggering resend
+2018-10-06 00:17:03.421 Error, Node018, ERROR: Dropping command, expected response not received after 6 attempt(s)
+2018-10-06 00:17:03.421 Detail, Node018, Removing current message
+2018-10-06 00:17:03.421 Detail, 
+2018-10-06 00:17:03.422 Info, Node010, Sending (Send) message (Callback ID=0x82, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=10): 0x01, 0x09, 0x00, 0x13, 0x0a, 0x02, 0x26, 0x02, 0x25, 0x82, 0x6e
+2018-10-06 00:17:03.422 Detail, Node010, CAN received...triggering resend
+2018-10-06 00:17:03.422 Detail, 
+2018-10-06 00:17:03.422 Info, Node010, Sending (Send) message (Attempt 2, Callback ID=0x8b, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=10): 0x01, 0x09, 0x00, 0x13, 0x0a, 0x02, 0x26, 0x02, 0x25, 0x8b, 0x67
+2018-10-06 00:17:03.423 Detail, Node010, CAN received...triggering resend
+2018-10-06 00:17:03.423 Detail, 
+2018-10-06 00:17:03.423 Info, Node010, Sending (Send) message (Attempt 3, Callback ID=0x8c, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=10): 0x01, 0x09, 0x00, 0x13, 0x0a, 0x02, 0x26, 0x02, 0x25, 0x8c, 0x60
+2018-10-06 00:17:03.423 Detail, Node010, CAN received...triggering resend
+2018-10-06 00:17:03.423 Detail, 
+2018-10-06 00:17:03.423 Info, Node010, Sending (Send) message (Attempt 4, Callback ID=0x8d, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=10): 0x01, 0x09, 0x00, 0x13, 0x0a, 0x02, 0x26, 0x02, 0x25, 0x8d, 0x61
+2018-10-06 00:17:03.424 Detail, Node010, CAN received...triggering resend
+2018-10-06 00:17:03.424 Detail, 
+2018-10-06 00:17:03.424 Info, Node010, Sending (Send) message (Attempt 5, Callback ID=0x8e, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=10): 0x01, 0x09, 0x00, 0x13, 0x0a, 0x02, 0x26, 0x02, 0x25, 0x8e, 0x62
+2018-10-06 00:17:03.425 Detail, Node010, CAN received...triggering resend
+2018-10-06 00:17:03.425 Detail, 
+2018-10-06 00:17:03.425 Info, Node010, Sending (Send) message (Attempt 6, Callback ID=0x8f, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=10): 0x01, 0x09, 0x00, 0x13, 0x0a, 0x02, 0x26, 0x02, 0x25, 0x8f, 0x63
+2018-10-06 00:17:03.426 Detail, Node010, CAN received...triggering resend
+2018-10-06 00:17:03.426 Error, Node010, ERROR: Dropping command, expected response not received after 6 attempt(s)
+2018-10-06 00:17:03.426 Detail, Node010, Removing current message
+2018-10-06 00:17:03.426 Detail, 
+2018-10-06 00:17:03.426 Info, Node013, Sending (Send) message (Callback ID=0x83, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=13): 0x01, 0x09, 0x00, 0x13, 0x0d, 0x02, 0x26, 0x02, 0x25, 0x83, 0x68
+2018-10-06 00:17:03.427 Detail, Node013, CAN received...triggering resend
+2018-10-06 00:17:03.427 Detail, 
+2018-10-06 00:17:03.427 Info, Node013, Sending (Send) message (Attempt 2, Callback ID=0x90, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=13): 0x01, 0x09, 0x00, 0x13, 0x0d, 0x02, 0x26, 0x02, 0x25, 0x90, 0x7b
+2018-10-06 00:17:03.427 Detail, Node013, CAN received...triggering resend
+2018-10-06 00:17:03.427 Detail, 
+2018-10-06 00:17:03.427 Info, Node013, Sending (Send) message (Attempt 3, Callback ID=0x91, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=13): 0x01, 0x09, 0x00, 0x13, 0x0d, 0x02, 0x26, 0x02, 0x25, 0x91, 0x7a
+2018-10-06 00:17:03.428 Detail, Node013, CAN received...triggering resend
+2018-10-06 00:17:03.428 Detail, 
+2018-10-06 00:17:03.429 Info, Node013, Sending (Send) message (Attempt 4, Callback ID=0x92, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=13): 0x01, 0x09, 0x00, 0x13, 0x0d, 0x02, 0x26, 0x02, 0x25, 0x92, 0x79
+2018-10-06 00:17:03.429 Detail, Node013, CAN received...triggering resend
+2018-10-06 00:17:03.429 Detail, 
+2018-10-06 00:17:03.429 Info, Node013, Sending (Send) message (Attempt 5, Callback ID=0x93, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=13): 0x01, 0x09, 0x00, 0x13, 0x0d, 0x02, 0x26, 0x02, 0x25, 0x93, 0x78
+2018-10-06 00:17:03.429 Detail, Node013, CAN received...triggering resend
+2018-10-06 00:17:03.429 Detail, 
+2018-10-06 00:17:03.430 Info, Node013, Sending (Send) message (Attempt 6, Callback ID=0x94, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=13): 0x01, 0x09, 0x00, 0x13, 0x0d, 0x02, 0x26, 0x02, 0x25, 0x94, 0x7f
+2018-10-06 00:17:03.430 Detail, Node013, CAN received...triggering resend
+2018-10-06 00:17:03.430 Error, Node013, ERROR: Dropping command, expected response not received after 6 attempt(s)
+2018-10-06 00:17:03.430 Detail, Node013, Removing current message
+2018-10-06 00:17:03.430 Detail, 
+2018-10-06 00:17:03.430 Info, Node018, Sending (Send) message (Callback ID=0x84, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=18): 0x01, 0x09, 0x00, 0x13, 0x12, 0x02, 0x26, 0x02, 0x25, 0x84, 0x70
+2018-10-06 00:17:03.431 Detail, Node018, CAN received...triggering resend
+2018-10-06 00:17:03.431 Detail, 
+2018-10-06 00:17:03.431 Info, Node018, Sending (Send) message (Attempt 2, Callback ID=0x95, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=18): 0x01, 0x09, 0x00, 0x13, 0x12, 0x02, 0x26, 0x02, 0x25, 0x95, 0x61
+2018-10-06 00:17:03.431 Detail, Node018, CAN received...triggering resend
+2018-10-06 00:17:03.431 Detail, 
+2018-10-06 00:17:03.431 Info, Node018, Sending (Send) message (Attempt 3, Callback ID=0x96, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=18): 0x01, 0x09, 0x00, 0x13, 0x12, 0x02, 0x26, 0x02, 0x25, 0x96, 0x62
+2018-10-06 00:17:03.432 Detail, Node018, CAN received...triggering resend
+2018-10-06 00:17:03.432 Detail, 
+2018-10-06 00:17:03.432 Info, Node018, Sending (Send) message (Attempt 4, Callback ID=0x97, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=18): 0x01, 0x09, 0x00, 0x13, 0x12, 0x02, 0x26, 0x02, 0x25, 0x97, 0x63
+2018-10-06 00:17:03.438 Detail, Node018,   Received: 0x01, 0x04, 0x01, 0x13, 0x00, 0xe9
+2018-10-06 00:17:03.438 Error, Node018, ERROR: ZW_SEND_DATA could not be delivered to Z-Wave stack
+2018-10-06 00:17:03.438 Detail, Node018, CAN received...triggering resend
+2018-10-06 00:17:03.438 Detail, 
+2018-10-06 00:17:03.438 Info, Node018, Sending (Send) message (Attempt 5, Callback ID=0x98, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=18): 0x01, 0x09, 0x00, 0x13, 0x12, 0x02, 0x26, 0x02, 0x25, 0x98, 0x6c
+2018-10-06 00:17:03.439 Detail, Node018, CAN received...triggering resend
+2018-10-06 00:17:03.439 Detail, 
+2018-10-06 00:17:03.439 Info, Node018, Sending (Send) message (Attempt 6, Callback ID=0x99, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=18): 0x01, 0x09, 0x00, 0x13, 0x12, 0x02, 0x26, 0x02, 0x25, 0x99, 0x6d
+2018-10-06 00:17:03.439 Detail, Node018, CAN received...triggering resend
+2018-10-06 00:17:03.439 Error, Node018, ERROR: Dropping command, expected response not received after 6 attempt(s)
+2018-10-06 00:17:03.439 Detail, Node018, Removing current message
+2018-10-06 00:17:03.440 Detail, CAN received...triggering resend
+2018-10-06 00:17:03.440 Warning, m_currentMsg was NULL when trying to set MaxSendAttempts
+2018-10-06 00:17:03.440 Always, 
+2018-10-06 00:17:03.440 Always, Dumping queued log messages
+2018-10-06 00:17:03.441 Always, 
+2018-10-06 00:17:03.441 Always, 
+2018-10-06 00:17:03.441 Always, End of queued log message dump
+2018-10-06 00:17:03.441 Always, 
+2018-10-06 00:17:03.441 Detail, WriteMsg CAN m_currentMsg=00000000
+2018-10-06 00:17:03.441 Detail, CAN received...triggering resend
+2018-10-06 00:17:03.441 Warning, m_currentMsg was NULL when trying to set MaxSendAttempts
+2018-10-06 00:17:03.441 Always, 
+2018-10-06 00:17:03.441 Always, Dumping queued log messages
+2018-10-06 00:17:03.441 Always, 
+2018-10-06 00:17:03.442 Always, 
+2018-10-06 00:17:03.442 Always, End of queued log message dump
+2018-10-06 00:17:03.442 Always, 
+2018-10-06 00:17:03.442 Detail, WriteMsg CAN m_currentMsg=00000000
+2018-10-06 00:17:03.442 Detail, CAN received...triggering resend
+2018-10-06 00:17:03.442 Warning, m_currentMsg was NULL when trying to set MaxSendAttempts
+2018-10-06 00:17:03.442 Always, 
+2018-10-06 00:17:03.442 Always, Dumping queued log messages
+2018-10-06 00:17:03.442 Always, 
+2018-10-06 00:17:03.443 Always, 
+2018-10-06 00:17:03.443 Always, End of queued log message dump
+2018-10-06 00:17:03.443 Always, 
+2018-10-06 00:17:03.443 Detail, WriteMsg CAN m_currentMsg=00000000
+2018-10-06 00:17:03.443 Detail, CAN received...triggering resend
+2018-10-06 00:17:03.443 Warning, m_currentMsg was NULL when trying to set MaxSendAttempts
+2018-10-06 00:17:03.443 Always, 
+2018-10-06 00:17:03.443 Always, Dumping queued log messages
+2018-10-06 00:17:03.443 Always, 
+2018-10-06 00:17:03.443 Always, 
+2018-10-06 00:17:03.443 Always, End of queued log message dump
+2018-10-06 00:17:03.443 Always, 
+2018-10-06 00:17:03.444 Detail, WriteMsg CAN m_currentMsg=00000000
+2018-10-06 00:17:03.444 Detail, CAN received...triggering resend
+2018-10-06 00:17:03.444 Warning, m_currentMsg was NULL when trying to set MaxSendAttempts
+2018-10-06 00:17:03.444 Always, 
+2018-10-06 00:17:03.444 Always, Dumping queued log messages
+2018-10-06 00:17:03.444 Always, 
+2018-10-06 00:17:03.444 Always, 
+2018-10-06 00:17:03.444 Always, End of queued log message dump
+2018-10-06 00:17:03.444 Always, 
+2018-10-06 00:17:03.445 Detail, WriteMsg CAN m_currentMsg=00000000
+2018-10-06 00:17:03.445 Detail, CAN received...triggering resend
+2018-10-06 00:17:03.445 Warning, m_currentMsg was NULL when trying to set MaxSendAttempts
+2018-10-06 00:17:03.445 Always, 
+2018-10-06 00:17:03.445 Always, Dumping queued log messages
+2018-10-06 00:17:03.445 Always, 
+2018-10-06 00:17:03.445 Always, 
+2018-10-06 00:17:03.445 Always, End of queued log message dump
+2018-10-06 00:17:03.445 Always, 
+2018-10-06 00:17:03.445 Detail, WriteMsg CAN m_currentMsg=00000000
+2018-10-06 00:17:03.446 Detail, CAN received...triggering resend
+2018-10-06 00:17:03.446 Warning, m_currentMsg was NULL when trying to set MaxSendAttempts
+2018-10-06 00:17:03.446 Always, 
+2018-10-06 00:17:03.446 Always, Dumping queued log messages
+2018-10-06 00:17:03.446 Always, 
+2018-10-06 00:17:03.446 Always, 
+2018-10-06 00:17:03.446 Always, End of queued log message dump
+2018-10-06 00:17:03.446 Always, 
+2018-10-06 00:17:03.446 Detail, WriteMsg CAN m_currentMsg=00000000
+2018-10-06 00:17:03.446 Detail, CAN received...triggering resend
+2018-10-06 00:17:03.446 Warning, m_currentMsg was NULL when trying to set MaxSendAttempts
+2018-10-06 00:17:03.446 Always, 
+2018-10-06 00:17:03.447 Always, Dumping queued log messages
+2018-10-06 00:17:03.447 Always, 
+2018-10-06 00:17:03.447 Always, 
+2018-10-06 00:17:03.447 Always, End of queued log message dump
+2018-10-06 00:17:03.447 Always, 
+2018-10-06 00:17:03.447 Detail, WriteMsg CAN m_currentMsg=00000000
+2018-10-06 00:17:03.447 Detail, CAN received...triggering resend
+2018-10-06 00:17:03.447 Warning, m_currentMsg was NULL when trying to set MaxSendAttempts
+2018-10-06 00:17:03.447 Always, 
+2018-10-06 00:17:03.447 Always, Dumping queued log messages
+2018-10-06 00:17:03.447 Always, 
+2018-10-06 00:17:03.448 Always, 
+2018-10-06 00:17:03.448 Always, End of queued log message dump
+2018-10-06 00:17:03.448 Always, 
+2018-10-06 00:17:03.448 Detail, WriteMsg CAN m_currentMsg=00000000
+2018-10-06 00:17:03.448 Detail, CAN received...triggering resend
+2018-10-06 00:17:03.448 Warning, m_currentMsg was NULL when trying to set MaxSendAttempts
+2018-10-06 00:17:03.448 Always, 
+2018-10-06 00:17:03.448 Always, Dumping queued log messages
+2018-10-06 00:17:03.448 Always, 
+2018-10-06 00:17:03.448 Always, 
+2018-10-06 00:17:03.448 Always, End of queued log message dump
+2018-10-06 00:17:03.449 Always, 
+2018-10-06 00:17:03.449 Detail, WriteMsg CAN m_currentMsg=00000000
+2018-10-06 00:17:03.449 Detail, CAN received...triggering resend
+2018-10-06 00:17:03.449 Warning, m_currentMsg was NULL when trying to set MaxSendAttempts
+2018-10-06 00:17:03.449 Always, 
+2018-10-06 00:17:03.449 Always, Dumping queued log messages
+2018-10-06 00:17:03.449 Always, 
+2018-10-06 00:17:03.449 Always, 
+2018-10-06 00:17:03.449 Always, End of queued log message dump
+2018-10-06 00:17:03.449 Always, 
+2018-10-06 00:17:03.449 Detail, WriteMsg CAN m_currentMsg=00000000
+2018-10-06 00:17:03.450 Detail, CAN received...triggering resend
+2018-10-06 00:17:03.450 Warning, m_currentMsg was NULL when trying to set MaxSendAttempts
+2018-10-06 00:17:03.450 Always, 
+2018-10-06 00:17:03.450 Always, Dumping queued log messages
+2018-10-06 00:17:03.450 Always, 
+2018-10-06 00:17:03.450 Always, 
+2018-10-06 00:17:03.450 Always, End of queued log message dump
+2018-10-06 00:17:03.450 Always, 
+2018-10-06 00:17:03.450 Detail, WriteMsg CAN m_currentMsg=00000000
+2018-10-06 00:17:03.450 Detail, CAN received...triggering resend
+2018-10-06 00:17:03.450 Warning, m_currentMsg was NULL when trying to set MaxSendAttempts
+2018-10-06 00:17:03.451 Always, 
+2018-10-06 00:17:03.451 Always, Dumping queued log messages
+2018-10-06 00:17:03.451 Always, 
+2018-10-06 00:17:03.451 Always, 
+2018-10-06 00:17:03.451 Always, End of queued log message dump
+2018-10-06 00:17:03.451 Always, 
+2018-10-06 00:17:03.451 Detail, WriteMsg CAN m_currentMsg=00000000
+2018-10-06 00:17:03.451 Detail, CAN received...triggering resend
+2018-10-06 00:17:03.451 Warning, m_currentMsg was NULL when trying to set MaxSendAttempts
+2018-10-06 00:17:03.451 Always, 
+2018-10-06 00:17:03.451 Always, Dumping queued log messages
+2018-10-06 00:17:03.451 Always, 
+2018-10-06 00:17:03.452 Always, 
+2018-10-06 00:17:03.452 Always, End of queued log message dump
+2018-10-06 00:17:03.452 Always, 
+2018-10-06 00:17:03.452 Detail, WriteMsg CAN m_currentMsg=00000000
+2018-10-06 00:17:03.452 Detail, CAN received...triggering resend
+2018-10-06 00:17:03.452 Warning, m_currentMsg was NULL when trying to set MaxSendAttempts
+2018-10-06 00:17:03.452 Always, 
+2018-10-06 00:17:03.452 Always, Dumping queued log messages
+2018-10-06 00:17:03.452 Always, 
+2018-10-06 00:17:03.453 Always, 
+2018-10-06 00:17:03.453 Always, End of queued log message dump
+2018-10-06 00:17:03.453 Always, 
+2018-10-06 00:17:03.453 Detail, WriteMsg CAN m_currentMsg=00000000
+2018-10-06 00:17:03.453 Detail, CAN received...triggering resend
+2018-10-06 00:17:03.453 Warning, m_currentMsg was NULL when trying to set MaxSendAttempts
+2018-10-06 00:17:03.453 Always, 
+2018-10-06 00:17:03.453 Always, Dumping queued log messages
+2018-10-06 00:17:03.453 Always, 
+2018-10-06 00:17:03.454 Always, 
+2018-10-06 00:17:03.454 Always, End of queued log message dump
+2018-10-06 00:17:03.454 Always, 
+2018-10-06 00:17:03.454 Detail, WriteMsg CAN m_currentMsg=00000000
+2018-10-06 00:17:03.454 Detail, CAN received...triggering resend
+2018-10-06 00:17:03.454 Warning, m_currentMsg was NULL when trying to set MaxSendAttempts
+2018-10-06 00:17:03.454 Always, 
+2018-10-06 00:17:03.454 Always, Dumping queued log messages
+2018-10-06 00:17:03.454 Always, 
+2018-10-06 00:17:03.454 Always, 
+2018-10-06 00:17:03.454 Always, End of queued log message dump
+2018-10-06 00:17:03.454 Always, 
+2018-10-06 00:17:03.455 Detail, WriteMsg CAN m_currentMsg=00000000
+2018-10-06 00:17:03.456 Detail,   Received: 0x01, 0x04, 0x01, 0x13, 0x00, 0xe9
+2018-10-06 00:17:03.456 Error, ERROR: ZW_SEND_DATA could not be delivered to Z-Wave stack
+2018-10-06 00:17:03.457 Detail, CAN received...triggering resend
+2018-10-06 00:17:03.457 Warning, m_currentMsg was NULL when trying to set MaxSendAttempts
+2018-10-06 00:17:03.457 Always, 
+2018-10-06 00:17:03.457 Always, Dumping queued log messages
+2018-10-06 00:17:03.457 Always, 
+2018-10-06 00:17:03.458 Always, 
+2018-10-06 00:17:03.458 Always, End of queued log message dump
+2018-10-06 00:17:03.458 Always, 
+2018-10-06 00:17:03.458 Detail, WriteMsg CAN m_currentMsg=00000000
