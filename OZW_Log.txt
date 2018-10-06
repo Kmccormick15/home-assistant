@@ -7353,3 +7353,546 @@
 2018-10-06 00:00:11.335 Detail, Node002, Removing current message
 2018-10-06 00:00:11.335 Detail, Notification: ControllerCommand - InProgress
 2018-10-06 00:00:11.336 Info, WriteNextMsg Controller nothing to do
+2018-10-06 00:02:11.487 Detail,   Received: 0x01, 0x05, 0x00, 0x48, 0x38, 0x23, 0xa9
+2018-10-06 00:02:11.488 Detail, 
+2018-10-06 00:02:11.488 Warning, WARNING: REQUEST_NEIGHBOR_UPDATE_FAILED
+2018-10-06 00:02:11.489 Detail, Notification: ControllerCommand - Failed
+2018-10-06 00:02:11.490 Info, Requesting Neighbor Update for node 3
+2018-10-06 00:02:11.490 Detail, Node003, Queuing (Command) ControllerCommand_RequestNodeNeighborUpdate (Node=3): 0x01, 0x05, 0x00, 0x48, 0x03, 0x39, 0x88
+2018-10-06 00:02:11.491 Detail, Notification: ControllerCommand - Starting
+2018-10-06 00:02:11.491 Error, Node003, ERROR: Dropping command because node is presumed dead
+2018-10-06 00:02:11.492 Detail, Node003, Removing current message
+2018-10-06 00:02:11.492 Detail, Notification: ControllerCommand - Error - Failed
+2018-10-06 00:02:11.493 Info, Requesting Neighbor Update for node 4
+2018-10-06 00:02:11.493 Detail, Node004, Queuing (Command) ControllerCommand_RequestNodeNeighborUpdate (Node=4): 0x01, 0x05, 0x00, 0x48, 0x04, 0x3a, 0x8c
+2018-10-06 00:02:11.494 Detail, Notification: ControllerCommand - Starting
+2018-10-06 00:02:11.495 Detail, 
+2018-10-06 00:02:11.496 Info, Node004, Sending (Command) message (Callback ID=0x3a, Expected Reply=0x48) - ControllerCommand_RequestNodeNeighborUpdate (Node=4): 0x01, 0x05, 0x00, 0x48, 0x04, 0x3a, 0x8c
+2018-10-06 00:02:11.594 Detail, Node004,   Received: 0x01, 0x05, 0x00, 0x48, 0x3a, 0x21, 0xa9
+2018-10-06 00:02:11.594 Detail, 
+2018-10-06 00:02:11.595 Info, Node004, REQUEST_NEIGHBOR_UPDATE_STARTED
+2018-10-06 00:02:11.595 Detail, Node033,   Expected callbackId was received
+2018-10-06 00:02:11.595 Detail, Node033,   Expected reply was received
+2018-10-06 00:02:11.595 Detail, Node033,   Message transaction complete
+2018-10-06 00:02:11.596 Detail, 
+2018-10-06 00:02:11.596 Detail, Node004, Removing current message
+2018-10-06 00:02:11.596 Detail, Notification: ControllerCommand - InProgress
+2018-10-06 00:02:11.597 Info, WriteNextMsg Controller nothing to do
+2018-10-06 00:04:11.657 Detail,   Received: 0x01, 0x05, 0x00, 0x48, 0x3a, 0x23, 0xab
+2018-10-06 00:04:11.658 Detail, 
+2018-10-06 00:04:11.658 Warning, WARNING: REQUEST_NEIGHBOR_UPDATE_FAILED
+2018-10-06 00:04:11.658 Detail, Notification: ControllerCommand - Failed
+2018-10-06 00:04:11.659 Info, Requesting Neighbor Update for node 5
+2018-10-06 00:04:11.659 Detail, Node005, Queuing (Command) ControllerCommand_RequestNodeNeighborUpdate (Node=5): 0x01, 0x05, 0x00, 0x48, 0x05, 0x3b, 0x8c
+2018-10-06 00:04:11.659 Detail, Notification: ControllerCommand - Starting
+2018-10-06 00:04:11.660 Detail, 
+2018-10-06 00:04:11.660 Info, Node005, Sending (Command) message (Callback ID=0x3b, Expected Reply=0x48) - ControllerCommand_RequestNodeNeighborUpdate (Node=5): 0x01, 0x05, 0x00, 0x48, 0x05, 0x3b, 0x8c
+2018-10-06 00:04:11.755 Detail, Node005,   Received: 0x01, 0x05, 0x00, 0x48, 0x3b, 0x21, 0xa8
+2018-10-06 00:04:11.755 Detail, 
+2018-10-06 00:04:11.756 Info, Node005, REQUEST_NEIGHBOR_UPDATE_STARTED
+2018-10-06 00:04:11.756 Detail, Node033,   Expected callbackId was received
+2018-10-06 00:04:11.756 Detail, Node033,   Expected reply was received
+2018-10-06 00:04:11.756 Detail, Node033,   Message transaction complete
+2018-10-06 00:04:11.756 Detail, 
+2018-10-06 00:04:11.756 Detail, Node005, Removing current message
+2018-10-06 00:04:11.757 Detail, Notification: ControllerCommand - InProgress
+2018-10-06 00:04:11.758 Info, WriteNextMsg Controller nothing to do
+2018-10-06 00:04:14.647 Detail,   Received: 0x01, 0x05, 0x00, 0x48, 0x3b, 0x21, 0xa8
+2018-10-06 00:04:14.647 Detail, 
+2018-10-06 00:04:14.647 Info, REQUEST_NEIGHBOR_UPDATE_STARTED
+2018-10-06 00:04:14.648 Detail, Notification: ControllerCommand - InProgress
+2018-10-06 00:04:22.533 Detail,   Received: 0x01, 0x05, 0x00, 0x48, 0x3b, 0x22, 0xab
+2018-10-06 00:04:22.534 Detail, 
+2018-10-06 00:04:22.534 Info, REQUEST_NEIGHBOR_UPDATE_DONE
+2018-10-06 00:04:22.534 Detail, Requesting routing info (neighbor list) for Node 5
+2018-10-06 00:04:22.534 Detail, Node005, Queuing (Command) Get Routing Info (Node=5): 0x01, 0x07, 0x00, 0x80, 0x05, 0x00, 0x00, 0x03, 0x7e
+2018-10-06 00:04:22.534 Detail, Notification: ControllerCommand - Completed
+2018-10-06 00:04:22.535 Detail, 
+2018-10-06 00:04:22.535 Info, Node005, Sending (Command) message (Callback ID=0x00, Expected Reply=0x80) - Get Routing Info (Node=5): 0x01, 0x07, 0x00, 0x80, 0x05, 0x00, 0x00, 0x03, 0x7e
+2018-10-06 00:04:22.540 Detail, Node005,   Received: 0x01, 0x20, 0x01, 0x80, 0x00, 0x02, 0x60, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x3c
+2018-10-06 00:04:22.540 Detail, 
+2018-10-06 00:04:22.540 Info, Node005, Received reply to FUNC_ID_ZW_GET_ROUTING_INFO
+2018-10-06 00:04:22.541 Info, Node005,     Neighbors of this node are:
+2018-10-06 00:04:22.541 Info, Node005,     Node 10
+2018-10-06 00:04:22.541 Info, Node005,     Node 22
+2018-10-06 00:04:22.541 Info, Node005,     Node 23
+2018-10-06 00:04:22.541 Detail, Node002,   Expected reply was received
+2018-10-06 00:04:22.541 Detail, Node002,   Message transaction complete
+2018-10-06 00:04:22.541 Detail, 
+2018-10-06 00:04:22.541 Detail, Node005, Removing current message
+2018-10-06 00:04:22.541 Info, Requesting Neighbor Update for node 7
+2018-10-06 00:04:22.541 Detail, Node007, Queuing (Command) ControllerCommand_RequestNodeNeighborUpdate (Node=7): 0x01, 0x05, 0x00, 0x48, 0x07, 0x3c, 0x89
+2018-10-06 00:04:22.542 Detail, Notification: ControllerCommand - Starting
+2018-10-06 00:04:22.543 Detail, 
+2018-10-06 00:04:22.543 Info, Node007, Sending (Command) message (Callback ID=0x3c, Expected Reply=0x48) - ControllerCommand_RequestNodeNeighborUpdate (Node=7): 0x01, 0x05, 0x00, 0x48, 0x07, 0x3c, 0x89
+2018-10-06 00:04:22.638 Detail, Node007,   Received: 0x01, 0x05, 0x00, 0x48, 0x3c, 0x21, 0xaf
+2018-10-06 00:04:22.638 Detail, 
+2018-10-06 00:04:22.638 Info, Node007, REQUEST_NEIGHBOR_UPDATE_STARTED
+2018-10-06 00:04:22.638 Detail, Node033,   Expected callbackId was received
+2018-10-06 00:04:22.639 Detail, Node033,   Expected reply was received
+2018-10-06 00:04:22.639 Detail, Node033,   Message transaction complete
+2018-10-06 00:04:22.639 Detail, 
+2018-10-06 00:04:22.639 Detail, Node007, Removing current message
+2018-10-06 00:04:22.639 Detail, Notification: ControllerCommand - InProgress
+2018-10-06 00:04:22.640 Info, WriteNextMsg Controller nothing to do
+2018-10-06 00:04:27.090 Detail,   Received: 0x01, 0x05, 0x00, 0x48, 0x3c, 0x22, 0xac
+2018-10-06 00:04:27.090 Detail, 
+2018-10-06 00:04:27.090 Info, REQUEST_NEIGHBOR_UPDATE_DONE
+2018-10-06 00:04:27.090 Detail, Requesting routing info (neighbor list) for Node 7
+2018-10-06 00:04:27.091 Detail, Node007, Queuing (Command) Get Routing Info (Node=7): 0x01, 0x07, 0x00, 0x80, 0x07, 0x00, 0x00, 0x03, 0x7c
+2018-10-06 00:04:27.091 Detail, Notification: ControllerCommand - Completed
+2018-10-06 00:04:27.092 Detail, 
+2018-10-06 00:04:27.093 Info, Node007, Sending (Command) message (Callback ID=0x00, Expected Reply=0x80) - Get Routing Info (Node=7): 0x01, 0x07, 0x00, 0x80, 0x07, 0x00, 0x00, 0x03, 0x7c
+2018-10-06 00:04:27.099 Detail, Node007,   Received: 0x01, 0x20, 0x01, 0x80, 0x01, 0x58, 0x6d, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x6a
+2018-10-06 00:04:27.100 Detail, 
+2018-10-06 00:04:27.100 Info, Node007, Received reply to FUNC_ID_ZW_GET_ROUTING_INFO
+2018-10-06 00:04:27.100 Info, Node007,     Neighbors of this node are:
+2018-10-06 00:04:27.100 Info, Node007,     Node 1
+2018-10-06 00:04:27.100 Info, Node007,     Node 12
+2018-10-06 00:04:27.100 Info, Node007,     Node 13
+2018-10-06 00:04:27.100 Info, Node007,     Node 15
+2018-10-06 00:04:27.100 Info, Node007,     Node 17
+2018-10-06 00:04:27.100 Info, Node007,     Node 19
+2018-10-06 00:04:27.100 Info, Node007,     Node 20
+2018-10-06 00:04:27.100 Info, Node007,     Node 22
+2018-10-06 00:04:27.100 Info, Node007,     Node 23
+2018-10-06 00:04:27.101 Detail, Node088,   Expected reply was received
+2018-10-06 00:04:27.101 Detail, Node088,   Message transaction complete
+2018-10-06 00:04:27.101 Detail, 
+2018-10-06 00:04:27.101 Detail, Node007, Removing current message
+2018-10-06 00:04:27.101 Info, Requesting Neighbor Update for node 8
+2018-10-06 00:04:27.101 Detail, Node008, Queuing (Command) ControllerCommand_RequestNodeNeighborUpdate (Node=8): 0x01, 0x05, 0x00, 0x48, 0x08, 0x3d, 0x87
+2018-10-06 00:04:27.101 Detail, Notification: ControllerCommand - Starting
+2018-10-06 00:04:27.102 Detail, 
+2018-10-06 00:04:27.103 Info, Node008, Sending (Command) message (Callback ID=0x3d, Expected Reply=0x48) - ControllerCommand_RequestNodeNeighborUpdate (Node=8): 0x01, 0x05, 0x00, 0x48, 0x08, 0x3d, 0x87
+2018-10-06 00:04:27.205 Detail, Node008,   Received: 0x01, 0x05, 0x00, 0x48, 0x3d, 0x21, 0xae
+2018-10-06 00:04:27.205 Detail, 
+2018-10-06 00:04:27.205 Info, Node008, REQUEST_NEIGHBOR_UPDATE_STARTED
+2018-10-06 00:04:27.205 Detail, Node033,   Expected callbackId was received
+2018-10-06 00:04:27.205 Detail, Node033,   Expected reply was received
+2018-10-06 00:04:27.205 Detail, Node033,   Message transaction complete
+2018-10-06 00:04:27.205 Detail, 
+2018-10-06 00:04:27.205 Detail, Node008, Removing current message
+2018-10-06 00:04:27.206 Detail, Notification: ControllerCommand - InProgress
+2018-10-06 00:04:27.206 Info, WriteNextMsg Controller nothing to do
+2018-10-06 00:06:28.229 Detail,   Received: 0x01, 0x05, 0x00, 0x48, 0x3d, 0x23, 0xac
+2018-10-06 00:06:28.229 Detail, 
+2018-10-06 00:06:28.229 Warning, WARNING: REQUEST_NEIGHBOR_UPDATE_FAILED
+2018-10-06 00:06:28.229 Detail, Notification: ControllerCommand - Failed
+2018-10-06 00:06:28.230 Info, Requesting Neighbor Update for node 10
+2018-10-06 00:06:28.230 Detail, Node010, Queuing (Command) ControllerCommand_RequestNodeNeighborUpdate (Node=10): 0x01, 0x05, 0x00, 0x48, 0x0a, 0x3e, 0x86
+2018-10-06 00:06:28.230 Detail, Notification: ControllerCommand - Starting
+2018-10-06 00:06:28.231 Detail, 
+2018-10-06 00:06:28.231 Info, Node010, Sending (Command) message (Callback ID=0x3e, Expected Reply=0x48) - ControllerCommand_RequestNodeNeighborUpdate (Node=10): 0x01, 0x05, 0x00, 0x48, 0x0a, 0x3e, 0x86
+2018-10-06 00:06:28.326 Detail, Node010,   Received: 0x01, 0x05, 0x00, 0x48, 0x3e, 0x21, 0xad
+2018-10-06 00:06:28.327 Detail, 
+2018-10-06 00:06:28.327 Info, Node010, REQUEST_NEIGHBOR_UPDATE_STARTED
+2018-10-06 00:06:28.327 Detail, Node033,   Expected callbackId was received
+2018-10-06 00:06:28.327 Detail, Node033,   Expected reply was received
+2018-10-06 00:06:28.327 Detail, Node033,   Message transaction complete
+2018-10-06 00:06:28.327 Detail, 
+2018-10-06 00:06:28.327 Detail, Node010, Removing current message
+2018-10-06 00:06:28.327 Detail, Notification: ControllerCommand - InProgress
+2018-10-06 00:06:28.328 Info, WriteNextMsg Controller nothing to do
+2018-10-06 00:06:34.460 Detail,   Received: 0x01, 0x05, 0x00, 0x48, 0x3e, 0x22, 0xae
+2018-10-06 00:06:34.460 Detail, 
+2018-10-06 00:06:34.460 Info, REQUEST_NEIGHBOR_UPDATE_DONE
+2018-10-06 00:06:34.460 Detail, Requesting routing info (neighbor list) for Node 10
+2018-10-06 00:06:34.460 Detail, Node010, Queuing (Command) Get Routing Info (Node=10): 0x01, 0x07, 0x00, 0x80, 0x0a, 0x00, 0x00, 0x03, 0x71
+2018-10-06 00:06:34.461 Detail, Notification: ControllerCommand - Completed
+2018-10-06 00:06:34.461 Detail, 
+2018-10-06 00:06:34.462 Info, Node010, Sending (Command) message (Callback ID=0x00, Expected Reply=0x80) - Get Routing Info (Node=10): 0x01, 0x07, 0x00, 0x80, 0x0a, 0x00, 0x00, 0x03, 0x71
+2018-10-06 00:06:34.470 Detail, Node010,   Received: 0x01, 0x20, 0x01, 0x80, 0x10, 0x30, 0x63, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x1d
+2018-10-06 00:06:34.470 Detail, 
+2018-10-06 00:06:34.470 Info, Node010, Received reply to FUNC_ID_ZW_GET_ROUTING_INFO
+2018-10-06 00:06:34.470 Info, Node010,     Neighbors of this node are:
+2018-10-06 00:06:34.470 Info, Node010,     Node 5
+2018-10-06 00:06:34.470 Info, Node010,     Node 13
+2018-10-06 00:06:34.470 Info, Node010,     Node 14
+2018-10-06 00:06:34.470 Info, Node010,     Node 17
+2018-10-06 00:06:34.470 Info, Node010,     Node 18
+2018-10-06 00:06:34.471 Info, Node010,     Node 22
+2018-10-06 00:06:34.471 Info, Node010,     Node 23
+2018-10-06 00:06:34.471 Detail, Node048,   Expected reply was received
+2018-10-06 00:06:34.471 Detail, Node048,   Message transaction complete
+2018-10-06 00:06:34.471 Detail, 
+2018-10-06 00:06:34.471 Detail, Node010, Removing current message
+2018-10-06 00:06:34.471 Info, Requesting Neighbor Update for node 11
+2018-10-06 00:06:34.471 Detail, Node011, Queuing (Command) ControllerCommand_RequestNodeNeighborUpdate (Node=11): 0x01, 0x05, 0x00, 0x48, 0x0b, 0x3f, 0x86
+2018-10-06 00:06:34.471 Detail, Notification: ControllerCommand - Starting
+2018-10-06 00:06:34.472 Error, Node011, ERROR: Dropping command because node is presumed dead
+2018-10-06 00:06:34.472 Detail, Node011, Removing current message
+2018-10-06 00:06:34.473 Detail, Notification: ControllerCommand - Error - Failed
+2018-10-06 00:06:34.475 Info, Requesting Neighbor Update for node 12
+2018-10-06 00:06:34.475 Detail, Node012, Queuing (Command) ControllerCommand_RequestNodeNeighborUpdate (Node=12): 0x01, 0x05, 0x00, 0x48, 0x0c, 0x40, 0xfe
+2018-10-06 00:06:34.475 Detail, Notification: ControllerCommand - Starting
+2018-10-06 00:06:34.476 Detail, 
+2018-10-06 00:06:34.476 Info, Node012, Sending (Command) message (Callback ID=0x40, Expected Reply=0x48) - ControllerCommand_RequestNodeNeighborUpdate (Node=12): 0x01, 0x05, 0x00, 0x48, 0x0c, 0x40, 0xfe
+2018-10-06 00:06:34.569 Detail, Node012,   Received: 0x01, 0x05, 0x00, 0x48, 0x40, 0x21, 0xd3
+2018-10-06 00:06:34.569 Detail, 
+2018-10-06 00:06:34.569 Info, Node012, REQUEST_NEIGHBOR_UPDATE_STARTED
+2018-10-06 00:06:34.569 Detail, Node033,   Expected callbackId was received
+2018-10-06 00:06:34.570 Detail, Node033,   Expected reply was received
+2018-10-06 00:06:34.570 Detail, Node033,   Message transaction complete
+2018-10-06 00:06:34.570 Detail, 
+2018-10-06 00:06:34.570 Detail, Node012, Removing current message
+2018-10-06 00:06:34.570 Detail, Notification: ControllerCommand - InProgress
+2018-10-06 00:06:34.571 Info, WriteNextMsg Controller nothing to do
+2018-10-06 00:06:37.916 Detail,   Received: 0x01, 0x05, 0x00, 0x48, 0x40, 0x22, 0xd0
+2018-10-06 00:06:37.916 Detail, 
+2018-10-06 00:06:37.916 Info, REQUEST_NEIGHBOR_UPDATE_DONE
+2018-10-06 00:06:37.916 Detail, Requesting routing info (neighbor list) for Node 12
+2018-10-06 00:06:37.917 Detail, Node012, Queuing (Command) Get Routing Info (Node=12): 0x01, 0x07, 0x00, 0x80, 0x0c, 0x00, 0x00, 0x03, 0x77
+2018-10-06 00:06:37.917 Detail, Notification: ControllerCommand - Completed
+2018-10-06 00:06:37.918 Detail, 
+2018-10-06 00:06:37.918 Info, Node012, Sending (Command) message (Callback ID=0x00, Expected Reply=0x80) - Get Routing Info (Node=12): 0x01, 0x07, 0x00, 0x80, 0x0c, 0x00, 0x00, 0x03, 0x77
+2018-10-06 00:06:37.926 Detail, Node012,   Received: 0x01, 0x20, 0x01, 0x80, 0x41, 0xf0, 0x6f, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x80
+2018-10-06 00:06:37.926 Detail, 
+2018-10-06 00:06:37.926 Info, Node012, Received reply to FUNC_ID_ZW_GET_ROUTING_INFO
+2018-10-06 00:06:37.926 Info, Node012,     Neighbors of this node are:
+2018-10-06 00:06:37.926 Info, Node012,     Node 1
+2018-10-06 00:06:37.926 Info, Node012,     Node 7
+2018-10-06 00:06:37.926 Info, Node012,     Node 13
+2018-10-06 00:06:37.926 Info, Node012,     Node 14
+2018-10-06 00:06:37.926 Info, Node012,     Node 15
+2018-10-06 00:06:37.926 Info, Node012,     Node 16
+2018-10-06 00:06:37.927 Info, Node012,     Node 17
+2018-10-06 00:06:37.927 Info, Node012,     Node 18
+2018-10-06 00:06:37.927 Info, Node012,     Node 19
+2018-10-06 00:06:37.927 Info, Node012,     Node 20
+2018-10-06 00:06:37.927 Info, Node012,     Node 22
+2018-10-06 00:06:37.927 Info, Node012,     Node 23
+2018-10-06 00:06:37.927 Detail, Node240,   Expected reply was received
+2018-10-06 00:06:37.927 Detail, Node240,   Message transaction complete
+2018-10-06 00:06:37.927 Detail, 
+2018-10-06 00:06:37.927 Detail, Node012, Removing current message
+2018-10-06 00:06:37.928 Info, Requesting Neighbor Update for node 13
+2018-10-06 00:06:37.928 Detail, Node013, Queuing (Command) ControllerCommand_RequestNodeNeighborUpdate (Node=13): 0x01, 0x05, 0x00, 0x48, 0x0d, 0x41, 0xfe
+2018-10-06 00:06:37.928 Detail, Notification: ControllerCommand - Starting
+2018-10-06 00:06:37.929 Detail, 
+2018-10-06 00:06:37.929 Info, Node013, Sending (Command) message (Callback ID=0x41, Expected Reply=0x48) - ControllerCommand_RequestNodeNeighborUpdate (Node=13): 0x01, 0x05, 0x00, 0x48, 0x0d, 0x41, 0xfe
+2018-10-06 00:06:38.024 Detail, Node013,   Received: 0x01, 0x05, 0x00, 0x48, 0x41, 0x21, 0xd2
+2018-10-06 00:06:38.024 Detail, 
+2018-10-06 00:06:38.024 Info, Node013, REQUEST_NEIGHBOR_UPDATE_STARTED
+2018-10-06 00:06:38.024 Detail, Node033,   Expected callbackId was received
+2018-10-06 00:06:38.024 Detail, Node033,   Expected reply was received
+2018-10-06 00:06:38.024 Detail, Node033,   Message transaction complete
+2018-10-06 00:06:38.024 Detail, 
+2018-10-06 00:06:38.024 Detail, Node013, Removing current message
+2018-10-06 00:06:38.024 Detail, Notification: ControllerCommand - InProgress
+2018-10-06 00:06:38.025 Info, WriteNextMsg Controller nothing to do
+2018-10-06 00:06:39.431 Detail,   Received: 0x01, 0x05, 0x00, 0x48, 0x41, 0x21, 0xd2
+2018-10-06 00:06:39.432 Detail, 
+2018-10-06 00:06:39.432 Info, REQUEST_NEIGHBOR_UPDATE_STARTED
+2018-10-06 00:06:39.432 Detail, Notification: ControllerCommand - InProgress
+2018-10-06 00:06:41.323 Detail,   Received: 0x01, 0x05, 0x00, 0x48, 0x41, 0x22, 0xd1
+2018-10-06 00:06:41.324 Detail, 
+2018-10-06 00:06:41.324 Info, REQUEST_NEIGHBOR_UPDATE_DONE
+2018-10-06 00:06:41.325 Detail, Requesting routing info (neighbor list) for Node 13
+2018-10-06 00:06:41.325 Detail, Node013, Queuing (Command) Get Routing Info (Node=13): 0x01, 0x07, 0x00, 0x80, 0x0d, 0x00, 0x00, 0x03, 0x76
+2018-10-06 00:06:41.325 Detail, Notification: ControllerCommand - Completed
+2018-10-06 00:06:41.326 Detail, 
+2018-10-06 00:06:41.327 Info, Node013, Sending (Command) message (Callback ID=0x00, Expected Reply=0x80) - Get Routing Info (Node=13): 0x01, 0x07, 0x00, 0x80, 0x0d, 0x00, 0x00, 0x03, 0x76
+2018-10-06 00:06:41.333 Detail, Node013,   Received: 0x01, 0x20, 0x01, 0x80, 0x50, 0x6a, 0x23, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x47
+2018-10-06 00:06:41.333 Detail, 
+2018-10-06 00:06:41.333 Info, Node013, Received reply to FUNC_ID_ZW_GET_ROUTING_INFO
+2018-10-06 00:06:41.334 Info, Node013,     Neighbors of this node are:
+2018-10-06 00:06:41.334 Info, Node013,     Node 5
+2018-10-06 00:06:41.334 Info, Node013,     Node 7
+2018-10-06 00:06:41.335 Info, Node013,     Node 10
+2018-10-06 00:06:41.335 Info, Node013,     Node 12
+2018-10-06 00:06:41.335 Info, Node013,     Node 14
+2018-10-06 00:06:41.335 Info, Node013,     Node 15
+2018-10-06 00:06:41.336 Info, Node013,     Node 17
+2018-10-06 00:06:41.336 Info, Node013,     Node 18
+2018-10-06 00:06:41.336 Info, Node013,     Node 22
+2018-10-06 00:06:41.336 Detail, Node106,   Expected reply was received
+2018-10-06 00:06:41.336 Detail, Node106,   Message transaction complete
+2018-10-06 00:06:41.336 Detail, 
+2018-10-06 00:06:41.336 Detail, Node013, Removing current message
+2018-10-06 00:06:41.336 Info, Requesting Neighbor Update for node 14
+2018-10-06 00:06:41.336 Detail, Node014, Queuing (Command) ControllerCommand_RequestNodeNeighborUpdate (Node=14): 0x01, 0x05, 0x00, 0x48, 0x0e, 0x42, 0xfe
+2018-10-06 00:06:41.337 Detail, Notification: ControllerCommand - Starting
+2018-10-06 00:06:41.337 Detail, 
+2018-10-06 00:06:41.337 Info, Node014, Sending (Command) message (Callback ID=0x42, Expected Reply=0x48) - ControllerCommand_RequestNodeNeighborUpdate (Node=14): 0x01, 0x05, 0x00, 0x48, 0x0e, 0x42, 0xfe
+2018-10-06 00:06:41.431 Detail, Node014,   Received: 0x01, 0x05, 0x00, 0x48, 0x42, 0x21, 0xd1
+2018-10-06 00:06:41.431 Detail, 
+2018-10-06 00:06:41.431 Info, Node014, REQUEST_NEIGHBOR_UPDATE_STARTED
+2018-10-06 00:06:41.431 Detail, Node033,   Expected callbackId was received
+2018-10-06 00:06:41.431 Detail, Node033,   Expected reply was received
+2018-10-06 00:06:41.431 Detail, Node033,   Message transaction complete
+2018-10-06 00:06:41.431 Detail, 
+2018-10-06 00:06:41.431 Detail, Node014, Removing current message
+2018-10-06 00:06:41.431 Detail, Notification: ControllerCommand - InProgress
+2018-10-06 00:06:41.432 Info, WriteNextMsg Controller nothing to do
+2018-10-06 00:06:45.821 Detail,   Received: 0x01, 0x05, 0x00, 0x48, 0x42, 0x22, 0xd2
+2018-10-06 00:06:45.822 Detail, 
+2018-10-06 00:06:45.822 Info, REQUEST_NEIGHBOR_UPDATE_DONE
+2018-10-06 00:06:45.823 Detail, Requesting routing info (neighbor list) for Node 14
+2018-10-06 00:06:45.823 Detail, Node014, Queuing (Command) Get Routing Info (Node=14): 0x01, 0x07, 0x00, 0x80, 0x0e, 0x00, 0x00, 0x03, 0x75
+2018-10-06 00:06:45.823 Detail, Notification: ControllerCommand - Completed
+2018-10-06 00:06:45.824 Detail, 
+2018-10-06 00:06:45.824 Info, Node014, Sending (Command) message (Callback ID=0x00, Expected Reply=0x80) - Get Routing Info (Node=14): 0x01, 0x07, 0x00, 0x80, 0x0e, 0x00, 0x00, 0x03, 0x75
+2018-10-06 00:06:45.831 Detail, Node014,   Received: 0x01, 0x20, 0x01, 0x80, 0x01, 0xda, 0x63, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xe6
+2018-10-06 00:06:45.832 Detail, 
+2018-10-06 00:06:45.832 Info, Node014, Received reply to FUNC_ID_ZW_GET_ROUTING_INFO
+2018-10-06 00:06:45.832 Info, Node014,     Neighbors of this node are:
+2018-10-06 00:06:45.833 Info, Node014,     Node 1
+2018-10-06 00:06:45.833 Info, Node014,     Node 10
+2018-10-06 00:06:45.833 Info, Node014,     Node 12
+2018-10-06 00:06:45.833 Info, Node014,     Node 13
+2018-10-06 00:06:45.833 Info, Node014,     Node 15
+2018-10-06 00:06:45.834 Info, Node014,     Node 16
+2018-10-06 00:06:45.834 Info, Node014,     Node 17
+2018-10-06 00:06:45.834 Info, Node014,     Node 18
+2018-10-06 00:06:45.834 Info, Node014,     Node 22
+2018-10-06 00:06:45.835 Info, Node014,     Node 23
+2018-10-06 00:06:45.835 Detail, Node218,   Expected reply was received
+2018-10-06 00:06:45.835 Detail, Node218,   Message transaction complete
+2018-10-06 00:06:45.835 Detail, 
+2018-10-06 00:06:45.835 Detail, Node014, Removing current message
+2018-10-06 00:06:45.836 Info, Requesting Neighbor Update for node 15
+2018-10-06 00:06:45.836 Detail, Node015, Queuing (Command) ControllerCommand_RequestNodeNeighborUpdate (Node=15): 0x01, 0x05, 0x00, 0x48, 0x0f, 0x43, 0xfe
+2018-10-06 00:06:45.836 Detail, Notification: ControllerCommand - Starting
+2018-10-06 00:06:45.837 Detail, 
+2018-10-06 00:06:45.838 Info, Node015, Sending (Command) message (Callback ID=0x43, Expected Reply=0x48) - ControllerCommand_RequestNodeNeighborUpdate (Node=15): 0x01, 0x05, 0x00, 0x48, 0x0f, 0x43, 0xfe
+2018-10-06 00:06:45.932 Detail, Node015,   Received: 0x01, 0x05, 0x00, 0x48, 0x43, 0x21, 0xd0
+2018-10-06 00:06:45.933 Detail, 
+2018-10-06 00:06:45.933 Info, Node015, REQUEST_NEIGHBOR_UPDATE_STARTED
+2018-10-06 00:06:45.933 Detail, Node033,   Expected callbackId was received
+2018-10-06 00:06:45.934 Detail, Node033,   Expected reply was received
+2018-10-06 00:06:45.934 Detail, Node033,   Message transaction complete
+2018-10-06 00:06:45.934 Detail, 
+2018-10-06 00:06:45.934 Detail, Node015, Removing current message
+2018-10-06 00:06:45.934 Detail, Notification: ControllerCommand - InProgress
+2018-10-06 00:06:45.936 Info, WriteNextMsg Controller nothing to do
+2018-10-06 00:06:50.769 Detail,   Received: 0x01, 0x05, 0x00, 0x48, 0x43, 0x22, 0xd3
+2018-10-06 00:06:50.770 Detail, 
+2018-10-06 00:06:50.770 Info, REQUEST_NEIGHBOR_UPDATE_DONE
+2018-10-06 00:06:50.770 Detail, Requesting routing info (neighbor list) for Node 15
+2018-10-06 00:06:50.771 Detail, Node015, Queuing (Command) Get Routing Info (Node=15): 0x01, 0x07, 0x00, 0x80, 0x0f, 0x00, 0x00, 0x03, 0x74
+2018-10-06 00:06:50.771 Detail, Notification: ControllerCommand - Completed
+2018-10-06 00:06:50.772 Detail, 
+2018-10-06 00:06:50.773 Info, Node015, Sending (Command) message (Callback ID=0x00, Expected Reply=0x80) - Get Routing Info (Node=15): 0x01, 0x07, 0x00, 0x80, 0x0f, 0x00, 0x00, 0x03, 0x74
+2018-10-06 00:06:50.779 Detail, Node015,   Received: 0x01, 0x20, 0x01, 0x80, 0x41, 0xb8, 0x61, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xc6
+2018-10-06 00:06:50.779 Detail, 
+2018-10-06 00:06:50.780 Info, Node015, Received reply to FUNC_ID_ZW_GET_ROUTING_INFO
+2018-10-06 00:06:50.780 Info, Node015,     Neighbors of this node are:
+2018-10-06 00:06:50.780 Info, Node015,     Node 1
+2018-10-06 00:06:50.780 Info, Node015,     Node 7
+2018-10-06 00:06:50.781 Info, Node015,     Node 12
+2018-10-06 00:06:50.781 Info, Node015,     Node 13
+2018-10-06 00:06:50.781 Info, Node015,     Node 14
+2018-10-06 00:06:50.781 Info, Node015,     Node 16
+2018-10-06 00:06:50.781 Info, Node015,     Node 17
+2018-10-06 00:06:50.782 Info, Node015,     Node 22
+2018-10-06 00:06:50.782 Info, Node015,     Node 23
+2018-10-06 00:06:50.782 Detail, Node184,   Expected reply was received
+2018-10-06 00:06:50.782 Detail, Node184,   Message transaction complete
+2018-10-06 00:06:50.783 Detail, 
+2018-10-06 00:06:50.783 Detail, Node015, Removing current message
+2018-10-06 00:06:50.783 Info, Requesting Neighbor Update for node 16
+2018-10-06 00:06:50.784 Detail, Node016, Queuing (Command) ControllerCommand_RequestNodeNeighborUpdate (Node=16): 0x01, 0x05, 0x00, 0x48, 0x10, 0x44, 0xe6
+2018-10-06 00:06:50.784 Detail, Notification: ControllerCommand - Starting
+2018-10-06 00:06:50.785 Detail, 
+2018-10-06 00:06:50.785 Info, Node016, Sending (Command) message (Callback ID=0x44, Expected Reply=0x48) - ControllerCommand_RequestNodeNeighborUpdate (Node=16): 0x01, 0x05, 0x00, 0x48, 0x10, 0x44, 0xe6
+2018-10-06 00:06:50.880 Detail, Node016,   Received: 0x01, 0x05, 0x00, 0x48, 0x44, 0x21, 0xd7
+2018-10-06 00:06:50.881 Detail, 
+2018-10-06 00:06:50.881 Info, Node016, REQUEST_NEIGHBOR_UPDATE_STARTED
+2018-10-06 00:06:50.881 Detail, Node033,   Expected callbackId was received
+2018-10-06 00:06:50.882 Detail, Node033,   Expected reply was received
+2018-10-06 00:06:50.882 Detail, Node033,   Message transaction complete
+2018-10-06 00:06:50.882 Detail, 
+2018-10-06 00:06:50.882 Detail, Node016, Removing current message
+2018-10-06 00:06:50.883 Detail, Notification: ControllerCommand - InProgress
+2018-10-06 00:06:50.884 Info, WriteNextMsg Controller nothing to do
+2018-10-06 00:06:57.448 Detail,   Received: 0x01, 0x05, 0x00, 0x48, 0x44, 0x22, 0xd4
+2018-10-06 00:06:57.448 Detail, 
+2018-10-06 00:06:57.448 Info, REQUEST_NEIGHBOR_UPDATE_DONE
+2018-10-06 00:06:57.448 Detail, Requesting routing info (neighbor list) for Node 16
+2018-10-06 00:06:57.448 Detail, Node016, Queuing (Command) Get Routing Info (Node=16): 0x01, 0x07, 0x00, 0x80, 0x10, 0x00, 0x00, 0x03, 0x6b
+2018-10-06 00:06:57.448 Detail, Notification: ControllerCommand - Completed
+2018-10-06 00:06:57.449 Detail, 
+2018-10-06 00:06:57.449 Info, Node016, Sending (Command) message (Callback ID=0x00, Expected Reply=0x80) - Get Routing Info (Node=16): 0x01, 0x07, 0x00, 0x80, 0x10, 0x00, 0x00, 0x03, 0x6b
+2018-10-06 00:06:57.457 Detail, Node016,   Received: 0x01, 0x20, 0x01, 0x80, 0x00, 0x68, 0x69, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x5f
+2018-10-06 00:06:57.457 Detail, 
+2018-10-06 00:06:57.457 Info, Node016, Received reply to FUNC_ID_ZW_GET_ROUTING_INFO
+2018-10-06 00:06:57.457 Info, Node016,     Neighbors of this node are:
+2018-10-06 00:06:57.457 Info, Node016,     Node 12
+2018-10-06 00:06:57.457 Info, Node016,     Node 14
+2018-10-06 00:06:57.457 Info, Node016,     Node 15
+2018-10-06 00:06:57.457 Info, Node016,     Node 17
+2018-10-06 00:06:57.457 Info, Node016,     Node 20
+2018-10-06 00:06:57.458 Info, Node016,     Node 22
+2018-10-06 00:06:57.458 Info, Node016,     Node 23
+2018-10-06 00:06:57.458 Detail, Node104,   Expected reply was received
+2018-10-06 00:06:57.458 Detail, Node104,   Message transaction complete
+2018-10-06 00:06:57.458 Detail, 
+2018-10-06 00:06:57.458 Detail, Node016, Removing current message
+2018-10-06 00:06:57.458 Info, Requesting Neighbor Update for node 17
+2018-10-06 00:06:57.458 Detail, Node017, Queuing (Command) ControllerCommand_RequestNodeNeighborUpdate (Node=17): 0x01, 0x05, 0x00, 0x48, 0x11, 0x45, 0xe6
+2018-10-06 00:06:57.459 Detail, Notification: ControllerCommand - Starting
+2018-10-06 00:06:57.459 Detail, 
+2018-10-06 00:06:57.459 Info, Node017, Sending (Command) message (Callback ID=0x45, Expected Reply=0x48) - ControllerCommand_RequestNodeNeighborUpdate (Node=17): 0x01, 0x05, 0x00, 0x48, 0x11, 0x45, 0xe6
+2018-10-06 00:06:57.553 Detail, Node017,   Received: 0x01, 0x05, 0x00, 0x48, 0x45, 0x21, 0xd6
+2018-10-06 00:06:57.553 Detail, 
+2018-10-06 00:06:57.554 Info, Node017, REQUEST_NEIGHBOR_UPDATE_STARTED
+2018-10-06 00:06:57.554 Detail, Node033,   Expected callbackId was received
+2018-10-06 00:06:57.554 Detail, Node033,   Expected reply was received
+2018-10-06 00:06:57.554 Detail, Node033,   Message transaction complete
+2018-10-06 00:06:57.554 Detail, 
+2018-10-06 00:06:57.554 Detail, Node017, Removing current message
+2018-10-06 00:06:57.554 Detail, Notification: ControllerCommand - InProgress
+2018-10-06 00:06:57.555 Info, WriteNextMsg Controller nothing to do
+2018-10-06 00:07:00.151 Detail,   Received: 0x01, 0x05, 0x00, 0x48, 0x45, 0x21, 0xd6
+2018-10-06 00:07:00.152 Detail, 
+2018-10-06 00:07:00.152 Info, REQUEST_NEIGHBOR_UPDATE_STARTED
+2018-10-06 00:07:00.152 Detail, Notification: ControllerCommand - InProgress
+2018-10-06 00:07:01.934 Detail,   Received: 0x01, 0x05, 0x00, 0x48, 0x45, 0x22, 0xd5
+2018-10-06 00:07:01.935 Detail, 
+2018-10-06 00:07:01.935 Info, REQUEST_NEIGHBOR_UPDATE_DONE
+2018-10-06 00:07:01.935 Detail, Requesting routing info (neighbor list) for Node 17
+2018-10-06 00:07:01.935 Detail, Node017, Queuing (Command) Get Routing Info (Node=17): 0x01, 0x07, 0x00, 0x80, 0x11, 0x00, 0x00, 0x03, 0x6a
+2018-10-06 00:07:01.935 Detail, Notification: ControllerCommand - Completed
+2018-10-06 00:07:01.936 Detail, 
+2018-10-06 00:07:01.936 Info, Node017, Sending (Command) message (Callback ID=0x00, Expected Reply=0x80) - Get Routing Info (Node=17): 0x01, 0x07, 0x00, 0x80, 0x11, 0x00, 0x00, 0x03, 0x6a
+2018-10-06 00:07:01.945 Detail, Node017,   Received: 0x01, 0x20, 0x01, 0x80, 0x40, 0xf8, 0x40, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xa6
+2018-10-06 00:07:01.945 Detail, 
+2018-10-06 00:07:01.945 Info, Node017, Received reply to FUNC_ID_ZW_GET_ROUTING_INFO
+2018-10-06 00:07:01.945 Info, Node017,     Neighbors of this node are:
+2018-10-06 00:07:01.945 Info, Node017,     Node 7
+2018-10-06 00:07:01.945 Info, Node017,     Node 12
+2018-10-06 00:07:01.945 Info, Node017,     Node 13
+2018-10-06 00:07:01.946 Info, Node017,     Node 14
+2018-10-06 00:07:01.946 Info, Node017,     Node 15
+2018-10-06 00:07:01.946 Info, Node017,     Node 16
+2018-10-06 00:07:01.946 Info, Node017,     Node 23
+2018-10-06 00:07:01.946 Detail, Node248,   Expected reply was received
+2018-10-06 00:07:01.946 Detail, Node248,   Message transaction complete
+2018-10-06 00:07:01.946 Detail, 
+2018-10-06 00:07:01.946 Detail, Node017, Removing current message
+2018-10-06 00:07:01.946 Info, Requesting Neighbor Update for node 18
+2018-10-06 00:07:01.947 Detail, Node018, Queuing (Command) ControllerCommand_RequestNodeNeighborUpdate (Node=18): 0x01, 0x05, 0x00, 0x48, 0x12, 0x46, 0xe6
+2018-10-06 00:07:01.947 Detail, Notification: ControllerCommand - Starting
+2018-10-06 00:07:01.947 Detail, 
+2018-10-06 00:07:01.948 Info, Node018, Sending (Command) message (Callback ID=0x46, Expected Reply=0x48) - ControllerCommand_RequestNodeNeighborUpdate (Node=18): 0x01, 0x05, 0x00, 0x48, 0x12, 0x46, 0xe6
+2018-10-06 00:07:02.042 Detail, Node018,   Received: 0x01, 0x05, 0x00, 0x48, 0x46, 0x21, 0xd5
+2018-10-06 00:07:02.042 Detail, 
+2018-10-06 00:07:02.042 Info, Node018, REQUEST_NEIGHBOR_UPDATE_STARTED
+2018-10-06 00:07:02.042 Detail, Node033,   Expected callbackId was received
+2018-10-06 00:07:02.042 Detail, Node033,   Expected reply was received
+2018-10-06 00:07:02.042 Detail, Node033,   Message transaction complete
+2018-10-06 00:07:02.042 Detail, 
+2018-10-06 00:07:02.043 Detail, Node018, Removing current message
+2018-10-06 00:07:02.043 Detail, Notification: ControllerCommand - InProgress
+2018-10-06 00:07:02.044 Info, WriteNextMsg Controller nothing to do
+2018-10-06 00:07:03.764 Detail,   Received: 0x01, 0x05, 0x00, 0x48, 0x46, 0x21, 0xd5
+2018-10-06 00:07:03.765 Detail, 
+2018-10-06 00:07:03.765 Info, REQUEST_NEIGHBOR_UPDATE_STARTED
+2018-10-06 00:07:03.765 Detail, Notification: ControllerCommand - InProgress
+2018-10-06 00:07:05.607 Detail,   Received: 0x01, 0x05, 0x00, 0x48, 0x46, 0x22, 0xd6
+2018-10-06 00:07:05.609 Detail, 
+2018-10-06 00:07:05.609 Info, REQUEST_NEIGHBOR_UPDATE_DONE
+2018-10-06 00:07:05.609 Detail, Requesting routing info (neighbor list) for Node 18
+2018-10-06 00:07:05.610 Detail, Node018, Queuing (Command) Get Routing Info (Node=18): 0x01, 0x07, 0x00, 0x80, 0x12, 0x00, 0x00, 0x03, 0x69
+2018-10-06 00:07:05.610 Detail, Notification: ControllerCommand - Completed
+2018-10-06 00:07:05.611 Detail, 
+2018-10-06 00:07:05.612 Info, Node018, Sending (Command) message (Callback ID=0x00, Expected Reply=0x80) - Get Routing Info (Node=18): 0x01, 0x07, 0x00, 0x80, 0x12, 0x00, 0x00, 0x03, 0x69
+2018-10-06 00:07:05.617 Detail, Node018,   Received: 0x01, 0x20, 0x01, 0x80, 0x10, 0x32, 0x40, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x3c
+2018-10-06 00:07:05.617 Detail, 
+2018-10-06 00:07:05.619 Info, Node018, Received reply to FUNC_ID_ZW_GET_ROUTING_INFO
+2018-10-06 00:07:05.619 Info, Node018,     Neighbors of this node are:
+2018-10-06 00:07:05.619 Info, Node018,     Node 5
+2018-10-06 00:07:05.620 Info, Node018,     Node 10
+2018-10-06 00:07:05.620 Info, Node018,     Node 13
+2018-10-06 00:07:05.620 Info, Node018,     Node 14
+2018-10-06 00:07:05.620 Info, Node018,     Node 23
+2018-10-06 00:07:05.621 Detail, Node050,   Expected reply was received
+2018-10-06 00:07:05.621 Detail, Node050,   Message transaction complete
+2018-10-06 00:07:05.621 Detail, 
+2018-10-06 00:07:05.621 Detail, Node018, Removing current message
+2018-10-06 00:07:05.622 Info, Requesting Neighbor Update for node 19
+2018-10-06 00:07:05.622 Detail, Node019, Queuing (Command) ControllerCommand_RequestNodeNeighborUpdate (Node=19): 0x01, 0x05, 0x00, 0x48, 0x13, 0x47, 0xe6
+2018-10-06 00:07:05.623 Detail, Notification: ControllerCommand - Starting
+2018-10-06 00:07:05.625 Detail, 
+2018-10-06 00:07:05.626 Info, Node019, Sending (Command) message (Callback ID=0x47, Expected Reply=0x48) - ControllerCommand_RequestNodeNeighborUpdate (Node=19): 0x01, 0x05, 0x00, 0x48, 0x13, 0x47, 0xe6
+2018-10-06 00:07:05.718 Detail, Node019,   Received: 0x01, 0x05, 0x00, 0x48, 0x47, 0x21, 0xd4
+2018-10-06 00:07:05.719 Detail, 
+2018-10-06 00:07:05.719 Info, Node019, REQUEST_NEIGHBOR_UPDATE_STARTED
+2018-10-06 00:07:05.720 Detail, Node033,   Expected callbackId was received
+2018-10-06 00:07:05.720 Detail, Node033,   Expected reply was received
+2018-10-06 00:07:05.720 Detail, Node033,   Message transaction complete
+2018-10-06 00:07:05.720 Detail, 
+2018-10-06 00:07:05.721 Detail, Node019, Removing current message
+2018-10-06 00:07:05.721 Detail, Notification: ControllerCommand - InProgress
+2018-10-06 00:07:05.722 Info, WriteNextMsg Controller nothing to do
+2018-10-06 00:07:06.861 Detail,   Received: 0x01, 0x05, 0x00, 0x48, 0x47, 0x21, 0xd4
+2018-10-06 00:07:06.862 Detail, 
+2018-10-06 00:07:06.863 Info, REQUEST_NEIGHBOR_UPDATE_STARTED
+2018-10-06 00:07:06.863 Detail, Notification: ControllerCommand - InProgress
+2018-10-06 00:07:08.374 Detail,   Received: 0x01, 0x05, 0x00, 0x48, 0x47, 0x22, 0xd7
+2018-10-06 00:07:08.375 Detail, 
+2018-10-06 00:07:08.375 Info, REQUEST_NEIGHBOR_UPDATE_DONE
+2018-10-06 00:07:08.376 Detail, Requesting routing info (neighbor list) for Node 19
+2018-10-06 00:07:08.376 Detail, Node019, Queuing (Command) Get Routing Info (Node=19): 0x01, 0x07, 0x00, 0x80, 0x13, 0x00, 0x00, 0x03, 0x68
+2018-10-06 00:07:08.376 Detail, Notification: ControllerCommand - Completed
+2018-10-06 00:07:08.377 Detail, 
+2018-10-06 00:07:08.378 Info, Node019, Sending (Command) message (Callback ID=0x00, Expected Reply=0x80) - Get Routing Info (Node=19): 0x01, 0x07, 0x00, 0x80, 0x13, 0x00, 0x00, 0x03, 0x68
+2018-10-06 00:07:08.384 Detail, Node019,   Received: 0x01, 0x20, 0x01, 0x80, 0x40, 0x08, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x1e
+2018-10-06 00:07:08.384 Detail, 
+2018-10-06 00:07:08.385 Info, Node019, Received reply to FUNC_ID_ZW_GET_ROUTING_INFO
+2018-10-06 00:07:08.385 Info, Node019,     Neighbors of this node are:
+2018-10-06 00:07:08.385 Info, Node019,     Node 7
+2018-10-06 00:07:08.385 Info, Node019,     Node 12
+2018-10-06 00:07:08.386 Info, Node019,     Node 20
+2018-10-06 00:07:08.387 Detail, Node008,   Expected reply was received
+2018-10-06 00:07:08.388 Detail, Node008,   Message transaction complete
+2018-10-06 00:07:08.388 Detail, 
+2018-10-06 00:07:08.388 Detail, Node019, Removing current message
+2018-10-06 00:07:08.388 Info, Requesting Neighbor Update for node 20
+2018-10-06 00:07:08.389 Detail, Node020, Queuing (Command) ControllerCommand_RequestNodeNeighborUpdate (Node=20): 0x01, 0x05, 0x00, 0x48, 0x14, 0x48, 0xee
+2018-10-06 00:07:08.389 Detail, Notification: ControllerCommand - Starting
+2018-10-06 00:07:08.390 Detail, 
+2018-10-06 00:07:08.390 Info, Node020, Sending (Command) message (Callback ID=0x48, Expected Reply=0x48) - ControllerCommand_RequestNodeNeighborUpdate (Node=20): 0x01, 0x05, 0x00, 0x48, 0x14, 0x48, 0xee
+2018-10-06 00:07:08.484 Detail, Node020,   Received: 0x01, 0x05, 0x00, 0x48, 0x48, 0x21, 0xdb
+2018-10-06 00:07:08.485 Detail, 
+2018-10-06 00:07:08.485 Info, Node020, REQUEST_NEIGHBOR_UPDATE_STARTED
+2018-10-06 00:07:08.485 Detail, Node033,   Expected callbackId was received
+2018-10-06 00:07:08.486 Detail, Node033,   Expected reply was received
+2018-10-06 00:07:08.486 Detail, Node033,   Message transaction complete
+2018-10-06 00:07:08.486 Detail, 
+2018-10-06 00:07:08.486 Detail, Node020, Removing current message
+2018-10-06 00:07:08.487 Detail, Notification: ControllerCommand - InProgress
+2018-10-06 00:07:08.488 Info, WriteNextMsg Controller nothing to do
+2018-10-06 00:07:09.758 Detail,   Received: 0x01, 0x05, 0x00, 0x48, 0x48, 0x21, 0xdb
+2018-10-06 00:07:09.759 Detail, 
+2018-10-06 00:07:09.759 Info, REQUEST_NEIGHBOR_UPDATE_STARTED
+2018-10-06 00:07:09.760 Detail, Notification: ControllerCommand - InProgress
+2018-10-06 00:07:11.201 Detail,   Received: 0x01, 0x05, 0x00, 0x48, 0x48, 0x22, 0xd8
+2018-10-06 00:07:11.202 Detail, 
+2018-10-06 00:07:11.203 Info, REQUEST_NEIGHBOR_UPDATE_DONE
+2018-10-06 00:07:11.203 Detail, Requesting routing info (neighbor list) for Node 20
+2018-10-06 00:07:11.203 Detail, Node020, Queuing (Command) Get Routing Info (Node=20): 0x01, 0x07, 0x00, 0x80, 0x14, 0x00, 0x00, 0x03, 0x6f
+2018-10-06 00:07:11.203 Detail, Notification: ControllerCommand - Completed
+2018-10-06 00:07:11.204 Detail, 
+2018-10-06 00:07:11.205 Info, Node020, Sending (Command) message (Callback ID=0x00, Expected Reply=0x80) - Get Routing Info (Node=20): 0x01, 0x07, 0x00, 0x80, 0x14, 0x00, 0x00, 0x03, 0x6f
+2018-10-06 00:07:11.211 Detail, Node020,   Received: 0x01, 0x20, 0x01, 0x80, 0x40, 0x00, 0x04, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x1a
+2018-10-06 00:07:11.212 Detail, 
+2018-10-06 00:07:11.212 Info, Node020, Received reply to FUNC_ID_ZW_GET_ROUTING_INFO
+2018-10-06 00:07:11.212 Info, Node020,     Neighbors of this node are:
+2018-10-06 00:07:11.212 Info, Node020,     Node 7
+2018-10-06 00:07:11.212 Info, Node020,     Node 19
+2018-10-06 00:07:11.212 Detail,   Expected reply was received
+2018-10-06 00:07:11.212 Detail,   Message transaction complete
+2018-10-06 00:07:11.212 Detail, 
+2018-10-06 00:07:11.212 Detail, Node020, Removing current message
+2018-10-06 00:07:11.213 Info, Requesting Neighbor Update for node 22
+2018-10-06 00:07:11.213 Detail, 
+2018-10-06 00:07:11.213 Detail, Node022, Queuing (Controller) Request Node Neighbor Update
+2018-10-06 00:07:11.213 Detail, Notification: ControllerCommand - Starting
+2018-10-06 00:07:11.214 Detail, Notification: ControllerCommand - Sleeping
+2018-10-06 00:07:11.214 Info, Requesting Neighbor Update for node 23
+2018-10-06 00:07:11.215 Detail, 
+2018-10-06 00:07:11.215 Detail, Node023, Queuing (Controller) Request Node Neighbor Update
+2018-10-06 00:07:11.215 Detail, Notification: ControllerCommand - Starting
+2018-10-06 00:07:11.215 Detail, Notification: ControllerCommand - Sleeping
