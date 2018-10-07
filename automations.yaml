@@ -1,7 +1,5 @@
-# Driveway Alert if Home
 - action:
   - data:
-      # Blink theater light script
       entity_id: script.1512866664337
     service: script.turn_on
   - data:
@@ -11,8 +9,7 @@
     entity_id: media_player.kitchen_speaker
     data_template:
       message: '''{{ ["Looks like someone''s here. ", "Ding Dong. ", "Look alive.
-        ", "Someone might be here. "] | random }}''
-        '
+        ", "Someone might be here. "] | random }}'' '
   alias: Driveway Alert
   condition:
   - condition: state
@@ -24,8 +21,6 @@
     from: 'off'
     platform: state
     to: 'on'
-
-# Driveway Alert if Away
 - action:
   - data:
       entity_id: group.inside_house_lights
@@ -60,37 +55,22 @@
     from: 'off'
     platform: state
     to: 'on'
-
-#Turn everything off when bluetooth presence is away
 - action:
   - data:
-      entity_id: group.inside_house_lights
+      entity_id:
+      - group.inside_house_lights
+      - group.rec_room
     service: light.turn_off
   - data:
       entity_id: group.inside_house_lights
     service: switch.turn_off
-  - data:
-      entity_id: script.1514064152005
-    service: script.turn_on
   - data:
       entity_id:
       - switch.ge_unknown_type5052_id3031_switch_2
       - switch.leviton_unknown_type3601_id0001_switch
     service: switch.turn_off
   - delay: 00:00:05
-  - data:
-      entity_id: script.1514064152005
-    service: script.turn_on
-  - data:
-      entity_id: switch.projector
-    service: switch.turn_off
-  - data:
-      entity_id: switch.projector_screen
-    service: switch.turn_off
   - delay: 00:00:02
-  - data:
-      entity_id: switch.projector
-    service: switch.turn_off
   - data:
       entity_id: group.outside_house_lights
     service: switch.turn_off
@@ -105,8 +85,6 @@
     from: home
     platform: state
     to: not_home
-
-# Set theater on
 - action:
   - data:
       entity_id:
@@ -140,8 +118,6 @@
     from: Office TV
     platform: state
     to: Xbox One
-
-# Set Theater Off
 - action:
   - data:
       entity_id:
@@ -175,30 +151,6 @@
     from: Xbox One
     platform: state
     to: PowerOff
-
-# Lights On at Dusk and Away
-# - action:
-#   - data:
-#       brightness: 80
-#       entity_id: light.ge_unknown_type4944_id3130_level
-#     service: light.turn_on
-#   - delay: 00:00:03
-#   - data:
-#       brightness: 30
-#       entity_id: light.ge_unknown_type4944_id3130_level
-#     service: light.turn_on
-#   alias: Lights On at Dusk and Away
-#   condition:
-#   - condition: state
-#     entity_id: group.bluetooth_presence
-#     state: not_home
-#   id: '1514320786284'
-#   trigger:
-#   - event: sunset
-#     offset: -00:30:00
-#     platform: sun
-
-#Evening Lights On
 - action:
   - data:
       entity_id:
@@ -209,7 +161,6 @@
       entity_id: group.inside_house_lights
     service: light.turn_on
   - data:
-      #Dim rec room to 100%
       entity_id: script.1514064524159
     service: script.turn_on
   - delay: 00:00:02
@@ -233,15 +184,10 @@
     from: 'off'
     platform: state
     to: 'on'
-
-#Night Lights On - Theater on 
 - action:
   - data:
       entity_id: group.inside_house_lights
     service: light.turn_on
-  # - data:
-  #     entity_id: switch.ge_unknown_type5052_id3031_switch_2
-  #   service: switch.turn_on
   - data:
       entity_id: script.1514064152005
     service: script.turn_on
@@ -256,12 +202,7 @@
     from: 'off'
     platform: state
     to: 'on'
-
-#Night Lights On Theater Off
 - action:
-  # - data:
-  #     entity_id: group.inside_house_lights
-  #   service: light.turn_on
   - data:
       entity_id: switch.ge_unknown_type5052_id3031_switch_2
     service: switch.turn_on
@@ -284,8 +225,6 @@
     from: 'off'
     platform: state
     to: 'on'
-
-# Outside Lights Off at Sunrise
 - action:
   - data:
       entity_id:
@@ -298,8 +237,6 @@
   trigger:
   - event: sunrise
     platform: sun
-
-# Brightness Slider
 - action:
   - service: light.turn_on
     data_template:
@@ -314,8 +251,6 @@
   trigger:
   - entity_id: input_number.master_brightness
     platform: state
-
-# Evening light timer - 60 mins no motion = lights off
 - action:
   - data:
       entity_id:
@@ -352,25 +287,6 @@
     to: 'off'
     for:
       minutes: 60
-
-# THis should be useless. delete after lights go on after dark an beam is broken
-# #Outside lights on after sunset and beam break
-# - action:
-#   - data:
-#       entity_id: group.outside_house_lights
-#     service: switch.turn_on
-#   alias: Outside Lights upon Night Driveway Alert
-#   condition:
-#   - after: sunset
-#     condition: sun
-#   id: '1516231258143'
-#   trigger:
-#   - entity_id: binary_sensor.fortrezz_mimolite_wireless_interfacebridge_module_sensor
-#     from: 'off'
-#     platform: state
-#     to: 'on'
-
-# Night time light timer
 - action:
   - data:
       entity_id:
@@ -406,8 +322,6 @@
   - entity_id: group.local_motion_sensing
     platform: state
     to: 'off'
-
-# Driveway alert exit disable for 3 mins
 - action:
   - delay: 00:00:05
   - data:
@@ -425,3 +339,89 @@
     from: 'on'
     platform: state
     to: 'off'
+- id: '1538938743083'
+  alias: Wallmote Lamps On
+  trigger:
+  - event_data:
+      entity_id: zwave.aeotec_zw130_wallmote_quad
+      scene_id: 1
+      scene_data: 0
+    event_type: zwave.scene_activated
+    platform: event
+  - event_data:
+      entity_id: zwave.aeotec_zw130_wallmote_quad
+      scene_id: 2
+      scene_data: 0
+    event_type: zwave.scene_activated
+    platform: event
+  - event_data:
+      entity_id: zwave.aeotec_zw130_wallmote_quad
+      scene_id: 3
+      scene_data: 0
+    event_type: zwave.scene_activated
+    platform: event
+  - event_data:
+      entity_id: zwave.aeotec_zw130_wallmote_quad
+      scene_id: 4
+      scene_data: 0
+    event_type: zwave.scene_activated
+    platform: event
+  condition: []
+  action:
+  - data:
+      entity_id:
+      - group.inside_house_lights
+    service: switch.turn_on
+  - data:
+      entity_id:
+      - group.inside_house_lights
+    service: light.turn_on
+- id: '1538938743084'
+  alias: Wallmote Lamps Off
+  trigger:
+  - event_data:
+      entity_id: zwave.aeotec_zw130_wallmote_quad
+      scene_id: 1
+      scene_data: 1
+    event_type: zwave.scene_activated
+    platform: event
+  - event_data:
+      entity_id: zwave.aeotec_zw130_wallmote_quad
+      scene_id: 2
+      scene_data: 1
+    event_type: zwave.scene_activated
+    platform: event
+  - event_data:
+      entity_id: zwave.aeotec_zw130_wallmote_quad
+      scene_id: 3
+      scene_data: 1
+    event_type: zwave.scene_activated
+    platform: event
+  - event_data:
+      entity_id: zwave.aeotec_zw130_wallmote_quad
+      scene_id: 4
+      scene_data: 1
+    event_type: zwave.scene_activated
+    platform: event
+  condition: []
+  action:
+  - data:
+      entity_id:
+      - group.inside_house_lights
+    service: switch.turn_off
+  - data:
+      entity_id:
+      - group.inside_house_lights
+    service: light.turn_off
+- id: '1538953465766'
+  alias: Driveway Light Sync
+  trigger:
+  - entity_id: switch.ge_unknown_type4952_id3037_switch
+    from: 'off'
+    platform: state
+    to: 'on'
+  condition: []
+  action:
+  - data:
+      entity_id: switch.ge_unknown_type4952_id3037_switch_3
+    service: switch.turn_on

@@ -882,6 +882,60 @@
                 "name": null,
                 "platform": "nest",
                 "unique_id": "v6gStDhuT7ynBjwUxOwgWnsk1szUuaV4-smoke_status"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_zw130_wallmote_quad_sourcenodeid",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "24-72057594446626849"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_zw130_wallmote_quad_power_management",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "24-72057594446626993"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.aeotec_zw130_wallmote_quad",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-24"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_zw130_wallmote_quad_alarm_type",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "24-72057594446626817"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.aeotec_zw130_wallmote_quad_alarm_level",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "24-72057594446626833"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.aeotec_zw130_wallmote_quad_switch",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "24-72057594445381632"
             }
         ]
     },
