@@ -12,7 +12,7 @@ binary_sensor.rec_room_camera_motion_detected:
 binary_sensor.rec_room_camera_person_detected:
   hidden: true
 camera.rec_room:
-  hidden: true
+  hidden: false
 binary_sensor.rec_room_camera_sound_detected:
   hidden: true
 binary_sensor.rec_room_camera_online:
@@ -93,7 +93,7 @@ group.zwave:
 group.basement_info:
   hidden: true
 camera.driveway:
-  hidden: true
+  hidden: false
 sensor.aeotec_zw100_multisensor_6_luminance:
   hidden: true
 sensor.aeotec_zw100_multisensor_6_sourcenodeid:

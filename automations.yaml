@@ -182,9 +182,11 @@
       entity_id:
       - group.inside_house_lights
       - group.outside_house_lights
+      - group.theater_light
     service: switch.turn_on
   - data:
-      entity_id: group.inside_house_lights
+      entity_id:
+      - group.inside_house_lights
     service: light.turn_on
   - data:
       entity_id: script.1514064524159
@@ -334,9 +336,10 @@
 ############################################ 
 - action:
   - data:
-      # theater light
-      entity_id: switch.ge_unknown_type5052_id3031_switch_2
-      entity_id: switch.ge_12727_inwall_smart_switch_toggle_switch_2
+      entity_id: 
+      - group.theater_light
+      # south flood
+      - switch.ge_12727_inwall_smart_switch_toggle_switch_2
     service: switch.turn_on
   - data:
       # under cabinet light

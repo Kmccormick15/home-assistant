@@ -13,7 +13,7 @@ Rec_Room:
   name: Rec Room
   entities:
     - light.ge_unknown_type4944_id3130_level
-Theater:
+Theater_Light:
   name: Theater
   entities:
     - switch.ge_unknown_type5052_id3031_switch_2
