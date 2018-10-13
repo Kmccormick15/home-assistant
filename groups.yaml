@@ -112,3 +112,17 @@ MiMo:
   entities:
     - sensor.fortrezz_mimolite_wireless_interfacebridge_module_alarm_level
     - sensor.fortrezz_mimolite_wireless_interfacebridge_module_alarm_type
+
+# Secondary:
+#   name: Secondary
+#   view: yes
+#   entities: 
+#     - group.mimo
+#     - group.zwave_status
+
+# all_autos:
+#   name: All Automations
+#   view: yes
+#   entities:
+#     - group.all_automations
+#     - group.all_scripts

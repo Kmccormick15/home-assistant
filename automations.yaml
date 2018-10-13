@@ -10,17 +10,12 @@
 ############################################ 
 - action:
   - data:
-      entity_id: group.inside_house_lights
+      entity_id: group.main_lights
     service: light.turn_on
   - data:
-      entity_id: group.inside_house_lights
-    service: switch.turn_on
-  - data:
-      entity_id:
-      - switch.ge_unknown_type5052_id3031_switch_2
-    service: switch.turn_on
-  - data:
-      entity_id: group.outside_house_lights
+      entity_id: 
+      - group.main_lights
+      - group.theater_light
     service: switch.turn_on
   - delay: 00:00:10
   - data:
@@ -55,23 +50,22 @@
 - action:
   - data:
       entity_id:
-      - group.inside_house_lights
-      - group.rec_room
+      - group.main_lights
     service: light.turn_off
   - data:
-      entity_id: group.inside_house_lights
-    service: switch.turn_off
-  - data:
-      entity_id:
-      - switch.ge_unknown_type5052_id3031_switch_2
-      - switch.leviton_unknown_type3601_id0001_switch
+      entity_id: 
+      - group.main_lights
+      - group.theater_light
     service: switch.turn_off
   - delay: 00:00:05
   - data:
-      entity_id: group.outside_house_lights
-    service: switch.turn_off
+      entity_id:
+      - group.main_lights
+    service: light.turn_off
   - data:
-      entity_id: group.inside_house_lights
+      entity_id: 
+      - group.main_lights
+      - group.theater_light
     service: switch.turn_off
   alias: Away From Home
   condition: []
@@ -134,7 +128,7 @@
 - action:
   - data:
       entity_id:
-      - switch.ge_unknown_type5052_id3031_switch_2
+      - group.theater_light
     service: switch.turn_on
   - data:
       entity_id: remote.teller_harmony_hub
@@ -153,7 +147,7 @@
   - delay: 00:02:00
   - data:
       entity_id:
-      - switch.ge_unknown_type5052_id3031_switch_2
+      - group.theater_light
     service: switch.turn_off
   alias: Set Theater Off
   condition: []
@@ -171,22 +165,20 @@
 
 ############################################
 #
-#   Evening Lights On
+#   Evening Lights On (Except Theater)
 #     Action: Turn on inside and outside house lights
 #     Trigger: Local Motion On
-#     Conditions: Sunset-1h to 9 PM
+#     Conditions: Sunset-1h to 11:30 PM
 #
 ############################################ 
 - action:
   - data:
       entity_id:
-      - group.inside_house_lights
-      - group.outside_house_lights
-      - group.theater_light
+      - group.main_lights
     service: switch.turn_on
   - data:
       entity_id:
-      - group.inside_house_lights
+      - group.main_lights
     service: light.turn_on
   - data:
       entity_id: script.1514064524159
@@ -194,9 +186,12 @@
   - delay: 00:00:02
   - data:
       entity_id:
-      - group.inside_house_lights
-      - group.outside_house_lights
+      - group.main_lights
     service: switch.turn_on
+  - data:
+      entity_id:
+      - group.main_lights
+    service: light.turn_on
   alias: Evening Lights On
   condition:
   - condition: and
@@ -204,7 +199,7 @@
     - after: sunset
       after_offset: -01:00:00
       condition: sun
-    - before: '22:00'
+    - before: '23:30'
       condition: time
   id: '1514838378061'
   trigger:
@@ -212,6 +207,41 @@
     from: 'off'
     platform: state
     to: 'on'
+
+
+############################################
+#
+#   Evening Lights On (Theater)
+#     Action: Turn on inside and outside house lights
+#     Trigger: Local Motion On
+#     Conditions: Sunset-1h to 11:30 PM
+#
+############################################ 
+- action:
+  - data:
+      entity_id:
+      - group.theater_light
+    service: switch.turn_on
+  - delay: 00:00:02
+  alias: Evening Lights On (Theater)
+  condition:
+  - condition: and
+    conditions:
+    - after: sunset
+      after_offset: -01:00:00
+      condition: sun
+    - before: '23:30'
+      condition: time
+    - condition: state
+      entity_id: sensor.theater
+      state: PowerOff
+  id: '1514838378061'
+  trigger:
+  - entity_id: group.local_motion_sensing
+    from: 'off'
+    platform: state
+    to: 'on'
+
 
 ############################################
 #
@@ -224,22 +254,20 @@
 - action:
   - data:
       entity_id:
-      - group.inside_house_lights
-      - group.outside_house_lights
-      - switch.ge_unknown_type5052_id3031_switch_2
+      - group.main_lights
+      - group.theater_light
     service: switch.turn_off
   - data:
-      entity_id: group.inside_house_lights
+      entity_id: group.main_lights
     service: light.turn_off
   - delay: 00:00:2
   - data:
       entity_id:
-      - group.inside_house_lights
-      - group.outside_house_lights
-      - switch.ge_unknown_type5052_id3031_switch_2
+      - group.main_lights
+      - group.theater_light
     service: switch.turn_off
   - data:
-      entity_id: group.inside_house_lights
+      entity_id: group.main_lights
     service: light.turn_off
   alias: Evening Light Timer
   condition:
@@ -250,7 +278,7 @@
       condition: sun
     - condition: time
       before: '23:30'
-  id: '1515887964298'
+  id: 'Evening light timer'
   trigger:
   - entity_id: group.local_motion_sensing
     platform: state
@@ -261,7 +289,7 @@
 
 ############################################
 #
-#   Night Lights On (Theater On - TV)
+#   Night Lights On (Cabinet and Rec Room Low)
 #     Action: Turn on night lights 
 #     Trigger: Local Motion On
 #     Conditions: 11:30 PM - 7:30 AM & Theater Off
@@ -276,16 +304,13 @@
       #Rec Room dimmed low script
       entity_id: script.1514064152005
     service: script.turn_on
-  alias: Night Lights On Theather On TV
+  alias: Night Lights On Cabinet and Rec Room
   condition:
     condition: and
     conditions:
     - after: '23:30'
       before: '07:30'
       condition: time
-    - condition: state
-      entity_id: sensor.theater
-      state: Watch Fios TV
   id: '1514838378062'
   trigger:
   - entity_id: group.local_motion_sensing
@@ -295,40 +320,7 @@
 
 ############################################
 #
-#   Night Lights On (Theater On - Xbox One)
-#     Action: Turn on night lights 
-#     Trigger: Local Motion On
-#     Conditions: 11:30 PM - 7:30 AM & Theater Off
-#
-############################################ 
-- action:
-  - data:
-      # under cabinet light
-      entity_id: light.ge_unknown_type4944_id3130_level_2
-    service: light.turn_on
-  - data:
-      #Rec Room dimmed low script
-      entity_id: script.1514064152005
-    service: script.turn_on
-  alias: Night Lights On Theather On TV
-  condition:
-    condition: and
-    conditions:
-    - after: '23:30'
-      before: '07:30'
-      condition: time
-    - condition: state
-      entity_id: sensor.theater
-      state: Xbox One
-  id: '1514838378062'
-  trigger:
-  - entity_id: group.local_motion_sensing
-    from: 'off'
-    platform: state
-    to: 'on'
-############################################
-#
-#   Night Lights On (Theater Off)
+#   Night Light On (Theater Off)
 #     Action: Turn on night lights 
 #     Trigger: Local Motion On
 #     Conditions: 11:30 PM - 7:30 AM & Theater Off
@@ -337,19 +329,11 @@
 - action:
   - data:
       entity_id: 
-      - group.theater_light
-      # south flood
-      - switch.ge_12727_inwall_smart_switch_toggle_switch_2
+        - switch.theater_light
+        # East flood
+        - switch.ge_12727_inwall_smart_switch_toggle_switch_2
     service: switch.turn_on
-  - data:
-      # under cabinet light
-      entity_id: light.ge_unknown_type4944_id3130_level_2
-    service: light.turn_on
-  - data:
-      #Rec Room dimmed low script
-      entity_id: script.1514064152005
-    service: script.turn_on
-  alias: Night Lights On Theather Off
+  alias: Night Light On (Theater)
   condition:
     condition: and
     conditions:
@@ -366,6 +350,7 @@
     platform: state
     to: 'on'
 
+
 ############################################
 #
 #   Night time lights off
@@ -377,27 +362,22 @@
 - action:
   - data:
       entity_id:
-      - group.inside_house_lights
-      - group.outside_house_lights
-      - switch.ge_unknown_type5052_id3031_switch_2
+      - group.main_lights
+      - group.theater_light
     service: switch.turn_off
   - data:
       entity_id:
-      - group.inside_house_lights
-      - light.ge_unknown_type4944_id3130_level
+      - group.main_lights
     service: light.turn_off
   - delay: 00:00:2
   - data:
       entity_id:
-      - group.inside_house_lights
-      - group.outside_house_lights
-      - switch.ge_unknown_type5052_id3031_switch_2
-      - switch.leviton_unknown_type3601_id0001_switch
+      - group.main_lights
+      - group.theater_light
     service: switch.turn_off
   - data:
       entity_id:
-      - group.inside_house_lights
-      - light.ge_unknown_type4944_id3130_level
+      - group.main_lights
     service: light.turn_off
   alias: Night Light Timer
   condition:

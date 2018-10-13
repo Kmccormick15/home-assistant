@@ -171,16 +171,16 @@ switch:
         command_off: 'JgBYAAABKJAUERM2ExETEhM2EzYTERMSEzYTERM2EzYTERMSEzYTNhMREzYTNhM2ExISNhMSExETNhMSExETEhM2ExETNhM2EwAFGgABJkkTAAw6AAEnSBMADQU='
         
 #Test Scenes
-input_select:
-  scene_kitchen:
-    name: Kitchen Scene
-    options:
-      - Select
-      - Day Cooking
-      - Night Cooking
-      - Relax
-      - 'OFF'
-    initial: 'Select'
+# input_select:
+#   scene_kitchen:
+#     name: Kitchen Scene
+#     options:
+#       - Select
+#       - Day Cooking
+#       - Night Cooking
+#       - Relax
+#       - 'OFF'
+#     initial: 'Select'
 input_number:
   master_brightness:
     name: Master Brightness
