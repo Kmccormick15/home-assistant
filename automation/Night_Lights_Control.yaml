@@ -42,7 +42,7 @@
 - action:
   - data:
       entity_id: 
-        - switch.theater_light
+        - group.theater_light
         # East flood
         - switch.ge_12727_inwall_smart_switch_toggle_switch_2
     service: switch.turn_on
