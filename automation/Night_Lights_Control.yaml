@@ -1,0 +1,124 @@
+
+
+############################################
+#
+#   Night Lights On (Cabinet and Rec Room Low)
+#     Action: Turn on night lights 
+#     Trigger: Local Motion On
+#     Conditions: 11:30 PM - 7:30 AM & Theater Off
+#
+############################################ 
+- action:
+  - data:
+      # under cabinet light
+      entity_id: light.ge_unknown_type4944_id3130_level_2
+    service: light.turn_on
+  - data:
+      #Rec Room dimmed low script
+      entity_id: script.1514064152005
+    service: script.turn_on
+  alias: Night Lights On Cabinet and Rec Room
+  condition:
+    condition: and
+    conditions:
+    - after: '23:30'
+      before: '07:30'
+      condition: time
+  id: '1514838378062'
+  trigger:
+  - entity_id: group.local_motion_sensing
+    from: 'off'
+    platform: state
+    to: 'on'
+
+############################################
+#
+#   Night Light On (Theater Off)
+#     Action: Turn on night lights 
+#     Trigger: Local Motion On
+#     Conditions: 11:30 PM - 7:30 AM & Theater Off
+#
+############################################ 
+- action:
+  - data:
+      entity_id: 
+        - switch.theater_light
+        # East flood
+        - switch.ge_12727_inwall_smart_switch_toggle_switch_2
+    service: switch.turn_on
+  alias: Night Light On (Theater)
+  condition:
+    condition: and
+    conditions:
+    - after: '23:30'
+      before: '07:30'
+      condition: time
+    - condition: state
+      entity_id: sensor.theater
+      state: PowerOff
+  id: '1514838378062'
+  trigger:
+  - entity_id: group.local_motion_sensing
+    from: 'off'
+    platform: state
+    to: 'on'
+
+
+############################################
+#
+#   Night time lights off
+#     Action: Turn off all lights 
+#     Trigger: No motion from local motion sensors
+#     Conditions: 11:30 pm - 06:10 AM
+#
+############################################    
+- action:
+  - data:
+      entity_id:
+      - group.main_lights
+      - group.theater_light
+    service: switch.turn_off
+  - data:
+      entity_id:
+      - group.main_lights
+    service: light.turn_off
+  - delay: 00:00:2
+  - data:
+      entity_id:
+      - group.main_lights
+      - group.theater_light
+    service: switch.turn_off
+  - data:
+      entity_id:
+      - group.main_lights
+    service: light.turn_off
+  alias: Night Light Timer
+  condition:
+  - after: '23:30'
+    before: '06:10'
+    condition: time
+  id: '1515887964299'
+  trigger:
+  - entity_id: group.local_motion_sensing
+    platform: state
+    to: 'off'
+
+############################################
+#
+#   Outside Lights off at Sunrise
+#     Action: Outside Lights off at Sunrise 
+#     Trigger: sunrise
+#     Conditions: None
+#
+############################################ 
+- action:
+  - data:
+      entity_id:
+      - group.outside_house_lights
+    service: switch.turn_off
+  alias: Outside Lights Off at Sunrise
+  condition: []
+  id: '1515259897457'
+  trigger:
+  - event: sunrise
+    platform: sun

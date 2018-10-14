@@ -1,0 +1,22 @@
+
+############################################
+#   Set Brightness from Webapp
+#     Action: Set brightness to dimmable lights 
+#     Trigger: Webapp brightness changes
+#     Conditions: None
+#
+############################################ 
+- action:
+  - service: light.turn_on
+    data_template:
+      entity_id:
+      - light.ge_unknown_type4944_id3130_level_2
+      - light.ge_12729_3way_dimmer_switch_level
+      - light.ge_unknown_type4944_id3130_level
+      brightness: '{{ trigger.to_state.state | int }}'
+  alias: Master Brightness Slider
+  condition: []
+  id: '1515270713952'
+  trigger:
+  - entity_id: input_number.master_brightness
+    platform: state

@@ -1,0 +1,86 @@
+
+############################################
+#
+#   Set Theater On
+#     Action: Turn On projector, screen, receiver
+#     Trigger: Harmony Remote set to TV or XBox
+#     Conditions: None
+#
+############################################ 
+- action:
+  - data:
+      entity_id:
+      - switch.projector
+    service: switch.turn_on
+  - data:
+      entity_id: switch.projector_screen
+    service: switch.turn_on
+  - delay: 00:00:05
+  - data:
+      entity_id: switch.projector
+    service: switch.turn_on
+  alias: Set Theater On
+  condition: []
+  id: '1514148400717'
+  trigger:
+  - entity_id: sensor.theater
+    from: PowerOff
+    platform: state
+    to: Watch Fios TV
+  - entity_id: sensor.theater
+    from: Office TV
+    platform: state
+    to: Watch Fios TV
+  - entity_id: sensor.theater
+    from: PowerOff
+    platform: state
+    to: Xbox One
+  - entity_id: sensor.theater
+    from: Office TV
+    platform: state
+    to: Xbox One
+
+############################################
+#
+#   Set Theater Off
+#     Action: Turn off projector, screen, receiver
+#     Trigger: Harmony Remote set to PowerOff
+#     Conditions: None
+#
+############################################ 
+- action:
+  - data:
+      entity_id:
+      - group.theater_light
+    service: switch.turn_on
+  - data:
+      entity_id: remote.teller_harmony_hub
+    service: remote.turn_off
+  - data:
+      entity_id:
+      - switch.projector
+    service: switch.turn_off
+  - data:
+      entity_id: switch.projector_screen
+    service: switch.turn_off
+  - delay: 00:00:02
+  - data:
+      entity_id: switch.projector
+    service: switch.turn_off
+  - delay: 00:02:00
+  - data:
+      entity_id:
+      - group.theater_light
+    service: switch.turn_off
+  alias: Set Theater Off
+  condition: []
+  id: '1514148400718'
+  trigger:
+  - entity_id: sensor.theater
+    from: Watch Fios TV
+    platform: state
+    to: PowerOff
+  - entity_id: sensor.theater
+    from: Xbox One
+    platform: state
+    to: PowerOff

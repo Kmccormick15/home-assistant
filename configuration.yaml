@@ -113,7 +113,6 @@ tts:
     time_memory: 300
 
 group: !include groups.yaml
-automation: !include automations.yaml
 script: !include scripts.yaml
 
 # ZWave
@@ -206,3 +205,5 @@ coinbase:
   api_secret: WH2kunSXe17k6JP5wRzQdKFFaDGgn39v 
   exchange_rate_currencies:
     - BTC
+
+automation: !include_dir_merge_list automation/

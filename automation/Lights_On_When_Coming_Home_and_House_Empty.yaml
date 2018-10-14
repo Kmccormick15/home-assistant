@@ -1,0 +1,38 @@
+############################################
+#
+#   Lights On When Coming Home and House Empty
+#     Action: Turn On inside_house_lights
+#     Trigger: Beam sensor
+#     Conditions: Not_home and after sunset-45m
+#
+############################################ 
+- action:
+  - data:
+      entity_id: group.main_lights
+    service: light.turn_on
+  - data:
+      entity_id: 
+      - group.main_lights
+      - group.theater_light
+    service: switch.turn_on
+  - delay: 00:00:10
+  - data:
+      #Dim rec room high
+      entity_id: script.1514064524159
+    service: script.turn_on
+  alias: Lights On When Coming Home and House Empty
+  condition:
+    condition: and
+    conditions:
+    - condition: state
+      entity_id: group.bluetooth_presence
+      state: not_home
+    - after: sunset
+      after_offset: -00:45:00
+      condition: sun
+  id: '1513377062497'
+  trigger:
+  - entity_id: binary_sensor.fortrezz_mimolite_wireless_interfacebridge_module_sensor
+    from: 'off'
+    platform: state
+    to: 'on'

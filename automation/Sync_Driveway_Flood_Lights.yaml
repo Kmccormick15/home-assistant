@@ -1,0 +1,23 @@
+
+
+############################################
+#
+#   Sync Barn flood light with West Flood light
+#     Action: Barn Big Flood On 
+#     Trigger: West Flood On
+#     Conditions: none
+#
+############################################ 
+- id: '1538953465766'
+  alias: Driveway Light Sync
+  trigger:
+  - entity_id: switch.ge_unknown_type4952_id3037_switch
+    from: 'off'
+    platform: state
+    to: 'on'
+  condition: []
+  action:
+  - data:
+      entity_id: switch.ge_unknown_type4952_id3037_switch_3
+    service: switch.turn_on
+

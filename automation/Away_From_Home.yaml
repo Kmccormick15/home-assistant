@@ -1,0 +1,37 @@
+
+############################################
+#
+#   Away from Home
+#     Action: Turn Off all house_lights
+#     Trigger: Bluetooth presence not_home for 3 mins
+#     Conditions: None
+#
+############################################ 
+- action:
+  - data:
+      entity_id:
+      - group.main_lights
+    service: light.turn_off
+  - data:
+      entity_id: 
+      - group.main_lights
+      - group.theater_light
+    service: switch.turn_off
+  - delay: 00:00:05
+  - data:
+      entity_id:
+      - group.main_lights
+    service: light.turn_off
+  - data:
+      entity_id: 
+      - group.main_lights
+      - group.theater_light
+    service: switch.turn_off
+  alias: Away From Home
+  condition: []
+  id: '1514061377826'
+  trigger:
+  - entity_id: group.bluetooth_presence
+    from: home
+    platform: state
+    to: not_home
