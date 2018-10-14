@@ -1,3 +1,8 @@
+Cameras:
+  name: Cameras
+  entities:
+    - camera.driveway
+    - camera.Rec_Room
 Inside_House_Lights:
   name: Inside House Lights
   entities:
@@ -51,6 +56,7 @@ Bluetooth_Presence:
     - device_tracker.pixel_2_xl
     - device_tracker.galaxy_s9
     - device_tracker.samsungsmg950u
+    - device_tracker.iphone
 Local_Motion_Sensing:
   name: Local Motion Sensing
   entities:
