@@ -113,7 +113,6 @@ tts:
     time_memory: 300
 
 group: !include groups.yaml
-automation: !include automations.yaml
 script: !include scripts.yaml
 
 # ZWave
