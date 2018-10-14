@@ -1,0 +1,60 @@
+
+############################################
+#
+#   Driveway Alert
+#     Action: Blink lights, IFTT alert, announce TTS google
+#     Trigger: Beam sensor
+#     Conditions: Home
+#
+############################################ 
+- action:
+  # - data:
+        # Blink theater light
+  #     entity_id: script.1512866664337
+  #   service: script.turn_on
+  - data:
+      event: Driveway_Alert
+    service: ifttt.trigger
+  # - service: tts.google_say
+  #   entity_id: media_player.kitchen_speaker
+  #   data_template:
+  #     message: '''{{ ["Looks like someone''s here. ", "Ding Dong. ", "Look alive.
+  #       ", "Someone might be here. "] | random }}'' '
+  alias: Driveway Alert
+  condition:
+  - condition: state
+    entity_id: group.bluetooth_presence
+    state: home
+  id: '1512961411263'
+  trigger:
+  - entity_id: binary_sensor.fortrezz_mimolite_wireless_interfacebridge_module_sensor
+    from: 'off'
+    platform: state
+    to: 'on'
+
+############################################
+#
+#   Disable driveway alert to prevent false positives
+#     Action: Disable driveway alert for 3 mins
+#     Trigger: Driveway_alert from beam sensor
+#     Conditions: None
+#
+############################################ 
+- action:
+  - delay: 00:00:05
+  - data:
+      entity_id: automation.driveway_alert
+    service: automation.turn_off
+  - delay: 00:03:00
+  - data:
+      entity_id: automation.driveway_alert
+    service: automation.turn_on
+  alias: Driveway Alert Exit Disable
+  condition: []
+  id: '1518372795162'
+  trigger:
+  - entity_id: automation.driveway_alert
+    from: 'on'
+    platform: state
+    to: 'off'
+
