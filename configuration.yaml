@@ -136,7 +136,7 @@ notify:
 
 #IFTT Key
 ifttt:
-  key: bGD0KedJta65AhcHPa4aOCVuU2qY3sXhz9c1wYhf3ey
+  key: !secret iftt_key
 
 #Bluetooth tracker
 device_tracker:
@@ -201,8 +201,8 @@ input_number:
     step: 1
 # Example configuration.yaml entry
 coinbase:
-  api_key: 80khjrouAVPSVpmC 
-  api_secret: WH2kunSXe17k6JP5wRzQdKFFaDGgn39v 
+  api_key: !secret coinbase_api_key 
+  api_secret: !secret coinbase_api_secret 
   exchange_rate_currencies:
     - BTC
 

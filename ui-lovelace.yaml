@@ -12,6 +12,25 @@ views:
         camera_image: camera.driveway
         show_info: true
         tap_action: dialog
+      - type: vertical-stack
+        cards:
+          - type: entities
+            title: Inside House Lights
+            show_header_toggle: true
+            entities:
+              - light.ge_12729_3way_dimmer_switch_level
+              - switch.ge_unknown_type5052_id3031_switch_3
+              - light.ge_unknown_type4944_id3130_level_2
+          - type: entities
+            title: Rec Room
+            show_header_toggle: true
+            entities:
+              - light.ge_unknown_type4944_id3130_level
+          - type: entities
+            title: Theater
+            show_header_toggle: true
+            entities:
+              - switch.ge_unknown_type5052_id3031_switch_2
       - type: picture-entity
         title: Rec Room
         entity: camera.rec_room
@@ -19,23 +38,6 @@ views:
         show_info: true
         tap_action: dialog
       - type: entities
-        title: Inside House Lights
-        show_header_toggle: true
-        entities:
-          - light.ge_12729_3way_dimmer_switch_level
-          - switch.ge_unknown_type5052_id3031_switch_3
-          - light.ge_unknown_type4944_id3130_level_2
-      - type: entities
-        title: Rec Room
-        show_header_toggle: true
-        entities:
-          - light.ge_unknown_type4944_id3130_level
-      - type: entities
-        title: Theater
-        show_header_toggle: true
-        entities:
-          - switch.ge_unknown_type5052_id3031_switch_2
-      - type: entities
         title: Outside House Lights
         show_header_toggle: true
         entities:
@@ -43,40 +45,9 @@ views:
           - switch.ge_12727_inwall_smart_switch_toggle_switch_2
           - switch.ge_unknown_type4952_id3037_switch
           - switch.ge_unknown_type4952_id3037_switch_3
-      - type: entities
-        title: Inside House Lights
-        show_header_toggle: true
-        entities:
-          - light.ge_12729_3way_dimmer_switch_level
-          - switch.ge_unknown_type5052_id3031_switch_3
-          - light.ge_unknown_type4944_id3130_level_2
-      - type: entities
-        title: Outside House Lights
-        show_header_toggle: true
-        entities:
-          - switch.ge_12727_inwall_smart_switch_toggle_switch
-          - switch.ge_12727_inwall_smart_switch_toggle_switch_2
-          - switch.ge_unknown_type4952_id3037_switch
-          - switch.ge_unknown_type4952_id3037_switch_3
-      - type: entities
-        title: Rec Room
-        show_header_toggle: true
-        entities:
-          - light.ge_unknown_type4944_id3130_level
-      - type: entities
-        title: House Temps
-        show_header_toggle: true
-        entities:
-          - sensor.thermostat_temperature
-          - sensor.living_room_temperature
-          - sensor.bedroom_temperature
-          - sensor.nolans_room_temperature
-          - sensor.aeotec_zw100_multisensor_6_temperature
       - type: weather-forecast
         entity: weather.thermostat
-      - type: entities
-        title: Bluetooth Presence
-        show_header_toggle: true
+      - type: entity-filter
         entities:
           - device_tracker.moto_e_4
           - device_tracker.moto_g_4
@@ -84,6 +55,11 @@ views:
           - device_tracker.galaxy_s9
           - device_tracker.samsungsmg950u
           - device_tracker.iphone
+        state_filter:
+          - home
+        card:
+          type: glance
+          title: People at Home
       - type: entities
         title: Local Motion Sensing
         show_header_toggle: true
@@ -101,12 +77,26 @@ views:
           - binary_sensor.thermostat_occupancy
           - binary_sensor.bedroom_occupancy
           - binary_sensor.nolans_room_occupancy
-      - type: entities
-        title: Humidity
-        show_header_toggle: true
-        entities:
-          - sensor.thermostat_humidity
-          - sensor.aeotec_zw100_multisensor_6_relative_humidity
+      - type: vertical-stack
+        cards:
+          - type: entities
+            title: House Temps
+            entities:  
+              - sensor.thermostat_temperature
+              - sensor.living_room_temperature
+              - sensor.bedroom_temperature
+              - sensor.nolans_room_temperature
+              - sensor.aeotec_zw100_multisensor_6_temperature
+          - type: sensor
+            height: 75
+            line_color: "#3498db"
+            entity: sensor.thermostat_humidity
+          - type: sensor
+            height: 75
+            line_color: "#3498db"
+            entity: sensor.aeotec_zw100_multisensor_6_relative_humidity
+            hourss_to_show: 72
+            name: Basement Humidity
       - type: entities
         title: Basement Status
         show_header_toggle: true
@@ -204,6 +194,8 @@ views:
           - device_tracker.samsungsmg950u
           - device_tracker.inkd_wireless
           - device_tracker.iphone
+  - title: autos
+    cards:
       - type: entities
         title: all automations
         show_header_toggle: true
@@ -225,5 +217,3 @@ views:
           - automation.set_theater_on
           - automation.wallmote_lamps_off
           - automation.wallmote_lamps_on
-      - type: weather-forecast
-        entity: weather.thermostat
