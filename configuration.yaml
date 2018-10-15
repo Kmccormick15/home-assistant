@@ -121,12 +121,12 @@ zwave:
 
 #nest key
 nest:
-  client_id: 379dfbd9-0b30-4ed7-a883-84878b70815d
-  client_secret: eyDr8n92NAIrgMQi4DZZxvvhI
+  client_id: !secret nest_client_id
+  client_secret: !secret nest_client_secret 
 
 #Ecobee key
 ecobee:
-  api_key: n2zqn3Ip3eI6u5tR9qlupgqMGmCcRXyh
+  api_key: !secret ecobee_api_key
   hold_temp: false
   
 #Ecobee Notifier
