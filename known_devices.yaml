@@ -163,3 +163,43 @@ iphone:
   name: iPhone
   picture:
   track: true
+
+inkd_wireless_2:
+  hide_if_away: false
+  icon:
+  mac: BT_D0:8A:55:90:9E:C9
+  name: Ink'd Wireless
+  picture:
+  track: true
+
+sacrocl6gj7sq2:
+  hide_if_away: false
+  icon:
+  mac: BT_C0:B6:F9:73:C5:61
+  name: SACROCL6GJ7SQ2
+  picture:
+  track: true
+
+yoga2:
+  hide_if_away: false
+  icon:
+  mac: BT_7C:7A:91:3F:4C:E6
+  name: YOGA-2
+  picture:
+  track: true
+
+bt_microphone:
+  hide_if_away: false
+  icon:
+  mac: BT_3A:95:09:54:74:2A
+  name: BT Microphone
+  picture:
+  track: true
+
+kmccormick15s_keyboard:
+  hide_if_away: false
+  icon:
+  mac: BT_E8:06:88:4F:D1:63
+  name: kmccormick15’s keyboard
+  picture:
+  track: true
