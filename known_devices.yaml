@@ -41,7 +41,7 @@ acton:
   mac: BT_40:EF:4C:10:1F:CA
   name: ACTON
   picture:
-  track: true
+  track: false
   vendor: unknown
 
 moto_e_4:
@@ -50,7 +50,7 @@ moto_e_4:
   mac: BT_F0:D7:AA:88:7B:94
   name: Moto E (4)
   picture:
-  track: true
+  track: false
   vendor: Motorola Mobility LLC, a Lenovo Company
 
 moto_g_4:
@@ -59,7 +59,7 @@ moto_g_4:
   mac: BT_68:C4:4D:A4:5C:0E
   name: Moto G (4)
   picture:
-  track: true
+  track: false
   vendor: Motorola Mobility LLC, a Lenovo Company
 
 uproar_wireless:
@@ -68,7 +68,7 @@ uproar_wireless:
   mac: BT_D0:8A:55:52:AC:3B
   name: Uproar Wireless
   picture:
-  track: true
+  track: false
   vendor: Skullcandy
 
 lance:
@@ -86,7 +86,7 @@ battlestation_2:
   mac: BT_AC:00:CD:64:05:09
   name: BATTLESTATION
   picture:
-  track: true
+  track: false
   vendor: unknown
 
 samsung_level_u_pro_27fc:
@@ -111,7 +111,7 @@ pixel_2_xl:
   hide_if_away: false
   icon:
   mac: BT_00:3D:E8:38:F3:FC
-  name: Pixel 2 XL
+  name: Kevin Pixel 2 XL
   picture:
   track: true
   vendor: LG Electronics (Mobile Communications)
@@ -120,7 +120,7 @@ galaxy_s9:
   hide_if_away: false
   icon:
   mac: BT_50:77:05:B4:A9:65
-  name: Galaxy S9
+  name: Missy Galaxy S9
   picture:
   track: true
 
@@ -144,7 +144,7 @@ samsungsmg950u:
   hide_if_away: false
   icon:
   mac: BT_A0:10:81:57:A4:E2
-  name: SAMSUNG-SM-G950U
+  name: Andrew S9
   picture:
   track: true
 
@@ -154,7 +154,7 @@ inkd_wireless:
   mac: BT_D0:8A:55:A6:27:C4
   name: Ink'd Wireless
   picture:
-  track: true
+  track: false
 
 iphone:
   hide_if_away: false
@@ -170,7 +170,7 @@ inkd_wireless_2:
   mac: BT_D0:8A:55:90:9E:C9
   name: Ink'd Wireless
   picture:
-  track: true
+  track: false
 
 sacrocl6gj7sq2:
   hide_if_away: false
@@ -178,7 +178,7 @@ sacrocl6gj7sq2:
   mac: BT_C0:B6:F9:73:C5:61
   name: SACROCL6GJ7SQ2
   picture:
-  track: true
+  track: false
 
 yoga2:
   hide_if_away: false
@@ -186,7 +186,7 @@ yoga2:
   mac: BT_7C:7A:91:3F:4C:E6
   name: YOGA-2
   picture:
-  track: true
+  track: false
 
 bt_microphone:
   hide_if_away: false
@@ -194,12 +194,68 @@ bt_microphone:
   mac: BT_3A:95:09:54:74:2A
   name: BT Microphone
   picture:
-  track: true
+  track: false
 
 kmccormick15s_keyboard:
   hide_if_away: false
   icon:
   mac: BT_E8:06:88:4F:D1:63
   name: kmccormick15’s keyboard
+  picture:
+  track: false
+
+moto_x4_terri:
+  hide_if_away: false
+  icon:
+  mac: BT_D0:04:01:2D:1A:C7
+  name: Terri Moto x4 
+  picture:
+  track: true
+
+kidz0516:
+  hide_if_away: false
+  icon:
+  mac: BT_FC:58:FA:43:00:05
+  name: Kidz0516
+  picture:
+  track: true
+
+kevins_ipad:
+  hide_if_away: false
+  icon:
+  mac: BT_58:E6:BA:A1:9A:0C
+  name: Kevin’s iPad
+  picture:
+  track: true
+
+desktopohgu7bd:
+  hide_if_away: false
+  icon:
+  mac: BT_68:17:29:68:D2:23
+  name: DESKTOP-OHGU7BD
+  picture:
+  track: true
+
+gs3705427:
+  hide_if_away: false
+  icon:
+  mac: BT_00:13:43:62:7B:24
+  name: GS3705427
+  picture:
+  track: true
+
+desktop_khdbkob:
+  hide_if_away: false
+  icon:
+  mac: BT_28:16:A8:53:C4:36
+  name: DESKTOP-KHDBKOB
+  picture:
+  track: true
+
+moto_e_4_2:
+  hide_if_away: false
+  icon:
+  mac: BT_A8:96:75:B6:42:5C
+  name: Moto E (4)
   picture:
   track: true
